@@ -1,0 +1,485 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 45;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1D3623260D0F684500981E51 /* AlphaWolfSquadAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D3623250D0F684500981E51 /* AlphaWolfSquadAppDelegate.m */; };
+		1D60589B0D05DD56006BFB54 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; };
+		1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1D30AB110D05D00D00671497 /* Foundation.framework */; };
+		1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1DF5F4DF0D08C38300B7A737 /* UIKit.framework */; };
+		288765A50DF7441C002DB57D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 288765A40DF7441C002DB57D /* CoreGraphics.framework */; };
+		2899E5220DE3E06400AC0155 /* AlphaWolfSquadViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2899E5210DE3E06400AC0155 /* AlphaWolfSquadViewController.xib */; };
+		28AD733F0D9D9553002E5188 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28AD733E0D9D9553002E5188 /* MainWindow.xib */; };
+		28D7ACF80DDB3853001CB0EB /* AlphaWolfSquadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28D7ACF70DDB3853001CB0EB /* AlphaWolfSquadViewController.m */; };
+		4D6C9DB910FE92FF006D94FD /* SlapView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D6C9DB810FE92FF006D94FD /* SlapView.m */; };
+		4D90180611125E91009A47FA /* begin.png in Resources */ = {isa = PBXBuildFile; fileRef = 4D9017F111125E91009A47FA /* begin.png */; };
+		4D90180711125E91009A47FA /* beginOver.png in Resources */ = {isa = PBXBuildFile; fileRef = 4D9017F211125E91009A47FA /* beginOver.png */; };
+		4D90180811125E91009A47FA /* screen1_mike.png in Resources */ = {isa = PBXBuildFile; fileRef = 4D9017F311125E91009A47FA /* screen1_mike.png */; };
+		4D90180911125E91009A47FA /* screen1_mike_arm.png in Resources */ = {isa = PBXBuildFile; fileRef = 4D9017F411125E91009A47FA /* screen1_mike_arm.png */; };
+		4D90180A11125E91009A47FA /* screen1_scott.png in Resources */ = {isa = PBXBuildFile; fileRef = 4D9017F511125E91009A47FA /* screen1_scott.png */; };
+		4D90180B11125E91009A47FA /* screen1_scott_arm.png in Resources */ = {isa = PBXBuildFile; fileRef = 4D9017F611125E91009A47FA /* screen1_scott_arm.png */; };
+		4D90180C11125E91009A47FA /* screen1_star_l.png in Resources */ = {isa = PBXBuildFile; fileRef = 4D9017F711125E91009A47FA /* screen1_star_l.png */; };
+		4D90180D11125E91009A47FA /* screen1_star_r.png in Resources */ = {isa = PBXBuildFile; fileRef = 4D9017F811125E91009A47FA /* screen1_star_r.png */; };
+		4D90180E11125E91009A47FA /* screen1_title.png in Resources */ = {isa = PBXBuildFile; fileRef = 4D9017F911125E91009A47FA /* screen1_title.png */; };
+		4D90180F11125E91009A47FA /* screen2_bkg.png in Resources */ = {isa = PBXBuildFile; fileRef = 4D9017FA11125E91009A47FA /* screen2_bkg.png */; };
+		4D90181011125E91009A47FA /* screen2_bust5.png in Resources */ = {isa = PBXBuildFile; fileRef = 4D9017FB11125E91009A47FA /* screen2_bust5.png */; };
+		4D90181111125E91009A47FA /* screen2_footer.png in Resources */ = {isa = PBXBuildFile; fileRef = 4D9017FC11125E91009A47FA /* screen2_footer.png */; };
+		4D90181211125E91009A47FA /* screen2_hand.png in Resources */ = {isa = PBXBuildFile; fileRef = 4D9017FD11125E91009A47FA /* screen2_hand.png */; };
+		4D90181311125E91009A47FA /* screen2_header.png in Resources */ = {isa = PBXBuildFile; fileRef = 4D9017FE11125E91009A47FA /* screen2_header.png */; };
+		4D90181411125E91009A47FA /* screen2_help.png in Resources */ = {isa = PBXBuildFile; fileRef = 4D9017FF11125E91009A47FA /* screen2_help.png */; };
+		4D90181511125E91009A47FA /* screen2_helpOver.png in Resources */ = {isa = PBXBuildFile; fileRef = 4D90180011125E91009A47FA /* screen2_helpOver.png */; };
+		4D90181611125E91009A47FA /* screen2_Instructions.png in Resources */ = {isa = PBXBuildFile; fileRef = 4D90180111125E91009A47FA /* screen2_Instructions.png */; };
+		4D90181711125E91009A47FA /* screen2_settings.png in Resources */ = {isa = PBXBuildFile; fileRef = 4D90180211125E91009A47FA /* screen2_settings.png */; };
+		4D90181811125E91009A47FA /* screen2_settingsOver.png in Resources */ = {isa = PBXBuildFile; fileRef = 4D90180311125E91009A47FA /* screen2_settingsOver.png */; };
+		4D90181911125E91009A47FA /* clap.wav in Resources */ = {isa = PBXBuildFile; fileRef = 4D90180511125E91009A47FA /* clap.wav */; };
+		4D90183911126138009A47FA /* Settings.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4D90183811126138009A47FA /* Settings.xib */; };
+		4D901853111261A6009A47FA /* back-btn.png in Resources */ = {isa = PBXBuildFile; fileRef = 4D90183B111261A6009A47FA /* back-btn.png */; };
+		4D901854111261A6009A47FA /* background.png in Resources */ = {isa = PBXBuildFile; fileRef = 4D90183C111261A6009A47FA /* background.png */; };
+		4D901855111261A6009A47FA /* begin-btn.png in Resources */ = {isa = PBXBuildFile; fileRef = 4D90183D111261A6009A47FA /* begin-btn.png */; };
+		4D901856111261A6009A47FA /* burst.png in Resources */ = {isa = PBXBuildFile; fileRef = 4D90183E111261A6009A47FA /* burst.png */; };
+		4D901857111261A6009A47FA /* bust-btn.png in Resources */ = {isa = PBXBuildFile; fileRef = 4D90183F111261A6009A47FA /* bust-btn.png */; };
+		4D901858111261A6009A47FA /* congrats-ttl.png in Resources */ = {isa = PBXBuildFile; fileRef = 4D901840111261A6009A47FA /* congrats-ttl.png */; };
+		4D901859111261A6009A47FA /* countdown-star-blank.png in Resources */ = {isa = PBXBuildFile; fileRef = 4D901841111261A6009A47FA /* countdown-star-blank.png */; };
+		4D90185A111261A6009A47FA /* fyi-ttl.png in Resources */ = {isa = PBXBuildFile; fileRef = 4D901842111261A6009A47FA /* fyi-ttl.png */; };
+		4D90185B111261A6009A47FA /* hand.png in Resources */ = {isa = PBXBuildFile; fileRef = 4D901843111261A6009A47FA /* hand.png */; };
+		4D90185C111261A6009A47FA /* have-some-5-ttl.png in Resources */ = {isa = PBXBuildFile; fileRef = 4D901844111261A6009A47FA /* have-some-5-ttl.png */; };
+		4D90185D111261A6009A47FA /* help_title.png in Resources */ = {isa = PBXBuildFile; fileRef = 4D901845111261A6009A47FA /* help_title.png */; };
+		4D90185E111261A6009A47FA /* help-btn.png in Resources */ = {isa = PBXBuildFile; fileRef = 4D901846111261A6009A47FA /* help-btn.png */; };
+		4D90185F111261A6009A47FA /* HighFiveScreens_v2_07.png in Resources */ = {isa = PBXBuildFile; fileRef = 4D901847111261A6009A47FA /* HighFiveScreens_v2_07.png */; };
+		4D901860111261A6009A47FA /* people.png in Resources */ = {isa = PBXBuildFile; fileRef = 4D901848111261A6009A47FA /* people.png */; };
+		4D901861111261A6009A47FA /* personal-stats-btn.png in Resources */ = {isa = PBXBuildFile; fileRef = 4D901849111261A6009A47FA /* personal-stats-btn.png */; };
+		4D901862111261A6009A47FA /* scott-mike.png in Resources */ = {isa = PBXBuildFile; fileRef = 4D90184A111261A6009A47FA /* scott-mike.png */; };
+		4D901863111261A6009A47FA /* send-btn.png in Resources */ = {isa = PBXBuildFile; fileRef = 4D90184B111261A6009A47FA /* send-btn.png */; };
+		4D901864111261A6009A47FA /* settings_title.png in Resources */ = {isa = PBXBuildFile; fileRef = 4D90184C111261A6009A47FA /* settings_title.png */; };
+		4D901865111261A6009A47FA /* settings-btn.png in Resources */ = {isa = PBXBuildFile; fileRef = 4D90184D111261A6009A47FA /* settings-btn.png */; };
+		4D901866111261A6009A47FA /* stars-left-lrg.png in Resources */ = {isa = PBXBuildFile; fileRef = 4D90184E111261A6009A47FA /* stars-left-lrg.png */; };
+		4D901867111261A6009A47FA /* stars-left.png in Resources */ = {isa = PBXBuildFile; fileRef = 4D90184F111261A6009A47FA /* stars-left.png */; };
+		4D901868111261A6009A47FA /* stars-right-lrg.png in Resources */ = {isa = PBXBuildFile; fileRef = 4D901850111261A6009A47FA /* stars-right-lrg.png */; };
+		4D901869111261A6009A47FA /* stars-right.png in Resources */ = {isa = PBXBuildFile; fileRef = 4D901851111261A6009A47FA /* stars-right.png */; };
+		4D90186A111261A6009A47FA /* try-again-btn.png in Resources */ = {isa = PBXBuildFile; fileRef = 4D901852111261A6009A47FA /* try-again-btn.png */; };
+		4D90186C111261E9009A47FA /* dialog.png in Resources */ = {isa = PBXBuildFile; fileRef = 4D90186B111261E9009A47FA /* dialog.png */; };
+		4D90187111126298009A47FA /* SettingsController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D90187011126298009A47FA /* SettingsController.m */; };
+		4DC9EFE91123C79300F97B5A /* HelpController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DC9EFE71123C79300F97B5A /* HelpController.m */; };
+		4DC9EFEA1123C79300F97B5A /* HelpController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4DC9EFE81123C79300F97B5A /* HelpController.xib */; };
+		C86D2BEA103DCD9D00EE8AF7 /* AlphaWolfView.m in Sources */ = {isa = PBXBuildFile; fileRef = C86D2BE9103DCD9D00EE8AF7 /* AlphaWolfView.m */; };
+		C86D2C2E103DCE1F00EE8AF7 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C86D2C2D103DCE1F00EE8AF7 /* QuartzCore.framework */; };
+		C8A21DA1104DD13A00FC9464 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C8A21DA0104DD13A00FC9464 /* AudioToolbox.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1D30AB110D05D00D00671497 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		1D3623240D0F684500981E51 /* AlphaWolfSquadAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlphaWolfSquadAppDelegate.h; sourceTree = "<group>"; };
+		1D3623250D0F684500981E51 /* AlphaWolfSquadAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlphaWolfSquadAppDelegate.m; sourceTree = "<group>"; };
+		1D6058910D05DD3D006BFB54 /* AlphaWolfSquad.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AlphaWolfSquad.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1DF5F4DF0D08C38300B7A737 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		288765A40DF7441C002DB57D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		2899E5210DE3E06400AC0155 /* AlphaWolfSquadViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AlphaWolfSquadViewController.xib; sourceTree = "<group>"; };
+		28AD733E0D9D9553002E5188 /* MainWindow.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainWindow.xib; sourceTree = "<group>"; };
+		28D7ACF60DDB3853001CB0EB /* AlphaWolfSquadViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlphaWolfSquadViewController.h; sourceTree = "<group>"; };
+		28D7ACF70DDB3853001CB0EB /* AlphaWolfSquadViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlphaWolfSquadViewController.m; sourceTree = "<group>"; };
+		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		32CA4F630368D1EE00C91783 /* AlphaWolfSquad_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlphaWolfSquad_Prefix.pch; sourceTree = "<group>"; };
+		4D6C9DB710FE92FF006D94FD /* SlapView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SlapView.h; sourceTree = "<group>"; };
+		4D6C9DB810FE92FF006D94FD /* SlapView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SlapView.m; sourceTree = "<group>"; };
+		4D9017F111125E91009A47FA /* begin.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = begin.png; sourceTree = "<group>"; };
+		4D9017F211125E91009A47FA /* beginOver.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = beginOver.png; sourceTree = "<group>"; };
+		4D9017F311125E91009A47FA /* screen1_mike.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = screen1_mike.png; sourceTree = "<group>"; };
+		4D9017F411125E91009A47FA /* screen1_mike_arm.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = screen1_mike_arm.png; sourceTree = "<group>"; };
+		4D9017F511125E91009A47FA /* screen1_scott.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = screen1_scott.png; sourceTree = "<group>"; };
+		4D9017F611125E91009A47FA /* screen1_scott_arm.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = screen1_scott_arm.png; sourceTree = "<group>"; };
+		4D9017F711125E91009A47FA /* screen1_star_l.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = screen1_star_l.png; sourceTree = "<group>"; };
+		4D9017F811125E91009A47FA /* screen1_star_r.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = screen1_star_r.png; sourceTree = "<group>"; };
+		4D9017F911125E91009A47FA /* screen1_title.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = screen1_title.png; sourceTree = "<group>"; };
+		4D9017FA11125E91009A47FA /* screen2_bkg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = screen2_bkg.png; sourceTree = "<group>"; };
+		4D9017FB11125E91009A47FA /* screen2_bust5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = screen2_bust5.png; sourceTree = "<group>"; };
+		4D9017FC11125E91009A47FA /* screen2_footer.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = screen2_footer.png; sourceTree = "<group>"; };
+		4D9017FD11125E91009A47FA /* screen2_hand.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = screen2_hand.png; sourceTree = "<group>"; };
+		4D9017FE11125E91009A47FA /* screen2_header.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = screen2_header.png; sourceTree = "<group>"; };
+		4D9017FF11125E91009A47FA /* screen2_help.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = screen2_help.png; sourceTree = "<group>"; };
+		4D90180011125E91009A47FA /* screen2_helpOver.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = screen2_helpOver.png; sourceTree = "<group>"; };
+		4D90180111125E91009A47FA /* screen2_Instructions.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = screen2_Instructions.png; sourceTree = "<group>"; };
+		4D90180211125E91009A47FA /* screen2_settings.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = screen2_settings.png; sourceTree = "<group>"; };
+		4D90180311125E91009A47FA /* screen2_settingsOver.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = screen2_settingsOver.png; sourceTree = "<group>"; };
+		4D90180511125E91009A47FA /* clap.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = clap.wav; sourceTree = "<group>"; };
+		4D90183811126138009A47FA /* Settings.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Settings.xib; path = Classes/Settings.xib; sourceTree = "<group>"; };
+		4D90183B111261A6009A47FA /* back-btn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "back-btn.png"; sourceTree = "<group>"; };
+		4D90183C111261A6009A47FA /* background.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = background.png; sourceTree = "<group>"; };
+		4D90183D111261A6009A47FA /* begin-btn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "begin-btn.png"; sourceTree = "<group>"; };
+		4D90183E111261A6009A47FA /* burst.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = burst.png; sourceTree = "<group>"; };
+		4D90183F111261A6009A47FA /* bust-btn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bust-btn.png"; sourceTree = "<group>"; };
+		4D901840111261A6009A47FA /* congrats-ttl.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "congrats-ttl.png"; sourceTree = "<group>"; };
+		4D901841111261A6009A47FA /* countdown-star-blank.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "countdown-star-blank.png"; sourceTree = "<group>"; };
+		4D901842111261A6009A47FA /* fyi-ttl.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "fyi-ttl.png"; sourceTree = "<group>"; };
+		4D901843111261A6009A47FA /* hand.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = hand.png; sourceTree = "<group>"; };
+		4D901844111261A6009A47FA /* have-some-5-ttl.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "have-some-5-ttl.png"; sourceTree = "<group>"; };
+		4D901845111261A6009A47FA /* help_title.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = help_title.png; sourceTree = "<group>"; };
+		4D901846111261A6009A47FA /* help-btn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "help-btn.png"; sourceTree = "<group>"; };
+		4D901847111261A6009A47FA /* HighFiveScreens_v2_07.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = HighFiveScreens_v2_07.png; sourceTree = "<group>"; };
+		4D901848111261A6009A47FA /* people.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = people.png; sourceTree = "<group>"; };
+		4D901849111261A6009A47FA /* personal-stats-btn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "personal-stats-btn.png"; sourceTree = "<group>"; };
+		4D90184A111261A6009A47FA /* scott-mike.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "scott-mike.png"; sourceTree = "<group>"; };
+		4D90184B111261A6009A47FA /* send-btn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "send-btn.png"; sourceTree = "<group>"; };
+		4D90184C111261A6009A47FA /* settings_title.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = settings_title.png; sourceTree = "<group>"; };
+		4D90184D111261A6009A47FA /* settings-btn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "settings-btn.png"; sourceTree = "<group>"; };
+		4D90184E111261A6009A47FA /* stars-left-lrg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "stars-left-lrg.png"; sourceTree = "<group>"; };
+		4D90184F111261A6009A47FA /* stars-left.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "stars-left.png"; sourceTree = "<group>"; };
+		4D901850111261A6009A47FA /* stars-right-lrg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "stars-right-lrg.png"; sourceTree = "<group>"; };
+		4D901851111261A6009A47FA /* stars-right.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "stars-right.png"; sourceTree = "<group>"; };
+		4D901852111261A6009A47FA /* try-again-btn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "try-again-btn.png"; sourceTree = "<group>"; };
+		4D90186B111261E9009A47FA /* dialog.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = dialog.png; sourceTree = "<group>"; };
+		4D90186F11126298009A47FA /* SettingsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsController.h; sourceTree = "<group>"; };
+		4D90187011126298009A47FA /* SettingsController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsController.m; sourceTree = "<group>"; };
+		4DC9EFE61123C79300F97B5A /* HelpController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HelpController.h; sourceTree = "<group>"; };
+		4DC9EFE71123C79300F97B5A /* HelpController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HelpController.m; sourceTree = "<group>"; };
+		4DC9EFE81123C79300F97B5A /* HelpController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = HelpController.xib; path = Classes/HelpController.xib; sourceTree = "<group>"; };
+		8D1107310486CEB800E47090 /* AlphaWolfSquad-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "AlphaWolfSquad-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
+		C86D2BE8103DCD9D00EE8AF7 /* AlphaWolfView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlphaWolfView.h; sourceTree = SOURCE_ROOT; };
+		C86D2BE9103DCD9D00EE8AF7 /* AlphaWolfView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlphaWolfView.m; sourceTree = SOURCE_ROOT; };
+		C86D2C2D103DCE1F00EE8AF7 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		C8A21DA0104DD13A00FC9464 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = /System/Library/Frameworks/AudioToolbox.framework; sourceTree = "<absolute>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1D60588F0D05DD3D006BFB54 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1D60589F0D05DD5A006BFB54 /* Foundation.framework in Frameworks */,
+				1DF5F4E00D08C38300B7A737 /* UIKit.framework in Frameworks */,
+				288765A50DF7441C002DB57D /* CoreGraphics.framework in Frameworks */,
+				C86D2C2E103DCE1F00EE8AF7 /* QuartzCore.framework in Frameworks */,
+				C8A21DA1104DD13A00FC9464 /* AudioToolbox.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		080E96DDFE201D6D7F000001 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				C86D2BE8103DCD9D00EE8AF7 /* AlphaWolfView.h */,
+				C86D2BE9103DCD9D00EE8AF7 /* AlphaWolfView.m */,
+				1D3623240D0F684500981E51 /* AlphaWolfSquadAppDelegate.h */,
+				1D3623250D0F684500981E51 /* AlphaWolfSquadAppDelegate.m */,
+				28D7ACF60DDB3853001CB0EB /* AlphaWolfSquadViewController.h */,
+				28D7ACF70DDB3853001CB0EB /* AlphaWolfSquadViewController.m */,
+				4D6C9DB710FE92FF006D94FD /* SlapView.h */,
+				4D6C9DB810FE92FF006D94FD /* SlapView.m */,
+				4D90186F11126298009A47FA /* SettingsController.h */,
+				4D90187011126298009A47FA /* SettingsController.m */,
+				4DC9EFE61123C79300F97B5A /* HelpController.h */,
+				4DC9EFE71123C79300F97B5A /* HelpController.m */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		19C28FACFE9D520D11CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1D6058910D05DD3D006BFB54 /* AlphaWolfSquad.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
+			isa = PBXGroup;
+			children = (
+				4D9017F011125E91009A47FA /* images */,
+				4D90180411125E91009A47FA /* sounds */,
+				080E96DDFE201D6D7F000001 /* Classes */,
+				29B97315FDCFA39411CA2CEA /* Other Sources */,
+				29B97317FDCFA39411CA2CEA /* Resources */,
+				29B97323FDCFA39411CA2CEA /* Frameworks */,
+				19C28FACFE9D520D11CA2CBB /* Products */,
+			);
+			name = CustomTemplate;
+			sourceTree = "<group>";
+		};
+		29B97315FDCFA39411CA2CEA /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+				32CA4F630368D1EE00C91783 /* AlphaWolfSquad_Prefix.pch */,
+				29B97316FDCFA39411CA2CEA /* main.m */,
+			);
+			name = "Other Sources";
+			sourceTree = "<group>";
+		};
+		29B97317FDCFA39411CA2CEA /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				4DC9EFE81123C79300F97B5A /* HelpController.xib */,
+				4D90183811126138009A47FA /* Settings.xib */,
+				2899E5210DE3E06400AC0155 /* AlphaWolfSquadViewController.xib */,
+				28AD733E0D9D9553002E5188 /* MainWindow.xib */,
+				8D1107310486CEB800E47090 /* AlphaWolfSquad-Info.plist */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C8A21DA0104DD13A00FC9464 /* AudioToolbox.framework */,
+				C86D2C2D103DCE1F00EE8AF7 /* QuartzCore.framework */,
+				1DF5F4DF0D08C38300B7A737 /* UIKit.framework */,
+				1D30AB110D05D00D00671497 /* Foundation.framework */,
+				288765A40DF7441C002DB57D /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4D9017F011125E91009A47FA /* images */ = {
+			isa = PBXGroup;
+			children = (
+				4D90186B111261E9009A47FA /* dialog.png */,
+				4D90183B111261A6009A47FA /* back-btn.png */,
+				4D90183C111261A6009A47FA /* background.png */,
+				4D90183D111261A6009A47FA /* begin-btn.png */,
+				4D90183E111261A6009A47FA /* burst.png */,
+				4D90183F111261A6009A47FA /* bust-btn.png */,
+				4D901840111261A6009A47FA /* congrats-ttl.png */,
+				4D901841111261A6009A47FA /* countdown-star-blank.png */,
+				4D901842111261A6009A47FA /* fyi-ttl.png */,
+				4D901843111261A6009A47FA /* hand.png */,
+				4D901844111261A6009A47FA /* have-some-5-ttl.png */,
+				4D901845111261A6009A47FA /* help_title.png */,
+				4D901846111261A6009A47FA /* help-btn.png */,
+				4D901847111261A6009A47FA /* HighFiveScreens_v2_07.png */,
+				4D901848111261A6009A47FA /* people.png */,
+				4D901849111261A6009A47FA /* personal-stats-btn.png */,
+				4D90184A111261A6009A47FA /* scott-mike.png */,
+				4D90184B111261A6009A47FA /* send-btn.png */,
+				4D90184C111261A6009A47FA /* settings_title.png */,
+				4D90184D111261A6009A47FA /* settings-btn.png */,
+				4D90184E111261A6009A47FA /* stars-left-lrg.png */,
+				4D90184F111261A6009A47FA /* stars-left.png */,
+				4D901850111261A6009A47FA /* stars-right-lrg.png */,
+				4D901851111261A6009A47FA /* stars-right.png */,
+				4D901852111261A6009A47FA /* try-again-btn.png */,
+				4D9017F111125E91009A47FA /* begin.png */,
+				4D9017F211125E91009A47FA /* beginOver.png */,
+				4D9017F311125E91009A47FA /* screen1_mike.png */,
+				4D9017F411125E91009A47FA /* screen1_mike_arm.png */,
+				4D9017F511125E91009A47FA /* screen1_scott.png */,
+				4D9017F611125E91009A47FA /* screen1_scott_arm.png */,
+				4D9017F711125E91009A47FA /* screen1_star_l.png */,
+				4D9017F811125E91009A47FA /* screen1_star_r.png */,
+				4D9017F911125E91009A47FA /* screen1_title.png */,
+				4D9017FA11125E91009A47FA /* screen2_bkg.png */,
+				4D9017FB11125E91009A47FA /* screen2_bust5.png */,
+				4D9017FC11125E91009A47FA /* screen2_footer.png */,
+				4D9017FD11125E91009A47FA /* screen2_hand.png */,
+				4D9017FE11125E91009A47FA /* screen2_header.png */,
+				4D9017FF11125E91009A47FA /* screen2_help.png */,
+				4D90180011125E91009A47FA /* screen2_helpOver.png */,
+				4D90180111125E91009A47FA /* screen2_Instructions.png */,
+				4D90180211125E91009A47FA /* screen2_settings.png */,
+				4D90180311125E91009A47FA /* screen2_settingsOver.png */,
+			);
+			path = images;
+			sourceTree = "<group>";
+		};
+		4D90180411125E91009A47FA /* sounds */ = {
+			isa = PBXGroup;
+			children = (
+				4D90180511125E91009A47FA /* clap.wav */,
+			);
+			path = sounds;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1D6058900D05DD3D006BFB54 /* AlphaWolfSquad */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "AlphaWolfSquad" */;
+			buildPhases = (
+				1D60588D0D05DD3D006BFB54 /* Resources */,
+				1D60588E0D05DD3D006BFB54 /* Sources */,
+				1D60588F0D05DD3D006BFB54 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AlphaWolfSquad;
+			productName = AlphaWolfSquad;
+			productReference = 1D6058910D05DD3D006BFB54 /* AlphaWolfSquad.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		29B97313FDCFA39411CA2CEA /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = C01FCF4E08A954540054247B /* Build configuration list for PBXProject "AlphaWolfSquad" */;
+			compatibilityVersion = "Xcode 3.1";
+			hasScannedForEncodings = 1;
+			mainGroup = 29B97314FDCFA39411CA2CEA /* CustomTemplate */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1D6058900D05DD3D006BFB54 /* AlphaWolfSquad */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1D60588D0D05DD3D006BFB54 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				28AD733F0D9D9553002E5188 /* MainWindow.xib in Resources */,
+				2899E5220DE3E06400AC0155 /* AlphaWolfSquadViewController.xib in Resources */,
+				4D90180611125E91009A47FA /* begin.png in Resources */,
+				4D90180711125E91009A47FA /* beginOver.png in Resources */,
+				4D90180811125E91009A47FA /* screen1_mike.png in Resources */,
+				4D90180911125E91009A47FA /* screen1_mike_arm.png in Resources */,
+				4D90180A11125E91009A47FA /* screen1_scott.png in Resources */,
+				4D90180B11125E91009A47FA /* screen1_scott_arm.png in Resources */,
+				4D90180C11125E91009A47FA /* screen1_star_l.png in Resources */,
+				4D90180D11125E91009A47FA /* screen1_star_r.png in Resources */,
+				4D90180E11125E91009A47FA /* screen1_title.png in Resources */,
+				4D90180F11125E91009A47FA /* screen2_bkg.png in Resources */,
+				4D90181011125E91009A47FA /* screen2_bust5.png in Resources */,
+				4D90181111125E91009A47FA /* screen2_footer.png in Resources */,
+				4D90181211125E91009A47FA /* screen2_hand.png in Resources */,
+				4D90181311125E91009A47FA /* screen2_header.png in Resources */,
+				4D90181411125E91009A47FA /* screen2_help.png in Resources */,
+				4D90181511125E91009A47FA /* screen2_helpOver.png in Resources */,
+				4D90181611125E91009A47FA /* screen2_Instructions.png in Resources */,
+				4D90181711125E91009A47FA /* screen2_settings.png in Resources */,
+				4D90181811125E91009A47FA /* screen2_settingsOver.png in Resources */,
+				4D90181911125E91009A47FA /* clap.wav in Resources */,
+				4D90183911126138009A47FA /* Settings.xib in Resources */,
+				4D901853111261A6009A47FA /* back-btn.png in Resources */,
+				4D901854111261A6009A47FA /* background.png in Resources */,
+				4D901855111261A6009A47FA /* begin-btn.png in Resources */,
+				4D901856111261A6009A47FA /* burst.png in Resources */,
+				4D901857111261A6009A47FA /* bust-btn.png in Resources */,
+				4D901858111261A6009A47FA /* congrats-ttl.png in Resources */,
+				4D901859111261A6009A47FA /* countdown-star-blank.png in Resources */,
+				4D90185A111261A6009A47FA /* fyi-ttl.png in Resources */,
+				4D90185B111261A6009A47FA /* hand.png in Resources */,
+				4D90185C111261A6009A47FA /* have-some-5-ttl.png in Resources */,
+				4D90185D111261A6009A47FA /* help_title.png in Resources */,
+				4D90185E111261A6009A47FA /* help-btn.png in Resources */,
+				4D90185F111261A6009A47FA /* HighFiveScreens_v2_07.png in Resources */,
+				4D901860111261A6009A47FA /* people.png in Resources */,
+				4D901861111261A6009A47FA /* personal-stats-btn.png in Resources */,
+				4D901862111261A6009A47FA /* scott-mike.png in Resources */,
+				4D901863111261A6009A47FA /* send-btn.png in Resources */,
+				4D901864111261A6009A47FA /* settings_title.png in Resources */,
+				4D901865111261A6009A47FA /* settings-btn.png in Resources */,
+				4D901866111261A6009A47FA /* stars-left-lrg.png in Resources */,
+				4D901867111261A6009A47FA /* stars-left.png in Resources */,
+				4D901868111261A6009A47FA /* stars-right-lrg.png in Resources */,
+				4D901869111261A6009A47FA /* stars-right.png in Resources */,
+				4D90186A111261A6009A47FA /* try-again-btn.png in Resources */,
+				4D90186C111261E9009A47FA /* dialog.png in Resources */,
+				4DC9EFEA1123C79300F97B5A /* HelpController.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1D60588E0D05DD3D006BFB54 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1D60589B0D05DD56006BFB54 /* main.m in Sources */,
+				1D3623260D0F684500981E51 /* AlphaWolfSquadAppDelegate.m in Sources */,
+				28D7ACF80DDB3853001CB0EB /* AlphaWolfSquadViewController.m in Sources */,
+				C86D2BEA103DCD9D00EE8AF7 /* AlphaWolfView.m in Sources */,
+				4D6C9DB910FE92FF006D94FD /* SlapView.m in Sources */,
+				4D90187111126298009A47FA /* SettingsController.m in Sources */,
+				4DC9EFE91123C79300F97B5A /* HelpController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		1D6058940D05DD3E006BFB54 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = AlphaWolfSquad_Prefix.pch;
+				INFOPLIST_FILE = "AlphaWolfSquad-Info.plist";
+				PRODUCT_NAME = AlphaWolfSquad;
+			};
+			name = Debug;
+		};
+		1D6058950D05DD3E006BFB54 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = AlphaWolfSquad_Prefix.pch;
+				INFOPLIST_FILE = "AlphaWolfSquad-Info.plist";
+				PRODUCT_NAME = AlphaWolfSquad;
+			};
+			name = Release;
+		};
+		C01FCF4F08A954540054247B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				PREBINDING = NO;
+				SDKROOT = iphoneos3.0;
+			};
+			name = Debug;
+		};
+		C01FCF5008A954540054247B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				PREBINDING = NO;
+				SDKROOT = iphoneos3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "AlphaWolfSquad" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1D6058940D05DD3E006BFB54 /* Debug */,
+				1D6058950D05DD3E006BFB54 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C01FCF4E08A954540054247B /* Build configuration list for PBXProject "AlphaWolfSquad" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C01FCF4F08A954540054247B /* Debug */,
+				C01FCF5008A954540054247B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 29B97313FDCFA39411CA2CEA /* Project object */;
+}

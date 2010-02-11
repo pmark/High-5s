@@ -1,0 +1,1212 @@
+TAlphaWolfSquad
+v7
+r0
+t285120096.831554
+cCheck dependencies
+cCpResource build/Debug-iphoneos/AlphaWolfSquad.app/ResourceRules.plist /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.1.sdk/ResourceRules.plist
+cProcessInfoPlistFile /Users/mark/projects/AlphaWolfSquadron/High5s_steffin/build/Debug-iphoneos/AlphaWolfSquad.app/Info.plist AlphaWolfSquad-Info.plist
+cCompileXIB /Users/mark/projects/AlphaWolfSquadron/High5s_steffin/MainWindow.xib
+cCompileXIB /Users/mark/projects/AlphaWolfSquadron/High5s_steffin/AlphaWolfSquadViewController.xib
+cCompileXIB /Users/mark/projects/AlphaWolfSquadron/High5s_steffin/AlphaWolfSquadViewController.xib
+cCopyPNGFile /Users/mark/projects/AlphaWolfSquadron/High5s_steffin/build/Debug-iphoneos/AlphaWolfSquad.app/begin.png begin.png
+cCopyPNGFile /Users/mark/projects/AlphaWolfSquadron/High5s_steffin/build/Debug-iphoneos/AlphaWolfSquad.app/beginOver.png beginOver.png
+cCopyPNGFile /Users/mark/projects/AlphaWolfSquadron/High5s_steffin/build/Debug-iphoneos/AlphaWolfSquad.app/screen2_hand.png screen2_hand.png
+cCopyPNGFile /Users/mark/projects/AlphaWolfSquadron/High5s_steffin/build/Debug-iphoneos/AlphaWolfSquad.app/screen2_header.png screen2_header.png
+cCopyPNGFile /Users/mark/projects/AlphaWolfSquadron/High5s_steffin/build/Debug-iphoneos/AlphaWolfSquad.app/screen1_mike.png screen1_mike.png
+cCopyPNGFile /Users/mark/projects/AlphaWolfSquadron/High5s_steffin/build/Debug-iphoneos/AlphaWolfSquad.app/screen2_footer.png screen2_footer.png
+cCopyPNGFile /Users/mark/projects/AlphaWolfSquadron/High5s_steffin/build/Debug-iphoneos/AlphaWolfSquad.app/screen1_mike_arm.png screen1_mike_arm.png
+cCopyPNGFile /Users/mark/projects/AlphaWolfSquadron/High5s_steffin/build/Debug-iphoneos/AlphaWolfSquad.app/screen1_scott_arm.png screen1_scott_arm.png
+cCopyPNGFile /Users/mark/projects/AlphaWolfSquadron/High5s_steffin/build/Debug-iphoneos/AlphaWolfSquad.app/screen2_bkg.png screen2_bkg.png
+cCopyPNGFile /Users/mark/projects/AlphaWolfSquadron/High5s_steffin/build/Debug-iphoneos/AlphaWolfSquad.app/screen1_star_r.png screen1_star_r.png
+cCopyPNGFile /Users/mark/projects/AlphaWolfSquadron/High5s_steffin/build/Debug-iphoneos/AlphaWolfSquad.app/screen1_star_l.png screen1_star_l.png
+cCopyPNGFile /Users/mark/projects/AlphaWolfSquadron/High5s_steffin/build/Debug-iphoneos/AlphaWolfSquad.app/screen1_title.png screen1_title.png
+cCopyPNGFile /Users/mark/projects/AlphaWolfSquadron/High5s_steffin/build/Debug-iphoneos/AlphaWolfSquad.app/screen1_scott.png screen1_scott.png
+cCpResource build/Debug-iphoneos/AlphaWolfSquad.app/clap.wav clap.wav
+cCopyPNGFile /Users/mark/projects/AlphaWolfSquadron/High5s_steffin/build/Debug-iphoneos/AlphaWolfSquad.app/screen2_helpOver.png screen2_helpOver.png
+cCopyPNGFile /Users/mark/projects/AlphaWolfSquadron/High5s_steffin/build/Debug-iphoneos/AlphaWolfSquad.app/screen2_settings.png screen2_settings.png
+cCopyPNGFile /Users/mark/projects/AlphaWolfSquadron/High5s_steffin/build/Debug-iphoneos/AlphaWolfSquad.app/screen2_Instructions.png screen2_Instructions.png
+cCopyPNGFile /Users/mark/projects/AlphaWolfSquadron/High5s_steffin/build/Debug-iphoneos/AlphaWolfSquad.app/screen2_help.png screen2_help.png
+cCopyPNGFile /Users/mark/projects/AlphaWolfSquadron/High5s_steffin/build/Debug-iphoneos/AlphaWolfSquad.app/screen2_bust5.png screen2_bust5.png
+cCopyPNGFile /Users/mark/projects/AlphaWolfSquadron/High5s_steffin/build/Debug-iphoneos/AlphaWolfSquad.app/screen2_settingsOver.png screen2_settingsOver.png
+cProcessPCH /var/folders/Rt/RtMYzVIo2RWa-++1Yt+xcU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/AlphaWolfSquad_Prefix-fenhiphjlqcudvgvwakghypcutby/AlphaWolfSquad_Prefix.pch.gch AlphaWolfSquad_Prefix.pch normal armv6 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/AlphaWolfSquad.build/Debug-iphoneos/AlphaWolfSquad.build/Objects-normal/armv6/main.o /Users/mark/projects/AlphaWolfSquadron/High5s_steffin/main.m normal armv6 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/AlphaWolfSquad.build/Debug-iphoneos/AlphaWolfSquad.build/Objects-normal/armv6/AlphaWolfSquadAppDelegate.o /Users/mark/projects/AlphaWolfSquadron/High5s_steffin/Classes/AlphaWolfSquadAppDelegate.m normal armv6 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/AlphaWolfSquad.build/Debug-iphoneos/AlphaWolfSquad.build/Objects-normal/armv6/AlphaWolfSquadViewController.o /Users/mark/projects/AlphaWolfSquadron/High5s_steffin/Classes/AlphaWolfSquadViewController.m normal armv6 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/AlphaWolfSquad.build/Debug-iphoneos/AlphaWolfSquad.build/Objects-normal/armv6/AlphaWolfView.o /Users/mark/projects/AlphaWolfSquadron/High5s_steffin/AlphaWolfView.m normal armv6 objective-c com.apple.compilers.gcc.4_2
+cCompileC build/AlphaWolfSquad.build/Debug-iphoneos/AlphaWolfSquad.build/Objects-normal/armv6/SlapView.o /Users/mark/projects/AlphaWolfSquadron/High5s_steffin/Classes/SlapView.m normal armv6 objective-c com.apple.compilers.gcc.4_2
+cLd /Users/mark/projects/AlphaWolfSquadron/High5s_steffin/build/Debug-iphoneos/AlphaWolfSquad.app/AlphaWolfSquad normal armv6
+cGenerateDSYMFile /Users/mark/projects/AlphaWolfSquadron/High5s_steffin/build/Debug-iphoneos/AlphaWolfSquad.app.dSYM /Users/mark/projects/AlphaWolfSquadron/High5s_steffin/build/Debug-iphoneos/AlphaWolfSquad.app/AlphaWolfSquad
+cProcessProductPackaging "/Users/mark/Library/MobileDevice/Provisioning Profiles/96A8CCE4-6EEB-4A79-B9AF-5F468C6FCBA9.mobileprovision" /Users/mark/projects/AlphaWolfSquadron/High5s_steffin/build/Debug-iphoneos/AlphaWolfSquad.app/embedded.mobileprovision
+cTouch /Users/mark/projects/AlphaWolfSquadron/High5s_steffin/build/Debug-iphoneos/AlphaWolfSquad.app
+cProcessProductPackaging /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.1.sdk/Entitlements.plist /Users/mark/projects/AlphaWolfSquadron/High5s_steffin/build/AlphaWolfSquad.build/Debug-iphoneos/AlphaWolfSquad.build/AlphaWolfSquad.xcent
+cCodeSign /Users/mark/projects/AlphaWolfSquadron/High5s_steffin/build/Debug-iphoneos/AlphaWolfSquad.app
+
+N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.1.sdk
+c000000004ABDAC680000000000000110
+t1253944424
+s272
+
+N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.1.sdk/Entitlements.plist
+c000000004A767D3000000000000000DD
+t1249279280
+s221
+
+N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.1.sdk/ResourceRules.plist
+c000000004A767D3000000000000001E5
+t1249279280
+s485
+
+N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.1.sdk/System/Library/Frameworks/AudioToolbox.framework/Headers/AudioToolbox.h
+c000000004A76552E0000000000000A22
+t1249269038
+s2594
+
+N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.1.sdk/System/Library/Frameworks/CoreGraphics.framework/CoreGraphics
+c000000004A82198D00000000005F4900
+t1250040205
+s6244608
+
+N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.1.sdk/System/Library/Frameworks/Foundation.framework/Foundation
+c000000004A76566F0000000000501370
+t1249269359
+s5247856
+
+N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.1.sdk/System/Library/Frameworks/Foundation.framework/Headers/Foundation.h
+c000000004A7656460000000000001355
+t1249269318
+s4949
+
+N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.1.sdk/System/Library/Frameworks/QuartzCore.framework/Headers/QuartzCore.h
+c000000004A7658A1000000000000007D
+t1249269921
+s125
+
+N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.1.sdk/System/Library/Frameworks/QuartzCore.framework/QuartzCore
+c000000004A76596900000000001C27F0
+t1249270121
+s1845232
+
+N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.1.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.h
+c000000004A7C6E9C0000000000000788
+t1249668764
+s1928
+
+N/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.1.sdk/System/Library/Frameworks/UIKit.framework/UIKit
+c000000004A7C6FEF0000000001B3F450
+t1249669103
+s28570704
+
+N/System/Library/Frameworks/AudioToolbox.framework/AudioToolbox
+c000000004B26F1FA00000000004C78A0
+t1260843514
+s5011616
+
+N/Users/mark/Library/MobileDevice/Provisioning Profiles/96A8CCE4-6EEB-4A79-B9AF-5F468C6FCBA9.mobileprovision
+c000000004B60330700000000000024FF
+t1264595719
+s9471
+
+N/Users/mark/projects/AlphaWolfSquadron/High5s_steffin/AlphaWolfSquadViewController.xib
+c000000004A9C4B7400000000000017F0
+t1251756916
+s6128
+
+N/Users/mark/projects/AlphaWolfSquadron/High5s_steffin/AlphaWolfSquad_Prefix.pch
+c000000004A8DAEB000000000000000C5
+t1250799280
+s197
+i<Foundation/Foundation.h>
+i<UIKit/UIKit.h>
+
+N/Users/mark/projects/AlphaWolfSquadron/High5s_steffin/AlphaWolfView.h
+c000000004B4E530600000000000009D5
+t1263424262
+s2517
+i<UIKit/UIKit.h>
+i<AudioToolbox/AudioToolbox.h>
+
+N/Users/mark/projects/AlphaWolfSquadron/High5s_steffin/AlphaWolfView.m
+c000000004B4E5F57000000000000488E
+t1263427415
+s18574
+i"AlphaWolfView.h"
+i<UIKit/UIKit.h>
+i<QuartzCore/QuartzCore.h>
+
+N/Users/mark/projects/AlphaWolfSquadron/High5s_steffin/Classes/AlphaWolfSquadAppDelegate.h
+c000000004AAFF030000000000000026F
+t1253044272
+s623
+i<UIKit/UIKit.h>
+
+N/Users/mark/projects/AlphaWolfSquadron/High5s_steffin/Classes/AlphaWolfSquadAppDelegate.m
+c000000004B4E4BE60000000000000500
+t1263422438
+s1280
+i"AlphaWolfSquadAppDelegate.h"
+i"AlphaWolfSquadViewController.h"
+
+N/Users/mark/projects/AlphaWolfSquadron/High5s_steffin/Classes/AlphaWolfSquadViewController.h
+c000000004B4E5CE4000000000000021B
+t1263426788
+s539
+i<UIKit/UIKit.h>
+i"AlphaWolfView.h"
+i"SlapView.h"
+
+N/Users/mark/projects/AlphaWolfSquadron/High5s_steffin/Classes/AlphaWolfSquadViewController.m
+c000000004B4E5F42000000000000095B
+t1263427394
+s2395
+i"AlphaWolfSquadViewController.h"
+
+N/Users/mark/projects/AlphaWolfSquadron/High5s_steffin/Classes/SlapView.h
+c000000004B4E5DAA0000000000000180
+t1263426986
+s384
+i<UIKit/UIKit.h>
+
+N/Users/mark/projects/AlphaWolfSquadron/High5s_steffin/Classes/SlapView.m
+c000000004B4E5EDB00000000000003D4
+t1263427291
+s980
+i"SlapView.h"
+
+N/Users/mark/projects/AlphaWolfSquadron/High5s_steffin/MainWindow.xib
+c000000004A8DAEB00000000000002462
+t1250799280
+s9314
+
+N/Users/mark/projects/AlphaWolfSquadron/High5s_steffin/begin.png
+c000000004A8308060000000000001E92
+t1250101254
+s7826
+
+N/Users/mark/projects/AlphaWolfSquadron/High5s_steffin/beginOver.png
+c000000004A8DD7520000000000002F1B
+t1250809682
+s12059
+
+N/Users/mark/projects/AlphaWolfSquadron/High5s_steffin/build/AlphaWolfSquad.build/Debug-iphoneos/AlphaWolfSquad.build/AlphaWolfSquad.xcent
+t1263422158
+s327
+
+N/Users/mark/projects/AlphaWolfSquadron/High5s_steffin/build/AlphaWolfSquad.build/Debug-iphoneos/AlphaWolfSquad.build/Objects-normal/armv6/AlphaWolfSquad.LinkFileList
+c000000004B4E5DB6000000000000030F
+t1263426998
+s783
+
+N/Users/mark/projects/AlphaWolfSquadron/High5s_steffin/build/AlphaWolfSquad.build/Debug-iphoneos/AlphaWolfSquad.build/Objects-normal/armv6/AlphaWolfSquadAppDelegate.o
+t1263426998
+s42388
+
+N/Users/mark/projects/AlphaWolfSquadron/High5s_steffin/build/AlphaWolfSquad.build/Debug-iphoneos/AlphaWolfSquad.build/Objects-normal/armv6/AlphaWolfSquadViewController.o
+t1263427178
+s41424
+
+N/Users/mark/projects/AlphaWolfSquadron/High5s_steffin/build/AlphaWolfSquad.build/Debug-iphoneos/AlphaWolfSquad.build/Objects-normal/armv6/AlphaWolfView.o
+t1263426999
+s89040
+
+N/Users/mark/projects/AlphaWolfSquadron/High5s_steffin/build/AlphaWolfSquad.build/Debug-iphoneos/AlphaWolfSquad.build/Objects-normal/armv6/SlapView.o
+t1263427296
+s16724
+
+N/Users/mark/projects/AlphaWolfSquadron/High5s_steffin/build/AlphaWolfSquad.build/Debug-iphoneos/AlphaWolfSquad.build/Objects-normal/armv6/main.o
+t1263422157
+s6572
+
+N/Users/mark/projects/AlphaWolfSquadron/High5s_steffin/build/Debug-iphoneos/AlphaWolfSquad.app
+t1263427296
+s1054
+
+N/Users/mark/projects/AlphaWolfSquadron/High5s_steffin/build/Debug-iphoneos/AlphaWolfSquad.app.dSYM
+t1263427296
+s102
+
+N/Users/mark/projects/AlphaWolfSquadron/High5s_steffin/build/Debug-iphoneos/AlphaWolfSquad.app/AlphaWolfSquad
+t1263427296
+s68016
+
+N/Users/mark/projects/AlphaWolfSquadron/High5s_steffin/build/Debug-iphoneos/AlphaWolfSquad.app/AlphaWolfSquadViewController.nib
+t1263422156
+s800
+
+N/Users/mark/projects/AlphaWolfSquadron/High5s_steffin/build/Debug-iphoneos/AlphaWolfSquad.app/Info.plist
+t1263422155
+s654
+
+N/Users/mark/projects/AlphaWolfSquadron/High5s_steffin/build/Debug-iphoneos/AlphaWolfSquad.app/MainWindow.nib
+t1263422155
+s1118
+
+N/Users/mark/projects/AlphaWolfSquadron/High5s_steffin/build/Debug-iphoneos/AlphaWolfSquad.app/PkgInfo
+t1263422155
+s8
+
+N/Users/mark/projects/AlphaWolfSquadron/High5s_steffin/build/Debug-iphoneos/AlphaWolfSquad.app/ResourceRules.plist
+t1263422155
+s485
+
+N/Users/mark/projects/AlphaWolfSquadron/High5s_steffin/build/Debug-iphoneos/AlphaWolfSquad.app/begin.png
+t1263422156
+s9153
+
+N/Users/mark/projects/AlphaWolfSquadron/High5s_steffin/build/Debug-iphoneos/AlphaWolfSquad.app/beginOver.png
+t1263422156
+s11832
+
+N/Users/mark/projects/AlphaWolfSquadron/High5s_steffin/build/Debug-iphoneos/AlphaWolfSquad.app/clap.wav
+t1263422156
+s38528
+
+N/Users/mark/projects/AlphaWolfSquadron/High5s_steffin/build/Debug-iphoneos/AlphaWolfSquad.app/embedded.mobileprovision
+t1263422158
+s9471
+
+N/Users/mark/projects/AlphaWolfSquadron/High5s_steffin/build/Debug-iphoneos/AlphaWolfSquad.app/screen1_mike.png
+t1263422156
+s11130
+
+N/Users/mark/projects/AlphaWolfSquadron/High5s_steffin/build/Debug-iphoneos/AlphaWolfSquad.app/screen1_mike_arm.png
+t1263422156
+s8702
+
+N/Users/mark/projects/AlphaWolfSquadron/High5s_steffin/build/Debug-iphoneos/AlphaWolfSquad.app/screen1_scott.png
+t1263422156
+s10338
+
+N/Users/mark/projects/AlphaWolfSquadron/High5s_steffin/build/Debug-iphoneos/AlphaWolfSquad.app/screen1_scott_arm.png
+t1263422156
+s7936
+
+N/Users/mark/projects/AlphaWolfSquadron/High5s_steffin/build/Debug-iphoneos/AlphaWolfSquad.app/screen1_star_l.png
+t1263422156
+s10469
+
+N/Users/mark/projects/AlphaWolfSquadron/High5s_steffin/build/Debug-iphoneos/AlphaWolfSquad.app/screen1_star_r.png
+t1263422156
+s10017
+
+N/Users/mark/projects/AlphaWolfSquadron/High5s_steffin/build/Debug-iphoneos/AlphaWolfSquad.app/screen1_title.png
+t1263422156
+s18999
+
+N/Users/mark/projects/AlphaWolfSquadron/High5s_steffin/build/Debug-iphoneos/AlphaWolfSquad.app/screen2_Instructions.png
+t1263422157
+s40994
+
+N/Users/mark/projects/AlphaWolfSquadron/High5s_steffin/build/Debug-iphoneos/AlphaWolfSquad.app/screen2_bkg.png
+t1263422156
+s22335
+
+N/Users/mark/projects/AlphaWolfSquadron/High5s_steffin/build/Debug-iphoneos/AlphaWolfSquad.app/screen2_bust5.png
+t1263422156
+s16515
+
+N/Users/mark/projects/AlphaWolfSquadron/High5s_steffin/build/Debug-iphoneos/AlphaWolfSquad.app/screen2_footer.png
+t1263422156
+s7758
+
+N/Users/mark/projects/AlphaWolfSquadron/High5s_steffin/build/Debug-iphoneos/AlphaWolfSquad.app/screen2_hand.png
+t1263422156
+s123209
+
+N/Users/mark/projects/AlphaWolfSquadron/High5s_steffin/build/Debug-iphoneos/AlphaWolfSquad.app/screen2_header.png
+t1263422156
+s10525
+
+N/Users/mark/projects/AlphaWolfSquadron/High5s_steffin/build/Debug-iphoneos/AlphaWolfSquad.app/screen2_help.png
+t1263422156
+s5926
+
+N/Users/mark/projects/AlphaWolfSquadron/High5s_steffin/build/Debug-iphoneos/AlphaWolfSquad.app/screen2_helpOver.png
+t1263422156
+s5818
+
+N/Users/mark/projects/AlphaWolfSquadron/High5s_steffin/build/Debug-iphoneos/AlphaWolfSquad.app/screen2_settings.png
+t1263422156
+s9688
+
+N/Users/mark/projects/AlphaWolfSquadron/High5s_steffin/build/Debug-iphoneos/AlphaWolfSquad.app/screen2_settingsOver.png
+t1263422156
+s9594
+
+N/Users/mark/projects/AlphaWolfSquadron/High5s_steffin/clap.wav
+c000000004A9DB6AE0000000000009680
+t1251849902
+s38528
+
+N/Users/mark/projects/AlphaWolfSquadron/High5s_steffin/main.m
+c000000004A8DAEB0000000000000016E
+t1250799280
+s366
+i<UIKit/UIKit.h>
+
+N/Users/mark/projects/AlphaWolfSquadron/High5s_steffin/screen1_mike.png
+c000000004A9C48740000000000002888
+t1251756148
+s10376
+
+N/Users/mark/projects/AlphaWolfSquadron/High5s_steffin/screen1_mike_arm.png
+c000000004A9C4A320000000000002109
+t1251756594
+s8457
+
+N/Users/mark/projects/AlphaWolfSquadron/High5s_steffin/screen1_scott.png
+c000000004A9C488E0000000000002688
+t1251756174
+s9864
+
+N/Users/mark/projects/AlphaWolfSquadron/High5s_steffin/screen1_scott_arm.png
+c000000004A9C4A5200000000000020C0
+t1251756626
+s8384
+
+N/Users/mark/projects/AlphaWolfSquadron/High5s_steffin/screen1_star_l.png
+c000000004A9C4B420000000000002744
+t1251756866
+s10052
+
+N/Users/mark/projects/AlphaWolfSquadron/High5s_steffin/screen1_star_r.png
+c000000004A9C4B2600000000000024A4
+t1251756838
+s9380
+
+N/Users/mark/projects/AlphaWolfSquadron/High5s_steffin/screen1_title.png
+c000000004A9C4A9C0000000000004035
+t1251756700
+s16437
+
+N/Users/mark/projects/AlphaWolfSquadron/High5s_steffin/screen2_Instructions.png
+c000000004A9C4E760000000000008471
+t1251757686
+s33905
+
+N/Users/mark/projects/AlphaWolfSquadron/High5s_steffin/screen2_bkg.png
+c000000004A9C50CA00000000000058D0
+t1251758282
+s22736
+
+N/Users/mark/projects/AlphaWolfSquadron/High5s_steffin/screen2_bust5.png
+c000000004A9C4DDA0000000000003D51
+t1251757530
+s15697
+
+N/Users/mark/projects/AlphaWolfSquadron/High5s_steffin/screen2_footer.png
+c000000004A9C50120000000000001AA4
+t1251758098
+s6820
+
+N/Users/mark/projects/AlphaWolfSquadron/High5s_steffin/screen2_hand.png
+c000000004A9C4F4A0000000000023DD1
+t1251757898
+s146897
+
+N/Users/mark/projects/AlphaWolfSquadron/High5s_steffin/screen2_header.png
+c000000004A9C504800000000000026B5
+t1251758152
+s9909
+
+N/Users/mark/projects/AlphaWolfSquadron/High5s_steffin/screen2_help.png
+c000000004A9C511A00000000000014EA
+t1251758362
+s5354
+
+N/Users/mark/projects/AlphaWolfSquadron/High5s_steffin/screen2_helpOver.png
+c000000004AAFC45E00000000000014A6
+t1253033054
+s5286
+
+N/Users/mark/projects/AlphaWolfSquadron/High5s_steffin/screen2_settings.png
+c000000004A9C51040000000000002120
+t1251758340
+s8480
+
+N/Users/mark/projects/AlphaWolfSquadron/High5s_steffin/screen2_settingsOver.png
+c000000004AAFC46A0000000000002142
+t1253033066
+s8514
+
+N/Users/mark/projects/bordertownlabs/CONTRACTS/AlphaWolfSquadron/High5s_steffin/AlphaWolfSquadViewController.xib
+c000000004A9C4B7400000000000017F0
+t1251756916
+s6128
+
+N/Users/mark/projects/bordertownlabs/CONTRACTS/AlphaWolfSquadron/High5s_steffin/AlphaWolfSquad_Prefix.pch
+c000000004A8DAEB000000000000000C5
+t1250799280
+s197
+i<Foundation/Foundation.h>
+i<UIKit/UIKit.h>
+
+N/Users/mark/projects/bordertownlabs/CONTRACTS/AlphaWolfSquadron/High5s_steffin/AlphaWolfView.h
+c000000004B4E530600000000000009D5
+t1263424262
+s2517
+i<UIKit/UIKit.h>
+i<AudioToolbox/AudioToolbox.h>
+
+N/Users/mark/projects/bordertownlabs/CONTRACTS/AlphaWolfSquadron/High5s_steffin/AlphaWolfView.m
+c000000004B4E5F57000000000000488E
+t1263427415
+s18574
+i"AlphaWolfView.h"
+i<UIKit/UIKit.h>
+i<QuartzCore/QuartzCore.h>
+
+N/Users/mark/projects/bordertownlabs/CONTRACTS/AlphaWolfSquadron/High5s_steffin/Classes/AlphaWolfSquadAppDelegate.h
+c000000004AAFF030000000000000026F
+t1253044272
+s623
+i<UIKit/UIKit.h>
+
+N/Users/mark/projects/bordertownlabs/CONTRACTS/AlphaWolfSquadron/High5s_steffin/Classes/AlphaWolfSquadAppDelegate.m
+c000000004B4E4BE60000000000000500
+t1263422438
+s1280
+i"AlphaWolfSquadAppDelegate.h"
+i"AlphaWolfSquadViewController.h"
+
+N/Users/mark/projects/bordertownlabs/CONTRACTS/AlphaWolfSquadron/High5s_steffin/Classes/AlphaWolfSquadViewController.h
+c000000004B4E5CE4000000000000021B
+t1263426788
+s539
+i<UIKit/UIKit.h>
+i"AlphaWolfView.h"
+i"SlapView.h"
+
+N/Users/mark/projects/bordertownlabs/CONTRACTS/AlphaWolfSquadron/High5s_steffin/Classes/AlphaWolfSquadViewController.m
+c000000004B4E5F42000000000000095B
+t1263427394
+s2395
+i"AlphaWolfSquadViewController.h"
+
+N/Users/mark/projects/bordertownlabs/CONTRACTS/AlphaWolfSquadron/High5s_steffin/Classes/SlapView.h
+c000000004B4E5DAA0000000000000180
+t1263426986
+s384
+i<UIKit/UIKit.h>
+
+N/Users/mark/projects/bordertownlabs/CONTRACTS/AlphaWolfSquadron/High5s_steffin/Classes/SlapView.m
+c000000004B4E5EDB00000000000003D4
+t1263427291
+s980
+i"SlapView.h"
+
+N/Users/mark/projects/bordertownlabs/CONTRACTS/AlphaWolfSquadron/High5s_steffin/MainWindow.xib
+c000000004A8DAEB00000000000002462
+t1250799280
+s9314
+
+N/Users/mark/projects/bordertownlabs/CONTRACTS/AlphaWolfSquadron/High5s_steffin/begin.png
+c000000004A8308060000000000001E92
+t1250101254
+s7826
+
+N/Users/mark/projects/bordertownlabs/CONTRACTS/AlphaWolfSquadron/High5s_steffin/beginOver.png
+c000000004A8DD7520000000000002F1B
+t1250809682
+s12059
+
+N/Users/mark/projects/bordertownlabs/CONTRACTS/AlphaWolfSquadron/High5s_steffin/build/AlphaWolfSquad.build/Debug-iphoneos/AlphaWolfSquad.build/Objects-normal/armv6/AlphaWolfSquad.LinkFileList
+c000000004B4E5DB6000000000000030F
+t1263426998
+s783
+
+N/Users/mark/projects/bordertownlabs/CONTRACTS/AlphaWolfSquadron/High5s_steffin/build/AlphaWolfSquad.build/Debug-iphoneos/AlphaWolfSquad.build/Objects-normal/armv6/AlphaWolfSquadAppDelegate.o
+t1263426998
+s42388
+
+N/Users/mark/projects/bordertownlabs/CONTRACTS/AlphaWolfSquadron/High5s_steffin/build/AlphaWolfSquad.build/Debug-iphoneos/AlphaWolfSquad.build/Objects-normal/armv6/AlphaWolfSquadViewController.o
+t1263427178
+s41424
+
+N/Users/mark/projects/bordertownlabs/CONTRACTS/AlphaWolfSquadron/High5s_steffin/build/AlphaWolfSquad.build/Debug-iphoneos/AlphaWolfSquad.build/Objects-normal/armv6/AlphaWolfView.o
+t1263426999
+s89040
+
+N/Users/mark/projects/bordertownlabs/CONTRACTS/AlphaWolfSquadron/High5s_steffin/build/AlphaWolfSquad.build/Debug-iphoneos/AlphaWolfSquad.build/Objects-normal/armv6/SlapView.o
+t1263427296
+s16724
+
+N/Users/mark/projects/bordertownlabs/CONTRACTS/AlphaWolfSquadron/High5s_steffin/build/AlphaWolfSquad.build/Debug-iphoneos/AlphaWolfSquad.build/Objects-normal/armv6/main.o
+t1263422157
+s6572
+
+N/Users/mark/projects/bordertownlabs/CONTRACTS/AlphaWolfSquadron/High5s_steffin/build/Debug-iphoneos/AlphaWolfSquad.app
+t1263427296
+s1054
+
+N/Users/mark/projects/bordertownlabs/CONTRACTS/AlphaWolfSquadron/High5s_steffin/build/Debug-iphoneos/AlphaWolfSquad.app.dSYM
+t1263427296
+s102
+
+N/Users/mark/projects/bordertownlabs/CONTRACTS/AlphaWolfSquadron/High5s_steffin/build/Debug-iphoneos/AlphaWolfSquad.app/AlphaWolfSquad
+t1263427296
+s68016
+
+N/Users/mark/projects/bordertownlabs/CONTRACTS/AlphaWolfSquadron/High5s_steffin/build/Debug-iphoneos/AlphaWolfSquad.app/AlphaWolfSquadViewController.nib
+t1263422156
+s800
+
+N/Users/mark/projects/bordertownlabs/CONTRACTS/AlphaWolfSquadron/High5s_steffin/build/Debug-iphoneos/AlphaWolfSquad.app/Info.plist
+t1263422155
+s654
+
+N/Users/mark/projects/bordertownlabs/CONTRACTS/AlphaWolfSquadron/High5s_steffin/build/Debug-iphoneos/AlphaWolfSquad.app/MainWindow.nib
+t1263422155
+s1118
+
+N/Users/mark/projects/bordertownlabs/CONTRACTS/AlphaWolfSquadron/High5s_steffin/build/Debug-iphoneos/AlphaWolfSquad.app/PkgInfo
+t1263422155
+s8
+
+N/Users/mark/projects/bordertownlabs/CONTRACTS/AlphaWolfSquadron/High5s_steffin/build/Debug-iphoneos/AlphaWolfSquad.app/ResourceRules.plist
+t1263422155
+s485
+
+N/Users/mark/projects/bordertownlabs/CONTRACTS/AlphaWolfSquadron/High5s_steffin/build/Debug-iphoneos/AlphaWolfSquad.app/begin.png
+t1263422156
+s9153
+
+N/Users/mark/projects/bordertownlabs/CONTRACTS/AlphaWolfSquadron/High5s_steffin/build/Debug-iphoneos/AlphaWolfSquad.app/beginOver.png
+t1263422156
+s11832
+
+N/Users/mark/projects/bordertownlabs/CONTRACTS/AlphaWolfSquadron/High5s_steffin/build/Debug-iphoneos/AlphaWolfSquad.app/clap.wav
+t1263422156
+s38528
+
+N/Users/mark/projects/bordertownlabs/CONTRACTS/AlphaWolfSquadron/High5s_steffin/build/Debug-iphoneos/AlphaWolfSquad.app/embedded.mobileprovision
+t1263422158
+s9471
+
+N/Users/mark/projects/bordertownlabs/CONTRACTS/AlphaWolfSquadron/High5s_steffin/build/Debug-iphoneos/AlphaWolfSquad.app/screen1_mike.png
+t1263422156
+s11130
+
+N/Users/mark/projects/bordertownlabs/CONTRACTS/AlphaWolfSquadron/High5s_steffin/build/Debug-iphoneos/AlphaWolfSquad.app/screen1_mike_arm.png
+t1263422156
+s8702
+
+N/Users/mark/projects/bordertownlabs/CONTRACTS/AlphaWolfSquadron/High5s_steffin/build/Debug-iphoneos/AlphaWolfSquad.app/screen1_scott.png
+t1263422156
+s10338
+
+N/Users/mark/projects/bordertownlabs/CONTRACTS/AlphaWolfSquadron/High5s_steffin/build/Debug-iphoneos/AlphaWolfSquad.app/screen1_scott_arm.png
+t1263422156
+s7936
+
+N/Users/mark/projects/bordertownlabs/CONTRACTS/AlphaWolfSquadron/High5s_steffin/build/Debug-iphoneos/AlphaWolfSquad.app/screen1_star_l.png
+t1263422156
+s10469
+
+N/Users/mark/projects/bordertownlabs/CONTRACTS/AlphaWolfSquadron/High5s_steffin/build/Debug-iphoneos/AlphaWolfSquad.app/screen1_star_r.png
+t1263422156
+s10017
+
+N/Users/mark/projects/bordertownlabs/CONTRACTS/AlphaWolfSquadron/High5s_steffin/build/Debug-iphoneos/AlphaWolfSquad.app/screen1_title.png
+t1263422156
+s18999
+
+N/Users/mark/projects/bordertownlabs/CONTRACTS/AlphaWolfSquadron/High5s_steffin/build/Debug-iphoneos/AlphaWolfSquad.app/screen2_Instructions.png
+t1263422157
+s40994
+
+N/Users/mark/projects/bordertownlabs/CONTRACTS/AlphaWolfSquadron/High5s_steffin/build/Debug-iphoneos/AlphaWolfSquad.app/screen2_bkg.png
+t1263422156
+s22335
+
+N/Users/mark/projects/bordertownlabs/CONTRACTS/AlphaWolfSquadron/High5s_steffin/build/Debug-iphoneos/AlphaWolfSquad.app/screen2_bust5.png
+t1263422156
+s16515
+
+N/Users/mark/projects/bordertownlabs/CONTRACTS/AlphaWolfSquadron/High5s_steffin/build/Debug-iphoneos/AlphaWolfSquad.app/screen2_footer.png
+t1263422156
+s7758
+
+N/Users/mark/projects/bordertownlabs/CONTRACTS/AlphaWolfSquadron/High5s_steffin/build/Debug-iphoneos/AlphaWolfSquad.app/screen2_hand.png
+t1263422156
+s123209
+
+N/Users/mark/projects/bordertownlabs/CONTRACTS/AlphaWolfSquadron/High5s_steffin/build/Debug-iphoneos/AlphaWolfSquad.app/screen2_header.png
+t1263422156
+s10525
+
+N/Users/mark/projects/bordertownlabs/CONTRACTS/AlphaWolfSquadron/High5s_steffin/build/Debug-iphoneos/AlphaWolfSquad.app/screen2_help.png
+t1263422156
+s5926
+
+N/Users/mark/projects/bordertownlabs/CONTRACTS/AlphaWolfSquadron/High5s_steffin/build/Debug-iphoneos/AlphaWolfSquad.app/screen2_helpOver.png
+t1263422156
+s5818
+
+N/Users/mark/projects/bordertownlabs/CONTRACTS/AlphaWolfSquadron/High5s_steffin/build/Debug-iphoneos/AlphaWolfSquad.app/screen2_settings.png
+t1263422156
+s9688
+
+N/Users/mark/projects/bordertownlabs/CONTRACTS/AlphaWolfSquadron/High5s_steffin/build/Debug-iphoneos/AlphaWolfSquad.app/screen2_settingsOver.png
+t1263422156
+s9594
+
+N/Users/mark/projects/bordertownlabs/CONTRACTS/AlphaWolfSquadron/High5s_steffin/clap.wav
+c000000004A9DB6AE0000000000009680
+t1251849902
+s38528
+
+N/Users/mark/projects/bordertownlabs/CONTRACTS/AlphaWolfSquadron/High5s_steffin/main.m
+c000000004A8DAEB0000000000000016E
+t1250799280
+s366
+i<UIKit/UIKit.h>
+
+N/Users/mark/projects/bordertownlabs/CONTRACTS/AlphaWolfSquadron/High5s_steffin/screen1_mike.png
+c000000004A9C48740000000000002888
+t1251756148
+s10376
+
+N/Users/mark/projects/bordertownlabs/CONTRACTS/AlphaWolfSquadron/High5s_steffin/screen1_mike_arm.png
+c000000004A9C4A320000000000002109
+t1251756594
+s8457
+
+N/Users/mark/projects/bordertownlabs/CONTRACTS/AlphaWolfSquadron/High5s_steffin/screen1_scott.png
+c000000004A9C488E0000000000002688
+t1251756174
+s9864
+
+N/Users/mark/projects/bordertownlabs/CONTRACTS/AlphaWolfSquadron/High5s_steffin/screen1_scott_arm.png
+c000000004A9C4A5200000000000020C0
+t1251756626
+s8384
+
+N/Users/mark/projects/bordertownlabs/CONTRACTS/AlphaWolfSquadron/High5s_steffin/screen1_star_l.png
+c000000004A9C4B420000000000002744
+t1251756866
+s10052
+
+N/Users/mark/projects/bordertownlabs/CONTRACTS/AlphaWolfSquadron/High5s_steffin/screen1_star_r.png
+c000000004A9C4B2600000000000024A4
+t1251756838
+s9380
+
+N/Users/mark/projects/bordertownlabs/CONTRACTS/AlphaWolfSquadron/High5s_steffin/screen1_title.png
+c000000004A9C4A9C0000000000004035
+t1251756700
+s16437
+
+N/Users/mark/projects/bordertownlabs/CONTRACTS/AlphaWolfSquadron/High5s_steffin/screen2_Instructions.png
+c000000004A9C4E760000000000008471
+t1251757686
+s33905
+
+N/Users/mark/projects/bordertownlabs/CONTRACTS/AlphaWolfSquadron/High5s_steffin/screen2_bkg.png
+c000000004A9C50CA00000000000058D0
+t1251758282
+s22736
+
+N/Users/mark/projects/bordertownlabs/CONTRACTS/AlphaWolfSquadron/High5s_steffin/screen2_bust5.png
+c000000004A9C4DDA0000000000003D51
+t1251757530
+s15697
+
+N/Users/mark/projects/bordertownlabs/CONTRACTS/AlphaWolfSquadron/High5s_steffin/screen2_footer.png
+c000000004A9C50120000000000001AA4
+t1251758098
+s6820
+
+N/Users/mark/projects/bordertownlabs/CONTRACTS/AlphaWolfSquadron/High5s_steffin/screen2_hand.png
+c000000004A9C4F4A0000000000023DD1
+t1251757898
+s146897
+
+N/Users/mark/projects/bordertownlabs/CONTRACTS/AlphaWolfSquadron/High5s_steffin/screen2_header.png
+c000000004A9C504800000000000026B5
+t1251758152
+s9909
+
+N/Users/mark/projects/bordertownlabs/CONTRACTS/AlphaWolfSquadron/High5s_steffin/screen2_help.png
+c000000004A9C511A00000000000014EA
+t1251758362
+s5354
+
+N/Users/mark/projects/bordertownlabs/CONTRACTS/AlphaWolfSquadron/High5s_steffin/screen2_helpOver.png
+c000000004AAFC45E00000000000014A6
+t1253033054
+s5286
+
+N/Users/mark/projects/bordertownlabs/CONTRACTS/AlphaWolfSquadron/High5s_steffin/screen2_settings.png
+c000000004A9C51040000000000002120
+t1251758340
+s8480
+
+N/Users/mark/projects/bordertownlabs/CONTRACTS/AlphaWolfSquadron/High5s_steffin/screen2_settingsOver.png
+c000000004AAFC46A0000000000002142
+t1253033066
+s8514
+
+N/var/folders/Rt/RtMYzVIo2RWa-++1Yt+xcU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/AlphaWolfSquad_Prefix-fenhiphjlqcudvgvwakghypcutby/AlphaWolfSquad_Prefix.pch.gch
+t1263422157
+s7876792
+
+N/var/folders/Rt/RtMYzVIo2RWa-++1Yt+xcU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/AlphaWolfSquad_Prefix-flbhptczplxxgjdlwxrdqaceqpof/AlphaWolfSquad_Prefix.pch.gch
+t2
+s0
+
+NAlphaWolfSquad-Info.plist
+c000000004A8DAEB0000000000000038D
+t1250799280
+s909
+
+CCheck dependencies
+r0
+lSLF07#2@18"Check dependencies285120096#285120096#0(0"0(0#1#0"4300885448#0"0#
+
+CCodeSign /Users/mark/projects/AlphaWolfSquadron/High5s_steffin/build/Debug-iphoneos/AlphaWolfSquad.app
+s285120096.565564
+e285120096.831511
+r1
+xCodeSign
+x/Users/mark/projects/AlphaWolfSquadron/High5s_steffin/build/Debug-iphoneos/AlphaWolfSquad.app
+lSLF07#2@48"CodeSign build/Debug-iphoneos/AlphaWolfSquad.app285120096#285120096#0(0"0(0#0#93"/Users/mark/projects/AlphaWolfSquadron/High5s_steffin/build/Debug-iphoneos/AlphaWolfSquad.app4300885448#730"    cd /Users/mark/projects/AlphaWolfSquadron/High5s_steffin    setenv CODESIGN_ALLOCATE /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/codesign_allocate    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /usr/bin/codesign -f -s "iPhone Developer: Peter Anderson" --resource-rules=/Users/mark/projects/AlphaWolfSquadron/High5s_steffin/build/Debug-iphoneos/AlphaWolfSquad.app/ResourceRules.plist --entitlements /Users/mark/projects/AlphaWolfSquadron/High5s_steffin/build/AlphaWolfSquad.build/Debug-iphoneos/AlphaWolfSquad.build/AlphaWolfSquad.xcent /Users/mark/projects/AlphaWolfSquadron/High5s_steffin/build/Debug-iphoneos/AlphaWolfSquad.app0#
+
+CCodeSign /Users/mark/projects/bordertownlabs/CONTRACTS/AlphaWolfSquadron/High5s_steffin/build/Debug-iphoneos/AlphaWolfSquad.app
+r0
+
+CCompileC build/AlphaWolfSquad.build/Debug-iphoneos/AlphaWolfSquad.build/Objects-normal/armv6/AlphaWolfSquadAppDelegate.o /Users/mark/projects/AlphaWolfSquadron/High5s_steffin/Classes/AlphaWolfSquadAppDelegate.m normal armv6 objective-c com.apple.compilers.gcc.4_2
+s285119798.472088
+e285119798.995399
+r1
+xCompileC
+xbuild/AlphaWolfSquad.build/Debug-iphoneos/AlphaWolfSquad.build/Objects-normal/armv6/AlphaWolfSquadAppDelegate.o
+x/Users/mark/projects/AlphaWolfSquadron/High5s_steffin/Classes/AlphaWolfSquadAppDelegate.m
+xnormal
+xarmv6
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@97"Compile /Users/mark/projects/AlphaWolfSquadron/High5s_steffin/Classes/AlphaWolfSquadAppDelegate.m285119798#285119798#0(0"0(0#0#89"/Users/mark/projects/AlphaWolfSquadron/High5s_steffin/Classes/AlphaWolfSquadAppDelegate.m4300885448#2079"    cd /Users/mark/projects/AlphaWolfSquadron/High5s_steffin    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch armv6 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.1.sdk -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=3.1 -iquote /Users/mark/projects/AlphaWolfSquadron/High5s_steffin/build/AlphaWolfSquad.build/Debug-iphoneos/AlphaWolfSquad.build/AlphaWolfSquad-generated-files.hmap -I/Users/mark/projects/AlphaWolfSquadron/High5s_steffin/build/AlphaWolfSquad.build/Debug-iphoneos/AlphaWolfSquad.build/AlphaWolfSquad-own-target-headers.hmap -I/Users/mark/projects/AlphaWolfSquadron/High5s_steffin/build/AlphaWolfSquad.build/Debug-iphoneos/AlphaWolfSquad.build/AlphaWolfSquad-all-target-headers.hmap -iquote /Users/mark/projects/AlphaWolfSquadron/High5s_steffin/build/AlphaWolfSquad.build/Debug-iphoneos/AlphaWolfSquad.build/AlphaWolfSquad-project-headers.hmap -F/Users/mark/projects/AlphaWolfSquadron/High5s_steffin/build/Debug-iphoneos -I/Users/mark/projects/AlphaWolfSquadron/High5s_steffin/build/Debug-iphoneos/include -I/Users/mark/projects/AlphaWolfSquadron/High5s_steffin/build/AlphaWolfSquad.build/Debug-iphoneos/AlphaWolfSquad.build/DerivedSources/armv6 -I/Users/mark/projects/AlphaWolfSquadron/High5s_steffin/build/AlphaWolfSquad.build/Debug-iphoneos/AlphaWolfSquad.build/DerivedSources -include /var/folders/Rt/RtMYzVIo2RWa-++1Yt+xcU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/AlphaWolfSquad_Prefix-fenhiphjlqcudvgvwakghypcutby/AlphaWolfSquad_Prefix.pch -c /Users/mark/projects/AlphaWolfSquadron/High5s_steffin/Classes/AlphaWolfSquadAppDelegate.m -o /Users/mark/projects/AlphaWolfSquadron/High5s_steffin/build/AlphaWolfSquad.build/Debug-iphoneos/AlphaWolfSquad.build/Objects-normal/armv6/AlphaWolfSquadAppDelegate.o0#
+
+CCompileC build/AlphaWolfSquad.build/Debug-iphoneos/AlphaWolfSquad.build/Objects-normal/armv6/AlphaWolfSquadAppDelegate.o /Users/mark/projects/bordertownlabs/CONTRACTS/AlphaWolfSquadron/High5s_steffin/Classes/AlphaWolfSquadAppDelegate.m normal armv6 objective-c com.apple.compilers.gcc.4_2
+r0
+
+CCompileC build/AlphaWolfSquad.build/Debug-iphoneos/AlphaWolfSquad.build/Objects-normal/armv6/AlphaWolfSquadViewController.o /Users/mark/projects/AlphaWolfSquadron/High5s_steffin/Classes/AlphaWolfSquadViewController.m normal armv6 objective-c com.apple.compilers.gcc.4_2
+s285119977.894634
+e285119978.134376
+r1
+xCompileC
+xbuild/AlphaWolfSquad.build/Debug-iphoneos/AlphaWolfSquad.build/Objects-normal/armv6/AlphaWolfSquadViewController.o
+x/Users/mark/projects/AlphaWolfSquadron/High5s_steffin/Classes/AlphaWolfSquadViewController.m
+xnormal
+xarmv6
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@100"Compile /Users/mark/projects/AlphaWolfSquadron/High5s_steffin/Classes/AlphaWolfSquadViewController.m285119977#285119978#0(0"0(0#0#92"/Users/mark/projects/AlphaWolfSquadron/High5s_steffin/Classes/AlphaWolfSquadViewController.m4300885448#2085"    cd /Users/mark/projects/AlphaWolfSquadron/High5s_steffin    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch armv6 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.1.sdk -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=3.1 -iquote /Users/mark/projects/AlphaWolfSquadron/High5s_steffin/build/AlphaWolfSquad.build/Debug-iphoneos/AlphaWolfSquad.build/AlphaWolfSquad-generated-files.hmap -I/Users/mark/projects/AlphaWolfSquadron/High5s_steffin/build/AlphaWolfSquad.build/Debug-iphoneos/AlphaWolfSquad.build/AlphaWolfSquad-own-target-headers.hmap -I/Users/mark/projects/AlphaWolfSquadron/High5s_steffin/build/AlphaWolfSquad.build/Debug-iphoneos/AlphaWolfSquad.build/AlphaWolfSquad-all-target-headers.hmap -iquote /Users/mark/projects/AlphaWolfSquadron/High5s_steffin/build/AlphaWolfSquad.build/Debug-iphoneos/AlphaWolfSquad.build/AlphaWolfSquad-project-headers.hmap -F/Users/mark/projects/AlphaWolfSquadron/High5s_steffin/build/Debug-iphoneos -I/Users/mark/projects/AlphaWolfSquadron/High5s_steffin/build/Debug-iphoneos/include -I/Users/mark/projects/AlphaWolfSquadron/High5s_steffin/build/AlphaWolfSquad.build/Debug-iphoneos/AlphaWolfSquad.build/DerivedSources/armv6 -I/Users/mark/projects/AlphaWolfSquadron/High5s_steffin/build/AlphaWolfSquad.build/Debug-iphoneos/AlphaWolfSquad.build/DerivedSources -include /var/folders/Rt/RtMYzVIo2RWa-++1Yt+xcU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/AlphaWolfSquad_Prefix-fenhiphjlqcudvgvwakghypcutby/AlphaWolfSquad_Prefix.pch -c /Users/mark/projects/AlphaWolfSquadron/High5s_steffin/Classes/AlphaWolfSquadViewController.m -o /Users/mark/projects/AlphaWolfSquadron/High5s_steffin/build/AlphaWolfSquad.build/Debug-iphoneos/AlphaWolfSquad.build/Objects-normal/armv6/AlphaWolfSquadViewController.o0#
+
+CCompileC build/AlphaWolfSquad.build/Debug-iphoneos/AlphaWolfSquad.build/Objects-normal/armv6/AlphaWolfSquadViewController.o /Users/mark/projects/bordertownlabs/CONTRACTS/AlphaWolfSquadron/High5s_steffin/Classes/AlphaWolfSquadViewController.m normal armv6 objective-c com.apple.compilers.gcc.4_2
+r0
+
+CCompileC build/AlphaWolfSquad.build/Debug-iphoneos/AlphaWolfSquad.build/Objects-normal/armv6/AlphaWolfView.o /Users/mark/projects/AlphaWolfSquadron/High5s_steffin/AlphaWolfView.m normal armv6 objective-c com.apple.compilers.gcc.4_2
+s285119798.995506
+e285119799.378526
+r1
+xCompileC
+xbuild/AlphaWolfSquad.build/Debug-iphoneos/AlphaWolfSquad.build/Objects-normal/armv6/AlphaWolfView.o
+x/Users/mark/projects/AlphaWolfSquadron/High5s_steffin/AlphaWolfView.m
+xnormal
+xarmv6
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@77"Compile /Users/mark/projects/AlphaWolfSquadron/High5s_steffin/AlphaWolfView.m285119798#285119799#0(0"0(0#0#69"/Users/mark/projects/AlphaWolfSquadron/High5s_steffin/AlphaWolfView.m4300885448#2047"    cd /Users/mark/projects/AlphaWolfSquadron/High5s_steffin    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch armv6 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.1.sdk -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=3.1 -iquote /Users/mark/projects/AlphaWolfSquadron/High5s_steffin/build/AlphaWolfSquad.build/Debug-iphoneos/AlphaWolfSquad.build/AlphaWolfSquad-generated-files.hmap -I/Users/mark/projects/AlphaWolfSquadron/High5s_steffin/build/AlphaWolfSquad.build/Debug-iphoneos/AlphaWolfSquad.build/AlphaWolfSquad-own-target-headers.hmap -I/Users/mark/projects/AlphaWolfSquadron/High5s_steffin/build/AlphaWolfSquad.build/Debug-iphoneos/AlphaWolfSquad.build/AlphaWolfSquad-all-target-headers.hmap -iquote /Users/mark/projects/AlphaWolfSquadron/High5s_steffin/build/AlphaWolfSquad.build/Debug-iphoneos/AlphaWolfSquad.build/AlphaWolfSquad-project-headers.hmap -F/Users/mark/projects/AlphaWolfSquadron/High5s_steffin/build/Debug-iphoneos -I/Users/mark/projects/AlphaWolfSquadron/High5s_steffin/build/Debug-iphoneos/include -I/Users/mark/projects/AlphaWolfSquadron/High5s_steffin/build/AlphaWolfSquad.build/Debug-iphoneos/AlphaWolfSquad.build/DerivedSources/armv6 -I/Users/mark/projects/AlphaWolfSquadron/High5s_steffin/build/AlphaWolfSquad.build/Debug-iphoneos/AlphaWolfSquad.build/DerivedSources -include /var/folders/Rt/RtMYzVIo2RWa-++1Yt+xcU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/AlphaWolfSquad_Prefix-fenhiphjlqcudvgvwakghypcutby/AlphaWolfSquad_Prefix.pch -c /Users/mark/projects/AlphaWolfSquadron/High5s_steffin/AlphaWolfView.m -o /Users/mark/projects/AlphaWolfSquadron/High5s_steffin/build/AlphaWolfSquad.build/Debug-iphoneos/AlphaWolfSquad.build/Objects-normal/armv6/AlphaWolfView.o0#
+
+CCompileC build/AlphaWolfSquad.build/Debug-iphoneos/AlphaWolfSquad.build/Objects-normal/armv6/AlphaWolfView.o /Users/mark/projects/bordertownlabs/CONTRACTS/AlphaWolfSquadron/High5s_steffin/AlphaWolfView.m normal armv6 objective-c com.apple.compilers.gcc.4_2
+r0
+
+CCompileC build/AlphaWolfSquad.build/Debug-iphoneos/AlphaWolfSquad.build/Objects-normal/armv6/SlapView.o /Users/mark/projects/AlphaWolfSquadron/High5s_steffin/Classes/SlapView.m normal armv6 objective-c com.apple.compilers.gcc.4_2
+s285120096.361709
+e285120096.496786
+r1
+xCompileC
+xbuild/AlphaWolfSquad.build/Debug-iphoneos/AlphaWolfSquad.build/Objects-normal/armv6/SlapView.o
+x/Users/mark/projects/AlphaWolfSquadron/High5s_steffin/Classes/SlapView.m
+xnormal
+xarmv6
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@80"Compile /Users/mark/projects/AlphaWolfSquadron/High5s_steffin/Classes/SlapView.m285120096#285120096#0(0"0(0#0#72"/Users/mark/projects/AlphaWolfSquadron/High5s_steffin/Classes/SlapView.m4300885448#2045"    cd /Users/mark/projects/AlphaWolfSquadron/High5s_steffin    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch armv6 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.1.sdk -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=3.1 -iquote /Users/mark/projects/AlphaWolfSquadron/High5s_steffin/build/AlphaWolfSquad.build/Debug-iphoneos/AlphaWolfSquad.build/AlphaWolfSquad-generated-files.hmap -I/Users/mark/projects/AlphaWolfSquadron/High5s_steffin/build/AlphaWolfSquad.build/Debug-iphoneos/AlphaWolfSquad.build/AlphaWolfSquad-own-target-headers.hmap -I/Users/mark/projects/AlphaWolfSquadron/High5s_steffin/build/AlphaWolfSquad.build/Debug-iphoneos/AlphaWolfSquad.build/AlphaWolfSquad-all-target-headers.hmap -iquote /Users/mark/projects/AlphaWolfSquadron/High5s_steffin/build/AlphaWolfSquad.build/Debug-iphoneos/AlphaWolfSquad.build/AlphaWolfSquad-project-headers.hmap -F/Users/mark/projects/AlphaWolfSquadron/High5s_steffin/build/Debug-iphoneos -I/Users/mark/projects/AlphaWolfSquadron/High5s_steffin/build/Debug-iphoneos/include -I/Users/mark/projects/AlphaWolfSquadron/High5s_steffin/build/AlphaWolfSquad.build/Debug-iphoneos/AlphaWolfSquad.build/DerivedSources/armv6 -I/Users/mark/projects/AlphaWolfSquadron/High5s_steffin/build/AlphaWolfSquad.build/Debug-iphoneos/AlphaWolfSquad.build/DerivedSources -include /var/folders/Rt/RtMYzVIo2RWa-++1Yt+xcU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/AlphaWolfSquad_Prefix-fenhiphjlqcudvgvwakghypcutby/AlphaWolfSquad_Prefix.pch -c /Users/mark/projects/AlphaWolfSquadron/High5s_steffin/Classes/SlapView.m -o /Users/mark/projects/AlphaWolfSquadron/High5s_steffin/build/AlphaWolfSquad.build/Debug-iphoneos/AlphaWolfSquad.build/Objects-normal/armv6/SlapView.o0#
+
+CCompileC build/AlphaWolfSquad.build/Debug-iphoneos/AlphaWolfSquad.build/Objects-normal/armv6/SlapView.o /Users/mark/projects/bordertownlabs/CONTRACTS/AlphaWolfSquadron/High5s_steffin/Classes/SlapView.m normal armv6 objective-c com.apple.compilers.gcc.4_2
+r0
+
+CCompileC build/AlphaWolfSquad.build/Debug-iphoneos/AlphaWolfSquad.build/Objects-normal/armv6/main.o /Users/mark/projects/AlphaWolfSquadron/High5s_steffin/main.m normal armv6 objective-c com.apple.compilers.gcc.4_2
+s285114957.750467
+e285114957.854230
+r1
+xCompileC
+xbuild/AlphaWolfSquad.build/Debug-iphoneos/AlphaWolfSquad.build/Objects-normal/armv6/main.o
+x/Users/mark/projects/AlphaWolfSquadron/High5s_steffin/main.m
+xnormal
+xarmv6
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@68"Compile /Users/mark/projects/AlphaWolfSquadron/High5s_steffin/main.m285114957#285114957#0(0"0(0#0#60"/Users/mark/projects/AlphaWolfSquadron/High5s_steffin/main.m4300885448#2029"    cd /Users/mark/projects/AlphaWolfSquadron/High5s_steffin    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c -arch armv6 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.1.sdk -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=3.1 -iquote /Users/mark/projects/AlphaWolfSquadron/High5s_steffin/build/AlphaWolfSquad.build/Debug-iphoneos/AlphaWolfSquad.build/AlphaWolfSquad-generated-files.hmap -I/Users/mark/projects/AlphaWolfSquadron/High5s_steffin/build/AlphaWolfSquad.build/Debug-iphoneos/AlphaWolfSquad.build/AlphaWolfSquad-own-target-headers.hmap -I/Users/mark/projects/AlphaWolfSquadron/High5s_steffin/build/AlphaWolfSquad.build/Debug-iphoneos/AlphaWolfSquad.build/AlphaWolfSquad-all-target-headers.hmap -iquote /Users/mark/projects/AlphaWolfSquadron/High5s_steffin/build/AlphaWolfSquad.build/Debug-iphoneos/AlphaWolfSquad.build/AlphaWolfSquad-project-headers.hmap -F/Users/mark/projects/AlphaWolfSquadron/High5s_steffin/build/Debug-iphoneos -I/Users/mark/projects/AlphaWolfSquadron/High5s_steffin/build/Debug-iphoneos/include -I/Users/mark/projects/AlphaWolfSquadron/High5s_steffin/build/AlphaWolfSquad.build/Debug-iphoneos/AlphaWolfSquad.build/DerivedSources/armv6 -I/Users/mark/projects/AlphaWolfSquadron/High5s_steffin/build/AlphaWolfSquad.build/Debug-iphoneos/AlphaWolfSquad.build/DerivedSources -include /var/folders/Rt/RtMYzVIo2RWa-++1Yt+xcU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/AlphaWolfSquad_Prefix-fenhiphjlqcudvgvwakghypcutby/AlphaWolfSquad_Prefix.pch -c /Users/mark/projects/AlphaWolfSquadron/High5s_steffin/main.m -o /Users/mark/projects/AlphaWolfSquadron/High5s_steffin/build/AlphaWolfSquad.build/Debug-iphoneos/AlphaWolfSquad.build/Objects-normal/armv6/main.o0#
+
+CCompileC build/AlphaWolfSquad.build/Debug-iphoneos/AlphaWolfSquad.build/Objects-normal/armv6/main.o /Users/mark/projects/bordertownlabs/CONTRACTS/AlphaWolfSquadron/High5s_steffin/main.m normal armv6 objective-c com.apple.compilers.gcc.4_2
+r0
+
+CCompileXIB /Users/mark/projects/AlphaWolfSquadron/High5s_steffin/AlphaWolfSquadViewController.xib
+s285114955.864587
+e285114956.174483
+r1
+xCompileXIB
+x/Users/mark/projects/AlphaWolfSquadron/High5s_steffin/AlphaWolfSquadViewController.xib
+lSLF07#2@43"CompileXIB AlphaWolfSquadViewController.xib285114955#285114956#0(0"0(0#0#86"/Users/mark/projects/AlphaWolfSquadron/High5s_steffin/AlphaWolfSquadViewController.xib4300885448#554"    cd /Users/mark/projects/AlphaWolfSquadron/High5s_steffin    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 3.1    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Users/mark/projects/AlphaWolfSquadron/High5s_steffin/build/Debug-iphoneos/AlphaWolfSquad.app/AlphaWolfSquadViewController.nib /Users/mark/projects/AlphaWolfSquadron/High5s_steffin/AlphaWolfSquadViewController.xib0#
+
+CCompileXIB /Users/mark/projects/AlphaWolfSquadron/High5s_steffin/MainWindow.xib
+s285114955.515663
+e285114955.864473
+r1
+xCompileXIB
+x/Users/mark/projects/AlphaWolfSquadron/High5s_steffin/MainWindow.xib
+lSLF07#2@25"CompileXIB MainWindow.xib285114955#285114955#0(0"0(0#0#68"/Users/mark/projects/AlphaWolfSquadron/High5s_steffin/MainWindow.xib4300885448#518"    cd /Users/mark/projects/AlphaWolfSquadron/High5s_steffin    setenv IBC_MINIMUM_COMPATIBILITY_VERSION 3.1    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/ibtool --errors --warnings --notices --output-format human-readable-text --compile /Users/mark/projects/AlphaWolfSquadron/High5s_steffin/build/Debug-iphoneos/AlphaWolfSquad.app/MainWindow.nib /Users/mark/projects/AlphaWolfSquadron/High5s_steffin/MainWindow.xib0#
+
+CCompileXIB /Users/mark/projects/bordertownlabs/CONTRACTS/AlphaWolfSquadron/High5s_steffin/AlphaWolfSquadViewController.xib
+r0
+
+CCompileXIB /Users/mark/projects/bordertownlabs/CONTRACTS/AlphaWolfSquadron/High5s_steffin/MainWindow.xib
+r0
+
+CCopyPNGFile /Users/mark/projects/AlphaWolfSquadron/High5s_steffin/build/Debug-iphoneos/AlphaWolfSquad.app/begin.png begin.png
+s285114955.916044
+e285114956.073223
+r1
+xCopyPNGFile
+x/Users/mark/projects/AlphaWolfSquadron/High5s_steffin/build/Debug-iphoneos/AlphaWolfSquad.app/begin.png
+xbegin.png
+lSLF07#2@71"CopyPNGFile build/Debug-iphoneos/AlphaWolfSquad.app/begin.png begin.png285114955#285114956#0(0"0(0#0#63"/Users/mark/projects/AlphaWolfSquadron/High5s_steffin/begin.png4300885448#610"    cd /Users/mark/projects/AlphaWolfSquadron/High5s_steffin    setenv COPY_COMMAND /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    "/Developer/Platforms/iPhoneOS.platform/Developer/Library/Xcode/Plug-ins/iPhoneOS Build System Support.xcplugin/Contents/Resources/copypng" -compress "" /Users/mark/projects/AlphaWolfSquadron/High5s_steffin/begin.png /Users/mark/projects/AlphaWolfSquadron/High5s_steffin/build/Debug-iphoneos/AlphaWolfSquad.app/begin.png0#
+
+CCopyPNGFile /Users/mark/projects/AlphaWolfSquadron/High5s_steffin/build/Debug-iphoneos/AlphaWolfSquad.app/beginOver.png beginOver.png
+s285114956.073327
+e285114956.114812
+r1
+xCopyPNGFile
+x/Users/mark/projects/AlphaWolfSquadron/High5s_steffin/build/Debug-iphoneos/AlphaWolfSquad.app/beginOver.png
+xbeginOver.png
+lSLF07#2@79"CopyPNGFile build/Debug-iphoneos/AlphaWolfSquad.app/beginOver.png beginOver.png285114956#285114956#0(0"0(0#0#67"/Users/mark/projects/AlphaWolfSquadron/High5s_steffin/beginOver.png4300885448#618"    cd /Users/mark/projects/AlphaWolfSquadron/High5s_steffin    setenv COPY_COMMAND /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    "/Developer/Platforms/iPhoneOS.platform/Developer/Library/Xcode/Plug-ins/iPhoneOS Build System Support.xcplugin/Contents/Resources/copypng" -compress "" /Users/mark/projects/AlphaWolfSquadron/High5s_steffin/beginOver.png /Users/mark/projects/AlphaWolfSquadron/High5s_steffin/build/Debug-iphoneos/AlphaWolfSquad.app/beginOver.png0#
+
+CCopyPNGFile /Users/mark/projects/AlphaWolfSquadron/High5s_steffin/build/Debug-iphoneos/AlphaWolfSquad.app/screen1_mike.png screen1_mike.png
+s285114956.263707
+e285114956.403807
+r1
+xCopyPNGFile
+x/Users/mark/projects/AlphaWolfSquadron/High5s_steffin/build/Debug-iphoneos/AlphaWolfSquad.app/screen1_mike.png
+xscreen1_mike.png
+lSLF07#2@85"CopyPNGFile build/Debug-iphoneos/AlphaWolfSquad.app/screen1_mike.png screen1_mike.png285114956#285114956#0(0"0(0#0#70"/Users/mark/projects/AlphaWolfSquadron/High5s_steffin/screen1_mike.png4300885448#624"    cd /Users/mark/projects/AlphaWolfSquadron/High5s_steffin    setenv COPY_COMMAND /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    "/Developer/Platforms/iPhoneOS.platform/Developer/Library/Xcode/Plug-ins/iPhoneOS Build System Support.xcplugin/Contents/Resources/copypng" -compress "" /Users/mark/projects/AlphaWolfSquadron/High5s_steffin/screen1_mike.png /Users/mark/projects/AlphaWolfSquadron/High5s_steffin/build/Debug-iphoneos/AlphaWolfSquad.app/screen1_mike.png0#
+
+CCopyPNGFile /Users/mark/projects/AlphaWolfSquadron/High5s_steffin/build/Debug-iphoneos/AlphaWolfSquad.app/screen1_mike_arm.png screen1_mike_arm.png
+s285114956.397363
+e285114956.525224
+r1
+xCopyPNGFile
+x/Users/mark/projects/AlphaWolfSquadron/High5s_steffin/build/Debug-iphoneos/AlphaWolfSquad.app/screen1_mike_arm.png
+xscreen1_mike_arm.png
+lSLF07#2@93"CopyPNGFile build/Debug-iphoneos/AlphaWolfSquad.app/screen1_mike_arm.png screen1_mike_arm.png285114956#285114956#0(0"0(0#0#74"/Users/mark/projects/AlphaWolfSquadron/High5s_steffin/screen1_mike_arm.png4300885448#632"    cd /Users/mark/projects/AlphaWolfSquadron/High5s_steffin    setenv COPY_COMMAND /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    "/Developer/Platforms/iPhoneOS.platform/Developer/Library/Xcode/Plug-ins/iPhoneOS Build System Support.xcplugin/Contents/Resources/copypng" -compress "" /Users/mark/projects/AlphaWolfSquadron/High5s_steffin/screen1_mike_arm.png /Users/mark/projects/AlphaWolfSquadron/High5s_steffin/build/Debug-iphoneos/AlphaWolfSquad.app/screen1_mike_arm.png0#
+
+CCopyPNGFile /Users/mark/projects/AlphaWolfSquadron/High5s_steffin/build/Debug-iphoneos/AlphaWolfSquad.app/screen1_scott.png screen1_scott.png
+s285114956.680779
+e285114956.809071
+r1
+xCopyPNGFile
+x/Users/mark/projects/AlphaWolfSquadron/High5s_steffin/build/Debug-iphoneos/AlphaWolfSquad.app/screen1_scott.png
+xscreen1_scott.png
+lSLF07#2@87"CopyPNGFile build/Debug-iphoneos/AlphaWolfSquad.app/screen1_scott.png screen1_scott.png285114956#285114956#0(0"0(0#0#71"/Users/mark/projects/AlphaWolfSquadron/High5s_steffin/screen1_scott.png4300885448#626"    cd /Users/mark/projects/AlphaWolfSquadron/High5s_steffin    setenv COPY_COMMAND /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    "/Developer/Platforms/iPhoneOS.platform/Developer/Library/Xcode/Plug-ins/iPhoneOS Build System Support.xcplugin/Contents/Resources/copypng" -compress "" /Users/mark/projects/AlphaWolfSquadron/High5s_steffin/screen1_scott.png /Users/mark/projects/AlphaWolfSquadron/High5s_steffin/build/Debug-iphoneos/AlphaWolfSquad.app/screen1_scott.png0#
+
+CCopyPNGFile /Users/mark/projects/AlphaWolfSquadron/High5s_steffin/build/Debug-iphoneos/AlphaWolfSquad.app/screen1_scott_arm.png screen1_scott_arm.png
+s285114956.403953
+e285114956.496321
+r1
+xCopyPNGFile
+x/Users/mark/projects/AlphaWolfSquadron/High5s_steffin/build/Debug-iphoneos/AlphaWolfSquad.app/screen1_scott_arm.png
+xscreen1_scott_arm.png
+lSLF07#2@95"CopyPNGFile build/Debug-iphoneos/AlphaWolfSquad.app/screen1_scott_arm.png screen1_scott_arm.png285114956#285114956#0(0"0(0#0#75"/Users/mark/projects/AlphaWolfSquadron/High5s_steffin/screen1_scott_arm.png4300885448#634"    cd /Users/mark/projects/AlphaWolfSquadron/High5s_steffin    setenv COPY_COMMAND /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    "/Developer/Platforms/iPhoneOS.platform/Developer/Library/Xcode/Plug-ins/iPhoneOS Build System Support.xcplugin/Contents/Resources/copypng" -compress "" /Users/mark/projects/AlphaWolfSquadron/High5s_steffin/screen1_scott_arm.png /Users/mark/projects/AlphaWolfSquadron/High5s_steffin/build/Debug-iphoneos/AlphaWolfSquad.app/screen1_scott_arm.png0#
+
+CCopyPNGFile /Users/mark/projects/AlphaWolfSquadron/High5s_steffin/build/Debug-iphoneos/AlphaWolfSquad.app/screen1_star_l.png screen1_star_l.png
+s285114956.586999
+e285114956.644006
+r1
+xCopyPNGFile
+x/Users/mark/projects/AlphaWolfSquadron/High5s_steffin/build/Debug-iphoneos/AlphaWolfSquad.app/screen1_star_l.png
+xscreen1_star_l.png
+lSLF07#2@89"CopyPNGFile build/Debug-iphoneos/AlphaWolfSquad.app/screen1_star_l.png screen1_star_l.png285114956#285114956#0(0"0(0#0#72"/Users/mark/projects/AlphaWolfSquadron/High5s_steffin/screen1_star_l.png4300885448#628"    cd /Users/mark/projects/AlphaWolfSquadron/High5s_steffin    setenv COPY_COMMAND /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    "/Developer/Platforms/iPhoneOS.platform/Developer/Library/Xcode/Plug-ins/iPhoneOS Build System Support.xcplugin/Contents/Resources/copypng" -compress "" /Users/mark/projects/AlphaWolfSquadron/High5s_steffin/screen1_star_l.png /Users/mark/projects/AlphaWolfSquadron/High5s_steffin/build/Debug-iphoneos/AlphaWolfSquad.app/screen1_star_l.png0#
+
+CCopyPNGFile /Users/mark/projects/AlphaWolfSquadron/High5s_steffin/build/Debug-iphoneos/AlphaWolfSquad.app/screen1_star_r.png screen1_star_r.png
+s285114956.525322
+e285114956.586871
+r1
+xCopyPNGFile
+x/Users/mark/projects/AlphaWolfSquadron/High5s_steffin/build/Debug-iphoneos/AlphaWolfSquad.app/screen1_star_r.png
+xscreen1_star_r.png
+lSLF07#2@89"CopyPNGFile build/Debug-iphoneos/AlphaWolfSquad.app/screen1_star_r.png screen1_star_r.png285114956#285114956#0(0"0(0#0#72"/Users/mark/projects/AlphaWolfSquadron/High5s_steffin/screen1_star_r.png4300885448#628"    cd /Users/mark/projects/AlphaWolfSquadron/High5s_steffin    setenv COPY_COMMAND /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    "/Developer/Platforms/iPhoneOS.platform/Developer/Library/Xcode/Plug-ins/iPhoneOS Build System Support.xcplugin/Contents/Resources/copypng" -compress "" /Users/mark/projects/AlphaWolfSquadron/High5s_steffin/screen1_star_r.png /Users/mark/projects/AlphaWolfSquadron/High5s_steffin/build/Debug-iphoneos/AlphaWolfSquad.app/screen1_star_r.png0#
+
+CCopyPNGFile /Users/mark/projects/AlphaWolfSquadron/High5s_steffin/build/Debug-iphoneos/AlphaWolfSquad.app/screen1_title.png screen1_title.png
+s285114956.644108
+e285114956.719060
+r1
+xCopyPNGFile
+x/Users/mark/projects/AlphaWolfSquadron/High5s_steffin/build/Debug-iphoneos/AlphaWolfSquad.app/screen1_title.png
+xscreen1_title.png
+lSLF07#2@87"CopyPNGFile build/Debug-iphoneos/AlphaWolfSquad.app/screen1_title.png screen1_title.png285114956#285114956#0(0"0(0#0#71"/Users/mark/projects/AlphaWolfSquadron/High5s_steffin/screen1_title.png4300885448#626"    cd /Users/mark/projects/AlphaWolfSquadron/High5s_steffin    setenv COPY_COMMAND /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    "/Developer/Platforms/iPhoneOS.platform/Developer/Library/Xcode/Plug-ins/iPhoneOS Build System Support.xcplugin/Contents/Resources/copypng" -compress "" /Users/mark/projects/AlphaWolfSquadron/High5s_steffin/screen1_title.png /Users/mark/projects/AlphaWolfSquadron/High5s_steffin/build/Debug-iphoneos/AlphaWolfSquad.app/screen1_title.png0#
+
+CCopyPNGFile /Users/mark/projects/AlphaWolfSquadron/High5s_steffin/build/Debug-iphoneos/AlphaWolfSquad.app/screen2_Instructions.png screen2_Instructions.png
+s285114956.806626
+e285114957.005240
+r1
+xCopyPNGFile
+x/Users/mark/projects/AlphaWolfSquadron/High5s_steffin/build/Debug-iphoneos/AlphaWolfSquad.app/screen2_Instructions.png
+xscreen2_Instructions.png
+lSLF07#2@101"CopyPNGFile build/Debug-iphoneos/AlphaWolfSquad.app/screen2_Instructions.png screen2_Instructions.png285114956#285114957#0(0"0(0#0#78"/Users/mark/projects/AlphaWolfSquadron/High5s_steffin/screen2_Instructions.png4300885448#640"    cd /Users/mark/projects/AlphaWolfSquadron/High5s_steffin    setenv COPY_COMMAND /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    "/Developer/Platforms/iPhoneOS.platform/Developer/Library/Xcode/Plug-ins/iPhoneOS Build System Support.xcplugin/Contents/Resources/copypng" -compress "" /Users/mark/projects/AlphaWolfSquadron/High5s_steffin/screen2_Instructions.png /Users/mark/projects/AlphaWolfSquadron/High5s_steffin/build/Debug-iphoneos/AlphaWolfSquad.app/screen2_Instructions.png0#
+
+CCopyPNGFile /Users/mark/projects/AlphaWolfSquadron/High5s_steffin/build/Debug-iphoneos/AlphaWolfSquad.app/screen2_bkg.png screen2_bkg.png
+s285114956.496429
+e285114956.680677
+r1
+xCopyPNGFile
+x/Users/mark/projects/AlphaWolfSquadron/High5s_steffin/build/Debug-iphoneos/AlphaWolfSquad.app/screen2_bkg.png
+xscreen2_bkg.png
+lSLF07#2@83"CopyPNGFile build/Debug-iphoneos/AlphaWolfSquad.app/screen2_bkg.png screen2_bkg.png285114956#285114956#0(0"0(0#0#69"/Users/mark/projects/AlphaWolfSquadron/High5s_steffin/screen2_bkg.png4300885448#622"    cd /Users/mark/projects/AlphaWolfSquadron/High5s_steffin    setenv COPY_COMMAND /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    "/Developer/Platforms/iPhoneOS.platform/Developer/Library/Xcode/Plug-ins/iPhoneOS Build System Support.xcplugin/Contents/Resources/copypng" -compress "" /Users/mark/projects/AlphaWolfSquadron/High5s_steffin/screen2_bkg.png /Users/mark/projects/AlphaWolfSquadron/High5s_steffin/build/Debug-iphoneos/AlphaWolfSquad.app/screen2_bkg.png0#
+
+CCopyPNGFile /Users/mark/projects/AlphaWolfSquadron/High5s_steffin/build/Debug-iphoneos/AlphaWolfSquad.app/screen2_bust5.png screen2_bust5.png
+s285114956.855444
+e285114956.935323
+r1
+xCopyPNGFile
+x/Users/mark/projects/AlphaWolfSquadron/High5s_steffin/build/Debug-iphoneos/AlphaWolfSquad.app/screen2_bust5.png
+xscreen2_bust5.png
+lSLF07#2@87"CopyPNGFile build/Debug-iphoneos/AlphaWolfSquad.app/screen2_bust5.png screen2_bust5.png285114956#285114956#0(0"0(0#0#71"/Users/mark/projects/AlphaWolfSquadron/High5s_steffin/screen2_bust5.png4300885448#626"    cd /Users/mark/projects/AlphaWolfSquadron/High5s_steffin    setenv COPY_COMMAND /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    "/Developer/Platforms/iPhoneOS.platform/Developer/Library/Xcode/Plug-ins/iPhoneOS Build System Support.xcplugin/Contents/Resources/copypng" -compress "" /Users/mark/projects/AlphaWolfSquadron/High5s_steffin/screen2_bust5.png /Users/mark/projects/AlphaWolfSquadron/High5s_steffin/build/Debug-iphoneos/AlphaWolfSquad.app/screen2_bust5.png0#
+
+CCopyPNGFile /Users/mark/projects/AlphaWolfSquadron/High5s_steffin/build/Debug-iphoneos/AlphaWolfSquad.app/screen2_footer.png screen2_footer.png
+s285114956.346695
+e285114956.397251
+r1
+xCopyPNGFile
+x/Users/mark/projects/AlphaWolfSquadron/High5s_steffin/build/Debug-iphoneos/AlphaWolfSquad.app/screen2_footer.png
+xscreen2_footer.png
+lSLF07#2@89"CopyPNGFile build/Debug-iphoneos/AlphaWolfSquad.app/screen2_footer.png screen2_footer.png285114956#285114956#0(0"0(0#0#72"/Users/mark/projects/AlphaWolfSquadron/High5s_steffin/screen2_footer.png4300885448#628"    cd /Users/mark/projects/AlphaWolfSquadron/High5s_steffin    setenv COPY_COMMAND /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    "/Developer/Platforms/iPhoneOS.platform/Developer/Library/Xcode/Plug-ins/iPhoneOS Build System Support.xcplugin/Contents/Resources/copypng" -compress "" /Users/mark/projects/AlphaWolfSquadron/High5s_steffin/screen2_footer.png /Users/mark/projects/AlphaWolfSquadron/High5s_steffin/build/Debug-iphoneos/AlphaWolfSquad.app/screen2_footer.png0#
+
+CCopyPNGFile /Users/mark/projects/AlphaWolfSquadron/High5s_steffin/build/Debug-iphoneos/AlphaWolfSquad.app/screen2_hand.png screen2_hand.png
+s285114956.114927
+e285114956.346569
+r1
+xCopyPNGFile
+x/Users/mark/projects/AlphaWolfSquadron/High5s_steffin/build/Debug-iphoneos/AlphaWolfSquad.app/screen2_hand.png
+xscreen2_hand.png
+lSLF07#2@85"CopyPNGFile build/Debug-iphoneos/AlphaWolfSquad.app/screen2_hand.png screen2_hand.png285114956#285114956#0(0"0(0#0#70"/Users/mark/projects/AlphaWolfSquadron/High5s_steffin/screen2_hand.png4300885448#624"    cd /Users/mark/projects/AlphaWolfSquadron/High5s_steffin    setenv COPY_COMMAND /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    "/Developer/Platforms/iPhoneOS.platform/Developer/Library/Xcode/Plug-ins/iPhoneOS Build System Support.xcplugin/Contents/Resources/copypng" -compress "" /Users/mark/projects/AlphaWolfSquadron/High5s_steffin/screen2_hand.png /Users/mark/projects/AlphaWolfSquadron/High5s_steffin/build/Debug-iphoneos/AlphaWolfSquad.app/screen2_hand.png0#
+
+CCopyPNGFile /Users/mark/projects/AlphaWolfSquadron/High5s_steffin/build/Debug-iphoneos/AlphaWolfSquad.app/screen2_header.png screen2_header.png
+s285114956.174584
+e285114956.263609
+r1
+xCopyPNGFile
+x/Users/mark/projects/AlphaWolfSquadron/High5s_steffin/build/Debug-iphoneos/AlphaWolfSquad.app/screen2_header.png
+xscreen2_header.png
+lSLF07#2@89"CopyPNGFile build/Debug-iphoneos/AlphaWolfSquad.app/screen2_header.png screen2_header.png285114956#285114956#0(0"0(0#0#72"/Users/mark/projects/AlphaWolfSquadron/High5s_steffin/screen2_header.png4300885448#628"    cd /Users/mark/projects/AlphaWolfSquadron/High5s_steffin    setenv COPY_COMMAND /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    "/Developer/Platforms/iPhoneOS.platform/Developer/Library/Xcode/Plug-ins/iPhoneOS Build System Support.xcplugin/Contents/Resources/copypng" -compress "" /Users/mark/projects/AlphaWolfSquadron/High5s_steffin/screen2_header.png /Users/mark/projects/AlphaWolfSquadron/High5s_steffin/build/Debug-iphoneos/AlphaWolfSquad.app/screen2_header.png0#
+
+CCopyPNGFile /Users/mark/projects/AlphaWolfSquadron/High5s_steffin/build/Debug-iphoneos/AlphaWolfSquad.app/screen2_help.png screen2_help.png
+s285114956.809167
+e285114956.855030
+r1
+xCopyPNGFile
+x/Users/mark/projects/AlphaWolfSquadron/High5s_steffin/build/Debug-iphoneos/AlphaWolfSquad.app/screen2_help.png
+xscreen2_help.png
+lSLF07#2@85"CopyPNGFile build/Debug-iphoneos/AlphaWolfSquad.app/screen2_help.png screen2_help.png285114956#285114956#0(0"0(0#0#70"/Users/mark/projects/AlphaWolfSquadron/High5s_steffin/screen2_help.png4300885448#624"    cd /Users/mark/projects/AlphaWolfSquadron/High5s_steffin    setenv COPY_COMMAND /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    "/Developer/Platforms/iPhoneOS.platform/Developer/Library/Xcode/Plug-ins/iPhoneOS Build System Support.xcplugin/Contents/Resources/copypng" -compress "" /Users/mark/projects/AlphaWolfSquadron/High5s_steffin/screen2_help.png /Users/mark/projects/AlphaWolfSquadron/High5s_steffin/build/Debug-iphoneos/AlphaWolfSquad.app/screen2_help.png0#
+
+CCopyPNGFile /Users/mark/projects/AlphaWolfSquadron/High5s_steffin/build/Debug-iphoneos/AlphaWolfSquad.app/screen2_helpOver.png screen2_helpOver.png
+s285114956.720645
+e285114956.766314
+r1
+xCopyPNGFile
+x/Users/mark/projects/AlphaWolfSquadron/High5s_steffin/build/Debug-iphoneos/AlphaWolfSquad.app/screen2_helpOver.png
+xscreen2_helpOver.png
+lSLF07#2@93"CopyPNGFile build/Debug-iphoneos/AlphaWolfSquad.app/screen2_helpOver.png screen2_helpOver.png285114956#285114956#0(0"0(0#0#74"/Users/mark/projects/AlphaWolfSquadron/High5s_steffin/screen2_helpOver.png4300885448#632"    cd /Users/mark/projects/AlphaWolfSquadron/High5s_steffin    setenv COPY_COMMAND /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    "/Developer/Platforms/iPhoneOS.platform/Developer/Library/Xcode/Plug-ins/iPhoneOS Build System Support.xcplugin/Contents/Resources/copypng" -compress "" /Users/mark/projects/AlphaWolfSquadron/High5s_steffin/screen2_helpOver.png /Users/mark/projects/AlphaWolfSquadron/High5s_steffin/build/Debug-iphoneos/AlphaWolfSquad.app/screen2_helpOver.png0#
+
+CCopyPNGFile /Users/mark/projects/AlphaWolfSquadron/High5s_steffin/build/Debug-iphoneos/AlphaWolfSquad.app/screen2_settings.png screen2_settings.png
+s285114956.766414
+e285114956.806518
+r1
+xCopyPNGFile
+x/Users/mark/projects/AlphaWolfSquadron/High5s_steffin/build/Debug-iphoneos/AlphaWolfSquad.app/screen2_settings.png
+xscreen2_settings.png
+lSLF07#2@93"CopyPNGFile build/Debug-iphoneos/AlphaWolfSquad.app/screen2_settings.png screen2_settings.png285114956#285114956#0(0"0(0#0#74"/Users/mark/projects/AlphaWolfSquadron/High5s_steffin/screen2_settings.png4300885448#632"    cd /Users/mark/projects/AlphaWolfSquadron/High5s_steffin    setenv COPY_COMMAND /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    "/Developer/Platforms/iPhoneOS.platform/Developer/Library/Xcode/Plug-ins/iPhoneOS Build System Support.xcplugin/Contents/Resources/copypng" -compress "" /Users/mark/projects/AlphaWolfSquadron/High5s_steffin/screen2_settings.png /Users/mark/projects/AlphaWolfSquadron/High5s_steffin/build/Debug-iphoneos/AlphaWolfSquad.app/screen2_settings.png0#
+
+CCopyPNGFile /Users/mark/projects/AlphaWolfSquadron/High5s_steffin/build/Debug-iphoneos/AlphaWolfSquad.app/screen2_settingsOver.png screen2_settingsOver.png
+s285114956.935558
+e285114956.977256
+r1
+xCopyPNGFile
+x/Users/mark/projects/AlphaWolfSquadron/High5s_steffin/build/Debug-iphoneos/AlphaWolfSquad.app/screen2_settingsOver.png
+xscreen2_settingsOver.png
+lSLF07#2@101"CopyPNGFile build/Debug-iphoneos/AlphaWolfSquad.app/screen2_settingsOver.png screen2_settingsOver.png285114956#285114956#0(0"0(0#0#78"/Users/mark/projects/AlphaWolfSquadron/High5s_steffin/screen2_settingsOver.png4300885448#640"    cd /Users/mark/projects/AlphaWolfSquadron/High5s_steffin    setenv COPY_COMMAND /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    "/Developer/Platforms/iPhoneOS.platform/Developer/Library/Xcode/Plug-ins/iPhoneOS Build System Support.xcplugin/Contents/Resources/copypng" -compress "" /Users/mark/projects/AlphaWolfSquadron/High5s_steffin/screen2_settingsOver.png /Users/mark/projects/AlphaWolfSquadron/High5s_steffin/build/Debug-iphoneos/AlphaWolfSquad.app/screen2_settingsOver.png0#
+
+CCopyPNGFile /Users/mark/projects/bordertownlabs/CONTRACTS/AlphaWolfSquadron/High5s_steffin/build/Debug-iphoneos/AlphaWolfSquad.app/begin.png begin.png
+r0
+
+CCopyPNGFile /Users/mark/projects/bordertownlabs/CONTRACTS/AlphaWolfSquadron/High5s_steffin/build/Debug-iphoneos/AlphaWolfSquad.app/beginOver.png beginOver.png
+r0
+
+CCopyPNGFile /Users/mark/projects/bordertownlabs/CONTRACTS/AlphaWolfSquadron/High5s_steffin/build/Debug-iphoneos/AlphaWolfSquad.app/screen1_mike.png screen1_mike.png
+r0
+
+CCopyPNGFile /Users/mark/projects/bordertownlabs/CONTRACTS/AlphaWolfSquadron/High5s_steffin/build/Debug-iphoneos/AlphaWolfSquad.app/screen1_mike_arm.png screen1_mike_arm.png
+r0
+
+CCopyPNGFile /Users/mark/projects/bordertownlabs/CONTRACTS/AlphaWolfSquadron/High5s_steffin/build/Debug-iphoneos/AlphaWolfSquad.app/screen1_scott.png screen1_scott.png
+r0
+
+CCopyPNGFile /Users/mark/projects/bordertownlabs/CONTRACTS/AlphaWolfSquadron/High5s_steffin/build/Debug-iphoneos/AlphaWolfSquad.app/screen1_scott_arm.png screen1_scott_arm.png
+r0
+
+CCopyPNGFile /Users/mark/projects/bordertownlabs/CONTRACTS/AlphaWolfSquadron/High5s_steffin/build/Debug-iphoneos/AlphaWolfSquad.app/screen1_star_l.png screen1_star_l.png
+r0
+
+CCopyPNGFile /Users/mark/projects/bordertownlabs/CONTRACTS/AlphaWolfSquadron/High5s_steffin/build/Debug-iphoneos/AlphaWolfSquad.app/screen1_star_r.png screen1_star_r.png
+r0
+
+CCopyPNGFile /Users/mark/projects/bordertownlabs/CONTRACTS/AlphaWolfSquadron/High5s_steffin/build/Debug-iphoneos/AlphaWolfSquad.app/screen1_title.png screen1_title.png
+r0
+
+CCopyPNGFile /Users/mark/projects/bordertownlabs/CONTRACTS/AlphaWolfSquadron/High5s_steffin/build/Debug-iphoneos/AlphaWolfSquad.app/screen2_Instructions.png screen2_Instructions.png
+r0
+
+CCopyPNGFile /Users/mark/projects/bordertownlabs/CONTRACTS/AlphaWolfSquadron/High5s_steffin/build/Debug-iphoneos/AlphaWolfSquad.app/screen2_bkg.png screen2_bkg.png
+r0
+
+CCopyPNGFile /Users/mark/projects/bordertownlabs/CONTRACTS/AlphaWolfSquadron/High5s_steffin/build/Debug-iphoneos/AlphaWolfSquad.app/screen2_bust5.png screen2_bust5.png
+r0
+
+CCopyPNGFile /Users/mark/projects/bordertownlabs/CONTRACTS/AlphaWolfSquadron/High5s_steffin/build/Debug-iphoneos/AlphaWolfSquad.app/screen2_footer.png screen2_footer.png
+r0
+
+CCopyPNGFile /Users/mark/projects/bordertownlabs/CONTRACTS/AlphaWolfSquadron/High5s_steffin/build/Debug-iphoneos/AlphaWolfSquad.app/screen2_hand.png screen2_hand.png
+r0
+
+CCopyPNGFile /Users/mark/projects/bordertownlabs/CONTRACTS/AlphaWolfSquadron/High5s_steffin/build/Debug-iphoneos/AlphaWolfSquad.app/screen2_header.png screen2_header.png
+r0
+
+CCopyPNGFile /Users/mark/projects/bordertownlabs/CONTRACTS/AlphaWolfSquadron/High5s_steffin/build/Debug-iphoneos/AlphaWolfSquad.app/screen2_help.png screen2_help.png
+r0
+
+CCopyPNGFile /Users/mark/projects/bordertownlabs/CONTRACTS/AlphaWolfSquadron/High5s_steffin/build/Debug-iphoneos/AlphaWolfSquad.app/screen2_helpOver.png screen2_helpOver.png
+r0
+
+CCopyPNGFile /Users/mark/projects/bordertownlabs/CONTRACTS/AlphaWolfSquadron/High5s_steffin/build/Debug-iphoneos/AlphaWolfSquad.app/screen2_settings.png screen2_settings.png
+r0
+
+CCopyPNGFile /Users/mark/projects/bordertownlabs/CONTRACTS/AlphaWolfSquadron/High5s_steffin/build/Debug-iphoneos/AlphaWolfSquad.app/screen2_settingsOver.png screen2_settingsOver.png
+r0
+
+CCpResource build/Debug-iphoneos/AlphaWolfSquad.app/ResourceRules.plist /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.1.sdk/ResourceRules.plist
+s285114955.421926
+e285114955.515546
+r1
+xCpResource
+xbuild/Debug-iphoneos/AlphaWolfSquad.app/ResourceRules.plist
+x/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.1.sdk/ResourceRules.plist
+lSLF07#2@94"Copy /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.1.sdk/ResourceRules.plist285114955#285114955#0(0"0(0#0#89"/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.1.sdk/ResourceRules.plist4300885448#517"    cd /Users/mark/projects/AlphaWolfSquadron/High5s_steffin    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -resolve-src-symlinks /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.1.sdk/ResourceRules.plist /Users/mark/projects/AlphaWolfSquadron/High5s_steffin/build/Debug-iphoneos/AlphaWolfSquad.app0#
+
+CCpResource build/Debug-iphoneos/AlphaWolfSquad.app/clap.wav clap.wav
+s285114956.719190
+e285114956.749005
+r1
+xCpResource
+xbuild/Debug-iphoneos/AlphaWolfSquad.app/clap.wav
+xclap.wav
+lSLF07#2@13"Copy clap.wav285114956#285114956#0(0"0(0#0#62"/Users/mark/projects/AlphaWolfSquadron/High5s_steffin/clap.wav4300885448#490"    cd /Users/mark/projects/AlphaWolfSquadron/High5s_steffin    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Library/PrivateFrameworks/DevToolsCore.framework/Resources/pbxcp -exclude .DS_Store -exclude CVS -exclude .svn -resolve-src-symlinks /Users/mark/projects/AlphaWolfSquadron/High5s_steffin/clap.wav /Users/mark/projects/AlphaWolfSquadron/High5s_steffin/build/Debug-iphoneos/AlphaWolfSquad.app0#
+
+CGenerateDSYMFile /Users/mark/projects/AlphaWolfSquadron/High5s_steffin/build/Debug-iphoneos/AlphaWolfSquad.app.dSYM /Users/mark/projects/AlphaWolfSquadron/High5s_steffin/build/Debug-iphoneos/AlphaWolfSquad.app/AlphaWolfSquad
+s285120096.538539
+e285120096.560727
+r1
+xGenerateDSYMFile
+x/Users/mark/projects/AlphaWolfSquadron/High5s_steffin/build/Debug-iphoneos/AlphaWolfSquad.app.dSYM
+x/Users/mark/projects/AlphaWolfSquadron/High5s_steffin/build/Debug-iphoneos/AlphaWolfSquad.app/AlphaWolfSquad
+lSLF07#2@116"GenerateDSYMFile build/Debug-iphoneos/AlphaWolfSquad.app.dSYM build/Debug-iphoneos/AlphaWolfSquad.app/AlphaWolfSquad285120096#285120096#0(0"0(0#0#108"/Users/mark/projects/AlphaWolfSquadron/High5s_steffin/build/Debug-iphoneos/AlphaWolfSquad.app/AlphaWolfSquad4300885448#428"    cd /Users/mark/projects/AlphaWolfSquadron/High5s_steffin    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/usr/bin/dsymutil /Users/mark/projects/AlphaWolfSquadron/High5s_steffin/build/Debug-iphoneos/AlphaWolfSquad.app/AlphaWolfSquad -o /Users/mark/projects/AlphaWolfSquadron/High5s_steffin/build/Debug-iphoneos/AlphaWolfSquad.app.dSYM0#
+
+CGenerateDSYMFile /Users/mark/projects/bordertownlabs/CONTRACTS/AlphaWolfSquadron/High5s_steffin/build/Debug-iphoneos/AlphaWolfSquad.app.dSYM /Users/mark/projects/bordertownlabs/CONTRACTS/AlphaWolfSquadron/High5s_steffin/build/Debug-iphoneos/AlphaWolfSquad.app/AlphaWolfSquad
+r0
+
+CLd /Users/mark/projects/AlphaWolfSquadron/High5s_steffin/build/Debug-iphoneos/AlphaWolfSquad.app/AlphaWolfSquad normal armv6
+s285120096.496888
+e285120096.538429
+r1
+xLd
+x/Users/mark/projects/AlphaWolfSquadron/High5s_steffin/build/Debug-iphoneos/AlphaWolfSquad.app/AlphaWolfSquad
+xnormal
+xarmv6
+lSLF07#2@113"Link /Users/mark/projects/AlphaWolfSquadron/High5s_steffin/build/Debug-iphoneos/AlphaWolfSquad.app/AlphaWolfSquad285120096#285120096#0(0"0(0#0#0"4300885448#1045"    cd /Users/mark/projects/AlphaWolfSquadron/High5s_steffin    setenv IPHONEOS_DEPLOYMENT_TARGET 3.1    setenv MACOSX_DEPLOYMENT_TARGET 10.5    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -arch armv6 -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.1.sdk -L/Users/mark/projects/AlphaWolfSquadron/High5s_steffin/build/Debug-iphoneos -F/Users/mark/projects/AlphaWolfSquadron/High5s_steffin/build/Debug-iphoneos -filelist /Users/mark/projects/AlphaWolfSquadron/High5s_steffin/build/AlphaWolfSquad.build/Debug-iphoneos/AlphaWolfSquad.build/Objects-normal/armv6/AlphaWolfSquad.LinkFileList -mmacosx-version-min=10.5 -dead_strip -miphoneos-version-min=3.1 -framework Foundation -framework UIKit -framework CoreGraphics -framework QuartzCore -framework AudioToolbox -o /Users/mark/projects/AlphaWolfSquadron/High5s_steffin/build/Debug-iphoneos/AlphaWolfSquad.app/AlphaWolfSquad0#
+
+CLd /Users/mark/projects/bordertownlabs/CONTRACTS/AlphaWolfSquadron/High5s_steffin/build/Debug-iphoneos/AlphaWolfSquad.app/AlphaWolfSquad normal armv6
+r0
+
+CProcessInfoPlistFile /Users/mark/projects/AlphaWolfSquadron/High5s_steffin/build/Debug-iphoneos/AlphaWolfSquad.app/Info.plist AlphaWolfSquad-Info.plist
+s285114955.495671
+e285114955.500839
+r1
+xProcessInfoPlistFile
+x/Users/mark/projects/AlphaWolfSquadron/High5s_steffin/build/Debug-iphoneos/AlphaWolfSquad.app/Info.plist
+xAlphaWolfSquad-Info.plist
+lSLF07#2@33"Process AlphaWolfSquad-Info.plist285114955#285114955#0(0"0(0#0#79"/Users/mark/projects/AlphaWolfSquadron/High5s_steffin/AlphaWolfSquad-Info.plist4300885448#650"    cd /Users/mark/projects/AlphaWolfSquadron/High5s_steffin    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    builtin-infoPlistUtility AlphaWolfSquad-Info.plist -genpkginfo /Users/mark/projects/AlphaWolfSquadron/High5s_steffin/build/Debug-iphoneos/AlphaWolfSquad.app/PkgInfo -expandbuildsettings -format binary -platform iphoneos -resourcerulesfile /Users/mark/projects/AlphaWolfSquadron/High5s_steffin/build/Debug-iphoneos/AlphaWolfSquad.app/ResourceRules.plist -o /Users/mark/projects/AlphaWolfSquadron/High5s_steffin/build/Debug-iphoneos/AlphaWolfSquad.app/Info.plist0#
+
+CProcessInfoPlistFile /Users/mark/projects/bordertownlabs/CONTRACTS/AlphaWolfSquadron/High5s_steffin/build/Debug-iphoneos/AlphaWolfSquad.app/Info.plist AlphaWolfSquad-Info.plist
+r0
+
+CProcessPCH /var/folders/Rt/RtMYzVIo2RWa-++1Yt+xcU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/AlphaWolfSquad_Prefix-fenhiphjlqcudvgvwakghypcutby/AlphaWolfSquad_Prefix.pch.gch AlphaWolfSquad_Prefix.pch normal armv6 objective-c com.apple.compilers.gcc.4_2
+s285114957.005378
+e285114957.750354
+r1
+xProcessPCH
+x/var/folders/Rt/RtMYzVIo2RWa-++1Yt+xcU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/AlphaWolfSquad_Prefix-fenhiphjlqcudvgvwakghypcutby/AlphaWolfSquad_Prefix.pch.gch
+xAlphaWolfSquad_Prefix.pch
+xnormal
+xarmv6
+xobjective-c
+xcom.apple.compilers.gcc.4_2
+lSLF07#2@36"Precompile AlphaWolfSquad_Prefix.pch285114957#285114957#0(0"0(0#0#79"/Users/mark/projects/AlphaWolfSquadron/High5s_steffin/AlphaWolfSquad_Prefix.pch4300885448#1905"    cd /Users/mark/projects/AlphaWolfSquadron/High5s_steffin    setenv LANG en_US.US-ASCII    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /Developer/Platforms/iPhoneOS.platform/Developer/usr/bin/gcc-4.2 -x objective-c-header -arch armv6 -fmessage-length=0 -pipe -std=c99 -Wno-trigraphs -fpascal-strings -O0 -Wreturn-type -Wunused-variable -isysroot /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.1.sdk -fvisibility=hidden -gdwarf-2 -mthumb -miphoneos-version-min=3.1 -iquote /Users/mark/projects/AlphaWolfSquadron/High5s_steffin/build/AlphaWolfSquad.build/Debug-iphoneos/AlphaWolfSquad.build/AlphaWolfSquad-generated-files.hmap -I/Users/mark/projects/AlphaWolfSquadron/High5s_steffin/build/AlphaWolfSquad.build/Debug-iphoneos/AlphaWolfSquad.build/AlphaWolfSquad-own-target-headers.hmap -I/Users/mark/projects/AlphaWolfSquadron/High5s_steffin/build/AlphaWolfSquad.build/Debug-iphoneos/AlphaWolfSquad.build/AlphaWolfSquad-all-target-headers.hmap -iquote /Users/mark/projects/AlphaWolfSquadron/High5s_steffin/build/AlphaWolfSquad.build/Debug-iphoneos/AlphaWolfSquad.build/AlphaWolfSquad-project-headers.hmap -F/Users/mark/projects/AlphaWolfSquadron/High5s_steffin/build/Debug-iphoneos -I/Users/mark/projects/AlphaWolfSquadron/High5s_steffin/build/Debug-iphoneos/include -I/Users/mark/projects/AlphaWolfSquadron/High5s_steffin/build/AlphaWolfSquad.build/Debug-iphoneos/AlphaWolfSquad.build/DerivedSources/armv6 -I/Users/mark/projects/AlphaWolfSquadron/High5s_steffin/build/AlphaWolfSquad.build/Debug-iphoneos/AlphaWolfSquad.build/DerivedSources -c /Users/mark/projects/AlphaWolfSquadron/High5s_steffin/AlphaWolfSquad_Prefix.pch -o /var/folders/Rt/RtMYzVIo2RWa-++1Yt+xcU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/AlphaWolfSquad_Prefix-fenhiphjlqcudvgvwakghypcutby/AlphaWolfSquad_Prefix.pch.gch0#
+
+CProcessPCH /var/folders/Rt/RtMYzVIo2RWa-++1Yt+xcU+++TI/-Caches-/com.apple.Xcode.501/SharedPrecompiledHeaders/AlphaWolfSquad_Prefix-flbhptczplxxgjdlwxrdqaceqpof/AlphaWolfSquad_Prefix.pch.gch AlphaWolfSquad_Prefix.pch normal armv6 objective-c com.apple.compilers.gcc.4_2
+r0
+
+CProcessProductPackaging "/Users/mark/Library/MobileDevice/Provisioning Profiles/96A8CCE4-6EEB-4A79-B9AF-5F468C6FCBA9.mobileprovision" /Users/mark/projects/AlphaWolfSquadron/High5s_steffin/build/Debug-iphoneos/AlphaWolfSquad.app/embedded.mobileprovision
+s285114958.415054
+e285114958.460438
+r1
+xProcessProductPackaging
+x/Users/mark/Library/MobileDevice/Provisioning Profiles/96A8CCE4-6EEB-4A79-B9AF-5F468C6FCBA9.mobileprovision
+x/Users/mark/projects/AlphaWolfSquadron/High5s_steffin/build/Debug-iphoneos/AlphaWolfSquad.app/embedded.mobileprovision
+lSLF07#2@198"ProcessProductPackaging "/Users/mark/Library/MobileDevice/Provisioning Profiles/96A8CCE4-6EEB-4A79-B9AF-5F468C6FCBA9.mobileprovision" build/Debug-iphoneos/AlphaWolfSquad.app/embedded.mobileprovision285114958#285114958#0(0"0(0#0#118"/Users/mark/projects/AlphaWolfSquadron/High5s_steffin/build/Debug-iphoneos/AlphaWolfSquad.app/embedded.mobileprovision4300885448#459"    cd /Users/mark/projects/AlphaWolfSquadron/High5s_steffin    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    <com.apple.tools.product-pkg-utility> "/Users/mark/Library/MobileDevice/Provisioning Profiles/96A8CCE4-6EEB-4A79-B9AF-5F468C6FCBA9.mobileprovision" -o /Users/mark/projects/AlphaWolfSquadron/High5s_steffin/build/Debug-iphoneos/AlphaWolfSquad.app/embedded.mobileprovision0#
+
+CProcessProductPackaging "/Users/mark/Library/MobileDevice/Provisioning Profiles/96A8CCE4-6EEB-4A79-B9AF-5F468C6FCBA9.mobileprovision" /Users/mark/projects/bordertownlabs/CONTRACTS/AlphaWolfSquadron/High5s_steffin/build/Debug-iphoneos/AlphaWolfSquad.app/embedded.mobileprovision
+r0
+
+CProcessProductPackaging /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.1.sdk/Entitlements.plist /Users/mark/projects/AlphaWolfSquadron/High5s_steffin/build/AlphaWolfSquad.build/Debug-iphoneos/AlphaWolfSquad.build/AlphaWolfSquad.xcent
+s285114958.465613
+e285114958.482262
+r1
+xProcessProductPackaging
+x/Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.1.sdk/Entitlements.plist
+x/Users/mark/projects/AlphaWolfSquadron/High5s_steffin/build/AlphaWolfSquad.build/Debug-iphoneos/AlphaWolfSquad.build/AlphaWolfSquad.xcent
+lSLF07#2@196"ProcessProductPackaging /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.1.sdk/Entitlements.plist build/AlphaWolfSquad.build/Debug-iphoneos/AlphaWolfSquad.build/AlphaWolfSquad.xcent285114958#285114958#0(0"0(0#0#137"/Users/mark/projects/AlphaWolfSquadron/High5s_steffin/build/AlphaWolfSquad.build/Debug-iphoneos/AlphaWolfSquad.build/AlphaWolfSquad.xcent4300885448#483"    cd /Users/mark/projects/AlphaWolfSquadron/High5s_steffin    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    <com.apple.tools.product-pkg-utility> /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.1.sdk/Entitlements.plist -entitlements -format xml -o /Users/mark/projects/AlphaWolfSquadron/High5s_steffin/build/AlphaWolfSquad.build/Debug-iphoneos/AlphaWolfSquad.build/AlphaWolfSquad.xcent0#
+
+CProcessProductPackaging /Developer/Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS3.1.sdk/Entitlements.plist /Users/mark/projects/bordertownlabs/CONTRACTS/AlphaWolfSquadron/High5s_steffin/build/AlphaWolfSquad.build/Debug-iphoneos/AlphaWolfSquad.build/AlphaWolfSquad.xcent
+r0
+
+CTouch /Users/mark/projects/AlphaWolfSquadron/High5s_steffin/build/Debug-iphoneos/AlphaWolfSquad.app
+s285120096.560942
+e285120096.565121
+r1
+xTouch
+x/Users/mark/projects/AlphaWolfSquadron/High5s_steffin/build/Debug-iphoneos/AlphaWolfSquad.app
+lSLF07#2@99"Touch /Users/mark/projects/AlphaWolfSquadron/High5s_steffin/build/Debug-iphoneos/AlphaWolfSquad.app285120096#285120096#0(0"0(0#0#0"4300885448#301"    cd /Users/mark/projects/AlphaWolfSquadron/High5s_steffin    setenv PATH "/Developer/Platforms/iPhoneOS.platform/Developer/usr/bin:/Developer/usr/bin:/usr/bin:/bin:/usr/sbin:/sbin"    /usr/bin/touch -c /Users/mark/projects/AlphaWolfSquadron/High5s_steffin/build/Debug-iphoneos/AlphaWolfSquad.app0#
+
+CTouch /Users/mark/projects/bordertownlabs/CONTRACTS/AlphaWolfSquadron/High5s_steffin/build/Debug-iphoneos/AlphaWolfSquad.app
+r0
+
