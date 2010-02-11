@@ -136,6 +136,7 @@
 		4DC9EFE61123C79300F97B5A /* HelpController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HelpController.h; sourceTree = "<group>"; };
 		4DC9EFE71123C79300F97B5A /* HelpController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HelpController.m; sourceTree = "<group>"; };
 		4DC9EFE81123C79300F97B5A /* HelpController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = HelpController.xib; path = Classes/HelpController.xib; sourceTree = "<group>"; };
+		4DC9F03E112491F800F97B5A /* High5s.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = High5s.h; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* AlphaWolfSquad-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "AlphaWolfSquad-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
 		C86D2BE8103DCD9D00EE8AF7 /* AlphaWolfView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlphaWolfView.h; sourceTree = SOURCE_ROOT; };
 		C86D2BE9103DCD9D00EE8AF7 /* AlphaWolfView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlphaWolfView.m; sourceTree = SOURCE_ROOT; };
@@ -174,6 +175,7 @@
 				4D90187011126298009A47FA /* SettingsController.m */,
 				4DC9EFE61123C79300F97B5A /* HelpController.h */,
 				4DC9EFE71123C79300F97B5A /* HelpController.m */,
+				4DC9F03E112491F800F97B5A /* High5s.h */,
 			);
 			path = Classes;
 			sourceTree = "<group>";

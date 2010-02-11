@@ -7,16 +7,21 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "High5s.h"
 
+@protocol SlapDelegate;
 
 @interface SlapView : UIView {
   UILabel *countLabel;
   NSInteger slapCount;
+  id<SlapDelegate> controller;
 }
 
 @property (nonatomic, retain) UILabel *countLabel;
 @property (nonatomic, assign) NSInteger slapCount;
+@property (nonatomic, assign) id<SlapDelegate> controller;
 
-- (void)increment;
+- (void)incrementCount;
+- (void)showSlapEffect;
 
 @end

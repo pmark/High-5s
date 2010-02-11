@@ -28,9 +28,10 @@
 	[aBegin release];
 	[self.view addSubview:alphaview];
 	
-  self.slapview = [[[SlapView alloc] initWithFrame:CGRectMake(0, 240, 320, 240)] autorelease];
-  //self.slapview.hidden = YES;
-  [self.alphaview addSubview:self.slapview];  
+  self.slapview = [[[SlapView alloc] initWithFrame:CGRectMake(0,90,320,326)] autorelease];
+  slapview.controller = self;
+  //slapview.hidden = YES;
+  [alphaview addSubview:slapview];  
 }
 
 -(void)acceleratedInX:(float)xx Y:(float)yy Z:(float)zz{
@@ -38,14 +39,6 @@
 	[alphaview acceleratedInX:xx Y:yy Z:zz];
 }
 
-
-/*
- // Override to allow orientations other than the default portrait orientation.
- - (BOOL)shouldAutorotateToInterfaceOrientation:(UIInterfaceOrientation)interfaceOrientation {
- // Return YES for supported orientations
- return (interfaceOrientation == UIInterfaceOrientationPortrait);
- }
- */
 
 - (void)didReceiveMemoryWarning {
 	// Releases the view if it doesn't have a superview.
@@ -79,8 +72,7 @@
 - (void)motionBegan:(UIEventSubtype)motion withEvent:(UIEvent *)event {
 	[super motionBegan: motion withEvent: event];
 	if (motion == UIEventSubtypeMotionShake) {
-    NSLog(@"shake!!!!!");
-    [self.slapview increment];
+    [self shakeDetected];
   }
 }
 
@@ -103,5 +95,23 @@
 }
 
 #pragma mark -
+
+- (void)handleSlap {
+  [alphaview clapper];
+
+  AudioServicesPlayAlertSound(kSystemSoundID_Vibrate);
+
+  [self.slapview showSlapEffect];
+  [self.slapview incrementCount];
+  
+  // start timer
+  
+}
+
+- (void)shakeDetected {
+  NSLog(@"shake!!!!!");
+  [self handleSlap];
+}
+
 
 @end

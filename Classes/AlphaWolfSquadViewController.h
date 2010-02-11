@@ -8,9 +8,11 @@
 
 #import <UIKit/UIKit.h>
 #import "AlphaWolfView.h"
+#import "High5s.h"
 #import "SlapView.h"
 
-@interface AlphaWolfSquadViewController : UIViewController {
+
+@interface AlphaWolfSquadViewController : UIViewController <SlapDelegate> {
 	AlphaWolfView *alphaview;
   SlapView *slapview;
 }
@@ -19,7 +21,9 @@
 @property (nonatomic, retain) SlapView *slapview;
 
 - (void)viewDidLoad;
--(void)acceleratedInX:(float)xx Y:(float)yy Z:(float)zz;
+- (void)acceleratedInX:(float)xx Y:(float)yy Z:(float)zz;
+- (void)shakeDetected;
+
 
 
 @end
