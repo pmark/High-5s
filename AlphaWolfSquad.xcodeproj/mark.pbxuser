@@ -29,18 +29,22 @@
 	};
 	28D7ACF70DDB3853001CB0EB /* AlphaWolfSquadViewController.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1761.88, 5275}}";
-			sepNavSelRange = "{5193, 0}";
-			sepNavVisRange = "{4898, 454}";
+			sepNavIntBoundsRect = "{{0, 0}, {1513.44, 5075}}";
+			sepNavSelRange = "{525, 0}";
+			sepNavVisRange = "{296, 425}";
 			sepNavWindowFrame = "{{0, 4}, {1280, 774}}";
 		};
 	};
 	29B97313FDCFA39411CA2CEA /* Project object */ = {
-		activeBuildConfigurationName = Debug;
+		activeBuildConfigurationName = AdHoc;
 		activeExecutable = 4D15F7F81062EAC400E199B8 /* AlphaWolfSquad */;
-		activeSDKPreference = iphonesimulator3.1;
+		activeSDKPreference = iphoneos3.1;
 		activeTarget = 1D6058900D05DD3D006BFB54 /* AlphaWolfSquad */;
 		addToTargets = (
+			1D6058900D05DD3D006BFB54 /* AlphaWolfSquad */,
+		);
+		breakpoints = (
+			4D902C9B1124B2E700E36DE4 /* AlphaWolfSquadViewController.m:88 */,
 		);
 		codeSenseManager = 4D15F81E1062EACE00E199B8 /* Code sense */;
 		executables = (
@@ -52,7 +56,7 @@
 				PBXFileTableDataSourceColumnSortingKey = PBXFileDataSource_Filename_ColumnID;
 				PBXFileTableDataSourceColumnWidthsKey = (
 					20,
-					10,
+					738,
 					20,
 					48,
 					43,
@@ -77,7 +81,7 @@
 					698,
 					60,
 					20,
-					48.16259765625,
+					48,
 					43,
 					43,
 				);
@@ -141,6 +145,25 @@
 			4D902C941124AEA400E36DE4 /* PBXTextBookmark */ = 4D902C941124AEA400E36DE4 /* PBXTextBookmark */;
 			4D902C961124AEA400E36DE4 /* PBXTextBookmark */ = 4D902C961124AEA400E36DE4 /* PBXTextBookmark */;
 			4D902C981124AEAC00E36DE4 /* PBXTextBookmark */ = 4D902C981124AEAC00E36DE4 /* PBXTextBookmark */;
+			4D902C9F1124B2EB00E36DE4 /* PBXTextBookmark */ = 4D902C9F1124B2EB00E36DE4 /* PBXTextBookmark */;
+			4D902CA01124B2EB00E36DE4 /* PBXTextBookmark */ = 4D902CA01124B2EB00E36DE4 /* PBXTextBookmark */;
+			4D902CA31124B32800E36DE4 /* PBXTextBookmark */ = 4D902CA31124B32800E36DE4 /* PBXTextBookmark */;
+			4D902CA61124B33900E36DE4 /* PBXTextBookmark */ = 4D902CA61124B33900E36DE4 /* PBXTextBookmark */;
+			4D902CA71124B35B00E36DE4 /* PBXTextBookmark */ = 4D902CA71124B35B00E36DE4 /* PBXTextBookmark */;
+			4D902CA81124B36C00E36DE4 /* PBXTextBookmark */ = 4D902CA81124B36C00E36DE4 /* PBXTextBookmark */;
+			4D902CA91124B38B00E36DE4 /* PBXTextBookmark */ = 4D902CA91124B38B00E36DE4 /* PBXTextBookmark */;
+			4D902CAD1124B3CD00E36DE4 /* PBXTextBookmark */ = 4D902CAD1124B3CD00E36DE4 /* PBXTextBookmark */;
+			4D902CB31124B45F00E36DE4 /* PBXTextBookmark */ = 4D902CB31124B45F00E36DE4 /* PBXTextBookmark */;
+			4D902CBF1124B4CC00E36DE4 /* PBXTextBookmark */ = 4D902CBF1124B4CC00E36DE4 /* PBXTextBookmark */;
+			4D902CC01124B4CC00E36DE4 /* PBXTextBookmark */ = 4D902CC01124B4CC00E36DE4 /* PBXTextBookmark */;
+			4D902CCF1124B62C00E36DE4 /* PBXTextBookmark */ = 4D902CCF1124B62C00E36DE4 /* PBXTextBookmark */;
+			4D902CD01124B62C00E36DE4 /* PBXTextBookmark */ = 4D902CD01124B62C00E36DE4 /* PBXTextBookmark */;
+			4D902CD11124B62C00E36DE4 /* XCBuildMessageTextBookmark */ = 4D902CD11124B62C00E36DE4 /* XCBuildMessageTextBookmark */;
+			4D902CD21124B62C00E36DE4 /* PBXTextBookmark */ = 4D902CD21124B62C00E36DE4 /* PBXTextBookmark */;
+			4D902CE51124B91600E36DE4 /* PlistBookmark */ = 4D902CE51124B91600E36DE4 /* PlistBookmark */;
+			4D902CE61124B91600E36DE4 /* PBXTextBookmark */ = 4D902CE61124B91600E36DE4 /* PBXTextBookmark */;
+			4D902CE71124B91600E36DE4 /* PBXTextBookmark */ = 4D902CE71124B91600E36DE4 /* PBXTextBookmark */;
+			4D902CEB1124B92C00E36DE4 /* PBXTextBookmark */ = 4D902CEB1124B92C00E36DE4 /* PBXTextBookmark */;
 			4DC9EFEC1123C7CD00F97B5A = 4DC9EFEC1123C7CD00F97B5A /* PBXTextBookmark */;
 			4DC9F01A11248EA300F97B5A = 4DC9F01A11248EA300F97B5A /* PBXTextBookmark */;
 			4DC9F0C6112498C100F97B5A = 4DC9F0C6112498C100F97B5A /* PBXTextBookmark */;
@@ -160,7 +183,7 @@
 		argumentStrings = (
 		);
 		autoAttachOnCrash = 1;
-		breakpointsEnabled = 1;
+		breakpointsEnabled = 0;
 		configStateDict = {
 		};
 		customDataFormattersEnabled = 1;
@@ -252,7 +275,7 @@
 		fRef = 28D7ACF70DDB3853001CB0EB /* AlphaWolfSquadViewController.m */;
 		name = "AlphaWolfSquadViewController.m: 100";
 		rLen = 7;
-		rLoc = 4489;
+		rLoc = 4439;
 		rType = 0;
 		vrLen = 496;
 		vrLoc = 2142;
@@ -262,7 +285,7 @@
 		fRef = C86D2BE9103DCD9D00EE8AF7 /* AlphaWolfView.m */;
 		name = "AlphaWolfView.m: 467";
 		rLen = 0;
-		rLoc = 12801;
+		rLoc = 12824;
 		rType = 0;
 		vrLen = 580;
 		vrLoc = 12557;
@@ -272,7 +295,7 @@
 		fRef = C86D2BE9103DCD9D00EE8AF7 /* AlphaWolfView.m */;
 		name = "AlphaWolfView.m: 467";
 		rLen = 0;
-		rLoc = 12801;
+		rLoc = 12824;
 		rType = 0;
 		vrLen = 607;
 		vrLoc = 12564;
@@ -282,7 +305,7 @@
 		fRef = C86D2BE9103DCD9D00EE8AF7 /* AlphaWolfView.m */;
 		name = "AlphaWolfView.m: 68";
 		rLen = 0;
-		rLoc = 1860;
+		rLoc = 1883;
 		rType = 0;
 		vrLen = 515;
 		vrLoc = 1579;
@@ -293,7 +316,7 @@
 		fRef = C86D2BE9103DCD9D00EE8AF7 /* AlphaWolfView.m */;
 		fallbackIsa = XCBuildMessageTextBookmark;
 		rLen = 1;
-		rLoc = 471;
+		rLoc = 472;
 		rType = 1;
 	};
 	4D902C0C1124A54200E36DE4 /* PBXTextBookmark */ = {
@@ -301,7 +324,7 @@
 		fRef = C86D2BE9103DCD9D00EE8AF7 /* AlphaWolfView.m */;
 		name = "AlphaWolfView.m: 68";
 		rLen = 0;
-		rLoc = 1860;
+		rLoc = 1883;
 		rType = 0;
 		vrLen = 632;
 		vrLoc = 1661;
@@ -321,7 +344,7 @@
 		fRef = 28D7ACF70DDB3853001CB0EB /* AlphaWolfSquadViewController.m */;
 		name = "AlphaWolfSquadViewController.m: 108";
 		rLen = 15;
-		rLoc = 4713;
+		rLoc = 4663;
 		rType = 0;
 		vrLen = 366;
 		vrLoc = 2502;
@@ -331,7 +354,7 @@
 		fRef = 28D7ACF70DDB3853001CB0EB /* AlphaWolfSquadViewController.m */;
 		name = "AlphaWolfSquadViewController.m: 111";
 		rLen = 0;
-		rLoc = 4728;
+		rLoc = 4678;
 		rType = 0;
 		vrLen = 397;
 		vrLoc = 2603;
@@ -341,7 +364,7 @@
 		fRef = 28D7ACF70DDB3853001CB0EB /* AlphaWolfSquadViewController.m */;
 		name = "AlphaWolfSquadViewController.m: 111";
 		rLen = 0;
-		rLoc = 4728;
+		rLoc = 4678;
 		rType = 0;
 		vrLen = 396;
 		vrLoc = 2604;
@@ -351,7 +374,7 @@
 		fRef = 28D7ACF70DDB3853001CB0EB /* AlphaWolfSquadViewController.m */;
 		name = "AlphaWolfSquadViewController.m: 112";
 		rLen = 0;
-		rLoc = 4728;
+		rLoc = 4678;
 		rType = 0;
 		vrLen = 409;
 		vrLoc = 2594;
@@ -381,7 +404,7 @@
 		fRef = 28D7ACF70DDB3853001CB0EB /* AlphaWolfSquadViewController.m */;
 		name = "AlphaWolfSquadViewController.m: 15";
 		rLen = 0;
-		rLoc = 571;
+		rLoc = 583;
 		rType = 0;
 		vrLen = 268;
 		vrLoc = 160;
@@ -391,7 +414,7 @@
 		fRef = 28D7ACF70DDB3853001CB0EB /* AlphaWolfSquadViewController.m */;
 		name = "AlphaWolfSquadViewController.m: 126";
 		rLen = 0;
-		rLoc = 5267;
+		rLoc = 5361;
 		rType = 0;
 		vrLen = 134;
 		vrLoc = 2947;
@@ -401,7 +424,7 @@
 		fRef = 28D7ACF70DDB3853001CB0EB /* AlphaWolfSquadViewController.m */;
 		name = "AlphaWolfSquadViewController.m: 118";
 		rLen = 0;
-		rLoc = 4898;
+		rLoc = 4848;
 		rType = 0;
 		vrLen = 303;
 		vrLoc = 2832;
@@ -421,7 +444,7 @@
 		fRef = 28D7ACF70DDB3853001CB0EB /* AlphaWolfSquadViewController.m */;
 		name = "AlphaWolfSquadViewController.m: 122";
 		rLen = 0;
-		rLoc = 5038;
+		rLoc = 4962;
 		rType = 0;
 		vrLen = 505;
 		vrLoc = 2630;
@@ -431,7 +454,7 @@
 		fRef = 28D7ACF70DDB3853001CB0EB /* AlphaWolfSquadViewController.m */;
 		name = "AlphaWolfSquadViewController.m: 23";
 		rLen = 0;
-		rLoc = 687;
+		rLoc = 699;
 		rType = 0;
 		vrLen = 655;
 		vrLoc = 296;
@@ -441,7 +464,7 @@
 		fRef = 28D7ACF70DDB3853001CB0EB /* AlphaWolfSquadViewController.m */;
 		name = "AlphaWolfSquadViewController.m: 104";
 		rLen = 0;
-		rLoc = 4474;
+		rLoc = 4424;
 		rType = 0;
 		vrLen = 696;
 		vrLoc = 2439;
@@ -451,7 +474,7 @@
 		fRef = 28D7ACF70DDB3853001CB0EB /* AlphaWolfSquadViewController.m */;
 		name = "AlphaWolfSquadViewController.m: 104";
 		rLen = 0;
-		rLoc = 4474;
+		rLoc = 4424;
 		rType = 0;
 		vrLen = 696;
 		vrLoc = 2439;
@@ -461,7 +484,7 @@
 		fRef = 28D7ACF70DDB3853001CB0EB /* AlphaWolfSquadViewController.m */;
 		name = "AlphaWolfSquadViewController.m: 104";
 		rLen = 0;
-		rLoc = 4474;
+		rLoc = 4424;
 		rType = 0;
 		vrLen = 696;
 		vrLoc = 2439;
@@ -471,7 +494,7 @@
 		fRef = 28D7ACF70DDB3853001CB0EB /* AlphaWolfSquadViewController.m */;
 		name = "AlphaWolfSquadViewController.m: 104";
 		rLen = 0;
-		rLoc = 4474;
+		rLoc = 4424;
 		rType = 0;
 		vrLen = 583;
 		vrLoc = 2600;
@@ -481,7 +504,7 @@
 		fRef = 28D7ACF70DDB3853001CB0EB /* AlphaWolfSquadViewController.m */;
 		name = "AlphaWolfSquadViewController.m: 104";
 		rLen = 0;
-		rLoc = 4474;
+		rLoc = 4424;
 		rType = 0;
 		vrLen = 576;
 		vrLoc = 2400;
@@ -501,7 +524,7 @@
 		fRef = 28D7ACF70DDB3853001CB0EB /* AlphaWolfSquadViewController.m */;
 		name = "AlphaWolfSquadViewController.m: 130";
 		rLen = 0;
-		rLoc = 5067;
+		rLoc = 4991;
 		rType = 0;
 		vrLen = 131;
 		vrLoc = 3182;
@@ -511,7 +534,7 @@
 		fRef = 28D7ACF70DDB3853001CB0EB /* AlphaWolfSquadViewController.m */;
 		name = "AlphaWolfSquadViewController.m: 134";
 		rLen = 0;
-		rLoc = 5093;
+		rLoc = 5017;
 		rType = 0;
 		vrLen = 221;
 		vrLoc = 3059;
@@ -521,7 +544,7 @@
 		fRef = 28D7ACF70DDB3853001CB0EB /* AlphaWolfSquadViewController.m */;
 		name = "AlphaWolfSquadViewController.m: 135";
 		rLen = 0;
-		rLoc = 5134;
+		rLoc = 5058;
 		rType = 0;
 		vrLen = 308;
 		vrLoc = 3056;
@@ -531,7 +554,7 @@
 		fRef = 28D7ACF70DDB3853001CB0EB /* AlphaWolfSquadViewController.m */;
 		name = "AlphaWolfSquadViewController.m: 135";
 		rLen = 0;
-		rLoc = 5115;
+		rLoc = 5039;
 		rType = 0;
 		vrLen = 302;
 		vrLoc = 3056;
@@ -571,7 +594,7 @@
 		fRef = 28D7ACF70DDB3853001CB0EB /* AlphaWolfSquadViewController.m */;
 		name = "AlphaWolfSquadViewController.m: 135";
 		rLen = 0;
-		rLoc = 5115;
+		rLoc = 5039;
 		rType = 0;
 		vrLen = 447;
 		vrLoc = 2894;
@@ -581,7 +604,7 @@
 		fRef = 28D7ACF70DDB3853001CB0EB /* AlphaWolfSquadViewController.m */;
 		name = "AlphaWolfSquadViewController.m: 138";
 		rLen = 0;
-		rLoc = 5260;
+		rLoc = 5354;
 		rType = 0;
 		vrLen = 301;
 		vrLoc = 3058;
@@ -601,7 +624,7 @@
 		fRef = 28D7ACF70DDB3853001CB0EB /* AlphaWolfSquadViewController.m */;
 		name = "AlphaWolfSquadViewController.m: 135";
 		rLen = 0;
-		rLoc = 5138;
+		rLoc = 5062;
 		rType = 0;
 		vrLen = 266;
 		vrLoc = 3058;
@@ -611,7 +634,7 @@
 		fRef = 28D7ACF70DDB3853001CB0EB /* AlphaWolfSquadViewController.m */;
 		name = "AlphaWolfSquadViewController.m: 16";
 		rLen = 0;
-		rLoc = 465;
+		rLoc = 477;
 		rType = 0;
 		vrLen = 519;
 		vrLoc = 0;
@@ -622,7 +645,7 @@
 		fRef = 28D7ACF70DDB3853001CB0EB /* AlphaWolfSquadViewController.m */;
 		fallbackIsa = XCBuildMessageTextBookmark;
 		rLen = 1;
-		rLoc = 120;
+		rLoc = 119;
 		rType = 1;
 	};
 	4D902C8F1124AE6500E36DE4 /* PBXTextBookmark */ = {
@@ -630,7 +653,7 @@
 		fRef = 28D7ACF70DDB3853001CB0EB /* AlphaWolfSquadViewController.m */;
 		name = "AlphaWolfSquadViewController.m: 106";
 		rLen = 0;
-		rLoc = 2953;
+		rLoc = 2903;
 		rType = 0;
 		vrLen = 663;
 		vrLoc = 2535;
@@ -640,7 +663,7 @@
 		fRef = 28D7ACF70DDB3853001CB0EB /* AlphaWolfSquadViewController.m */;
 		name = "AlphaWolfSquadViewController.m: 194";
 		rLen = 0;
-		rLoc = 5211;
+		rLoc = 5224;
 		rType = 0;
 		vrLen = 454;
 		vrLoc = 4898;
@@ -650,7 +673,7 @@
 		fRef = 28D7ACF70DDB3853001CB0EB /* AlphaWolfSquadViewController.m */;
 		name = "AlphaWolfSquadViewController.m: 194";
 		rLen = 0;
-		rLoc = 5211;
+		rLoc = 5224;
 		rType = 0;
 		vrLen = 262;
 		vrLoc = 5090;
@@ -667,6 +690,7 @@
 	};
 	4D902C951124AEA400E36DE4 /* asm objc_msgSend  0x922e1ec0 */ = {
 		isa = PBXFileReference;
+		lastKnownFileType = text;
 		path = "asm objc_msgSend  0x922e1ec0";
 		sourceTree = "<group>";
 	};
@@ -690,10 +714,218 @@
 		fRef = 28D7ACF70DDB3853001CB0EB /* AlphaWolfSquadViewController.m */;
 		name = "AlphaWolfSquadViewController.m: 194";
 		rLen = 0;
-		rLoc = 5193;
+		rLoc = 5206;
 		rType = 0;
 		vrLen = 454;
 		vrLoc = 4898;
+	};
+	4D902C9B1124B2E700E36DE4 /* AlphaWolfSquadViewController.m:88 */ = {
+		isa = PBXFileBreakpoint;
+		actions = (
+		);
+		breakpointStyle = 0;
+		continueAfterActions = 0;
+		countType = 0;
+		delayBeforeContinue = 0;
+		fileReference = 28D7ACF70DDB3853001CB0EB /* AlphaWolfSquadViewController.m */;
+		functionName = "-showEmailModalView:emailBody:recipientList:";
+		hitCount = 1;
+		ignoreCount = 0;
+		lineNumber = 88;
+		location = AlphaWolfSquad;
+		modificationTime = 287617789.215947;
+		originalNumberOfMultipleMatches = 1;
+		state = 1;
+	};
+	4D902C9F1124B2EB00E36DE4 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 28D7ACF70DDB3853001CB0EB /* AlphaWolfSquadViewController.m */;
+		name = "AlphaWolfSquadViewController.m: 87";
+		rLen = 108;
+		rLoc = 2319;
+		rType = 0;
+		vrLen = 753;
+		vrLoc = 2197;
+	};
+	4D902CA01124B2EB00E36DE4 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 28D7ACF70DDB3853001CB0EB /* AlphaWolfSquadViewController.m */;
+		name = "AlphaWolfSquadViewController.m: 87";
+		rLen = 108;
+		rLoc = 2319;
+		rType = 0;
+		vrLen = 688;
+		vrLoc = 2266;
+	};
+	4D902CA31124B32800E36DE4 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 28D7ACF70DDB3853001CB0EB /* AlphaWolfSquadViewController.m */;
+		name = "AlphaWolfSquadViewController.m: 96";
+		rLen = 0;
+		rLoc = 2677;
+		rType = 0;
+		vrLen = 465;
+		vrLoc = 4930;
+	};
+	4D902CA61124B33900E36DE4 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 28D7ACF70DDB3853001CB0EB /* AlphaWolfSquadViewController.m */;
+		name = "AlphaWolfSquadViewController.m: 96";
+		rLen = 0;
+		rLoc = 2677;
+		rType = 0;
+		vrLen = 465;
+		vrLoc = 4930;
+	};
+	4D902CA71124B35B00E36DE4 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 28D7ACF70DDB3853001CB0EB /* AlphaWolfSquadViewController.m */;
+		name = "AlphaWolfSquadViewController.m: 16";
+		rLen = 0;
+		rLoc = 338;
+		rType = 0;
+		vrLen = 671;
+		vrLoc = 38;
+	};
+	4D902CA81124B36C00E36DE4 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 28D7ACF70DDB3853001CB0EB /* AlphaWolfSquadViewController.m */;
+		name = "AlphaWolfSquadViewController.m: 16";
+		rLen = 0;
+		rLoc = 338;
+		rType = 0;
+		vrLen = 669;
+		vrLoc = 38;
+	};
+	4D902CA91124B38B00E36DE4 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 28D7ACF70DDB3853001CB0EB /* AlphaWolfSquadViewController.m */;
+		name = "AlphaWolfSquadViewController.m: 198";
+		rLen = 0;
+		rLoc = 5339;
+		rType = 0;
+		vrLen = 465;
+		vrLoc = 4929;
+	};
+	4D902CAD1124B3CD00E36DE4 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 28D7ACF70DDB3853001CB0EB /* AlphaWolfSquadViewController.m */;
+		name = "AlphaWolfSquadViewController.m: 198";
+		rLen = 0;
+		rLoc = 5339;
+		rType = 0;
+		vrLen = 465;
+		vrLoc = 4929;
+	};
+	4D902CB31124B45F00E36DE4 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 28D7ACF70DDB3853001CB0EB /* AlphaWolfSquadViewController.m */;
+		name = "AlphaWolfSquadViewController.m: 198";
+		rLen = 0;
+		rLoc = 5339;
+		rType = 0;
+		vrLen = 576;
+		vrLoc = 4560;
+	};
+	4D902CBF1124B4CC00E36DE4 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 28D7ACF70DDB3853001CB0EB /* AlphaWolfSquadViewController.m */;
+		name = "AlphaWolfSquadViewController.m: 193";
+		rLen = 0;
+		rLoc = 5206;
+		rType = 0;
+		vrLen = 302;
+		vrLoc = 5072;
+	};
+	4D902CC01124B4CC00E36DE4 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 28D7ACF70DDB3853001CB0EB /* AlphaWolfSquadViewController.m */;
+		name = "AlphaWolfSquadViewController.m: 20";
+		rLen = 0;
+		rLoc = 525;
+		rType = 0;
+		vrLen = 405;
+		vrLoc = 295;
+	};
+	4D902CCF1124B62C00E36DE4 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 28D7ACF70DDB3853001CB0EB /* AlphaWolfSquadViewController.m */;
+		name = "AlphaWolfSquadViewController.m: 182";
+		rLen = 0;
+		rLoc = 4967;
+		rType = 0;
+		vrLen = 536;
+		vrLoc = 4819;
+	};
+	4D902CD01124B62C00E36DE4 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = C86D2BE8103DCD9D00EE8AF7 /* AlphaWolfView.h */;
+		name = "AlphaWolfView.h: 31";
+		rLen = 0;
+		rLoc = 711;
+		rType = 0;
+		vrLen = 629;
+		vrLoc = 251;
+	};
+	4D902CD11124B62C00E36DE4 /* XCBuildMessageTextBookmark */ = {
+		isa = PBXTextBookmark;
+		comments = "Comparison between pointer and integer";
+		fRef = C86D2BE9103DCD9D00EE8AF7 /* AlphaWolfView.m */;
+		fallbackIsa = XCBuildMessageTextBookmark;
+		rLen = 1;
+		rLoc = 595;
+		rType = 1;
+	};
+	4D902CD21124B62C00E36DE4 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = C86D2BE9103DCD9D00EE8AF7 /* AlphaWolfView.m */;
+		name = "AlphaWolfView.m: 37";
+		rLen = 0;
+		rLoc = 692;
+		rType = 0;
+		vrLen = 1061;
+		vrLoc = 539;
+	};
+	4D902CE51124B91600E36DE4 /* PlistBookmark */ = {
+		isa = PlistBookmark;
+		fRef = 4D902CDF1124B8D800E36DE4 /* Entitlements.plist */;
+		fallbackIsa = PBXBookmark;
+		isK = 0;
+		kPath = (
+		);
+		name = /Users/mark/projects/bordertownlabs/CONTRACTS/AlphaWolfSquadron/High5s_steffin/Entitlements.plist;
+		rLen = 0;
+		rLoc = 9223372036854775807;
+	};
+	4D902CE61124B91600E36DE4 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = C86D2BE9103DCD9D00EE8AF7 /* AlphaWolfView.m */;
+		name = "AlphaWolfView.m: 588";
+		rLen = 17;
+		rLoc = 16955;
+		rType = 0;
+		vrLen = 529;
+		vrLoc = 16728;
+	};
+	4D902CE71124B91600E36DE4 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = C86D2BE8103DCD9D00EE8AF7 /* AlphaWolfView.h */;
+		name = "AlphaWolfView.h: 107";
+		rLen = 0;
+		rLoc = 2710;
+		rType = 0;
+		vrLen = 430;
+		vrLoc = 2287;
+	};
+	4D902CEB1124B92C00E36DE4 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = C86D2BE8103DCD9D00EE8AF7 /* AlphaWolfView.h */;
+		name = "AlphaWolfView.h: 98";
+		rLen = 0;
+		rLoc = 2571;
+		rType = 0;
+		vrLen = 431;
+		vrLoc = 2286;
 	};
 	4DC9EFE61123C79300F97B5A /* HelpController.h */ = {
 		uiCtxt = {
@@ -751,7 +983,7 @@
 		fRef = 28D7ACF70DDB3853001CB0EB /* AlphaWolfSquadViewController.m */;
 		name = "AlphaWolfSquadViewController.m: 100";
 		rLen = 7;
-		rLoc = 4489;
+		rLoc = 4439;
 		rType = 0;
 		vrLen = 260;
 		vrLoc = 2486;
@@ -770,8 +1002,8 @@
 		isa = PBXTextBookmark;
 		fRef = C86D2BE9103DCD9D00EE8AF7 /* AlphaWolfView.m */;
 		name = "AlphaWolfView.m: 586";
-		rLen = 16;
-		rLoc = 16932;
+		rLen = 17;
+		rLoc = 17257;
 		rType = 0;
 		vrLen = 645;
 		vrLoc = 16826;
@@ -780,24 +1012,24 @@
 		isa = PBXTextBookmark;
 		fRef = C86D2BE9103DCD9D00EE8AF7 /* AlphaWolfView.m */;
 		name = "AlphaWolfView.m: 586";
-		rLen = 16;
-		rLoc = 16932;
+		rLen = 17;
+		rLoc = 17257;
 		rType = 0;
 		vrLen = 675;
 		vrLoc = 16912;
 	};
 	C86D2BE8103DCD9D00EE8AF7 /* AlphaWolfView.h */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {916, 2825}}";
-			sepNavSelRange = "{545, 0}";
-			sepNavVisRange = "{2044, 566}";
+			sepNavIntBoundsRect = "{{0, 0}, {916, 2975}}";
+			sepNavSelRange = "{2571, 0}";
+			sepNavVisRange = "{2286, 431}";
 		};
 	};
 	C86D2BE9103DCD9D00EE8AF7 /* AlphaWolfView.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1329.81, 16600}}";
-			sepNavSelRange = "{829, 115}";
-			sepNavVisRange = "{513, 547}";
+			sepNavIntBoundsRect = "{{0, 0}, {1977.92, 15925}}";
+			sepNavSelRange = "{16955, 17}";
+			sepNavVisRange = "{16728, 529}";
 		};
 	};
 }

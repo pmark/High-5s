@@ -28,6 +28,7 @@
 	UIButton *startButton;
 
   AlphaWolfSquadViewController *controller;
+	SystemSoundID clapSound;    
 }
 // screen 1
 @property (nonatomic, retain)UIButton *beginButton;
@@ -102,6 +103,7 @@
 		  ease:(NSString *)ease;
 
 
+-(void)setupAudio;
 
 @end
 

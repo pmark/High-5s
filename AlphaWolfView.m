@@ -33,6 +33,7 @@
 	
 	if (self = [super initWithFrame:frame]) {
 		[self setUpInitView];
+    [self setupAudio];
 	}
 	return self;
 }
@@ -584,8 +585,18 @@
 
 
 //-------------------- SOUND --------------------------------------------------------
--(void)clapper{
-	[self soundObject:@"clap" type:@"wav"];
+-(void)setupAudio {
+	NSURL* soundURL = [NSURL fileURLWithPath:[[NSBundle mainBundle] pathForResource:@"clap" ofType:@"wav"]];
+	OSStatus status = AudioServicesCreateSystemSoundID((CFURLRef)soundURL, &clapSound);
+	if (status != kAudioServicesNoError)
+		NSLog(@"Sound creation error: %@", status);    
+}
+
+-(void)clapper {
+
+	//[self soundObject:@"clap" type:@"wav"];
+  //AudioServicesPlaySystemSound(pmph);
+	AudioServicesPlayAlertSound(clapSound);
 }
 -(void)soundObject:(NSString *)file type:(NSString *)type {
 	SystemSoundID pmph;

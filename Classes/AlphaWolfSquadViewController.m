@@ -10,10 +10,10 @@
 #import "SettingsController.h"
 #import "HelpController.h"
 
-#define SESSION_END_DELAY_SEC 1.8 
+#define SESSION_END_DELAY_SEC 1.5
 
-#define MAIL_SUBJECT @"Send"
-#define MAIL_BODY @"Hello friend,\n\nI'm sending you %i High 5s. Click the link below to view these puppies on the internets.\n\n   %@\n\n"
+#define MAIL_SUBJECT @"Have some high 5s"
+#define MAIL_BODY @"Hello friend,\n\nI'm sending you some High 5s. Click the link below to view these puppies on the internets.\n   %@\n\n"
 
 @implementation AlphaWolfSquadViewController
 
@@ -93,8 +93,7 @@
 	}
   
 	[picker setSubject:title];
-	NSString *emailBody = [NSString stringWithFormat:body];
-	[picker setMessageBody:emailBody isHTML:NO]; 	
+	[picker setMessageBody:body isHTML:NO]; 	
 	picker.navigationBar.barStyle = UIBarStyleBlack; 
 	picker.navigationBar.translucent = YES;
 	[self presentModalViewController:picker animated:YES];
@@ -174,7 +173,6 @@
 }
 
 - (void)askToEndSession {
-  NSLog(@"end session?");
   congrats.hidden = NO;
   [self.view bringSubviewToFront:congrats];
 }
@@ -190,10 +188,13 @@
 }
 
 - (IBAction)sendBatch {
-  [self showEmailModalView:MAIL_SUBJECT emailBody:MAIL_BODY recipientList:nil];
+  NSString *link = [NSString stringWithFormat:@"http://www.havesomehigh5s.com/staging/includes/sendStuff_iPhone.php?"];
+  [self showEmailModalView:MAIL_SUBJECT emailBody:[NSString stringWithFormat:MAIL_BODY, link] recipientList:nil];
 }
 
 #pragma mark -
 
+
+#pragma mark -
 
 @end

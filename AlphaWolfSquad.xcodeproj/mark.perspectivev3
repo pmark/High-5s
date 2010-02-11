@@ -341,9 +341,8 @@
 							<array>
 								<string>29B97314FDCFA39411CA2CEA</string>
 								<string>080E96DDFE201D6D7F000001</string>
-								<string>29B97315FDCFA39411CA2CEA</string>
 								<string>29B97317FDCFA39411CA2CEA</string>
-								<string>29B97323FDCFA39411CA2CEA</string>
+								<string>19C28FACFE9D520D11CA2CBB</string>
 								<string>1C37FBAC04509CD000000102</string>
 							</array>
 							<key>PBXSmartGroupTreeModuleOutlineStateSelectionKey</key>
@@ -390,7 +389,7 @@
 								<key>PBXProjectModuleGUID</key>
 								<string>4D15F8111062EACE00E199B8</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>asm objc_msgSend  0x922e1ec0</string>
+								<string>AlphaWolfView.h</string>
 								<key>PBXSplitModuleInNavigatorKey</key>
 								<dict>
 									<key>Split0</key>
@@ -398,11 +397,11 @@
 										<key>PBXProjectModuleGUID</key>
 										<string>4D15F8121062EACE00E199B8</string>
 										<key>PBXProjectModuleLabel</key>
-										<string>asm objc_msgSend  0x922e1ec0</string>
+										<string>AlphaWolfView.h</string>
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>4D902C981124AEAC00E36DE4</string>
+										<string>4D902CEB1124B92C00E36DE4</string>
 										<key>history</key>
 										<array>
 											<string>4D6C9D3A10FE88F3006D94FD</string>
@@ -410,7 +409,10 @@
 											<string>4DC9EFEC1123C7CD00F97B5A</string>
 											<string>4DC9F01A11248EA300F97B5A</string>
 											<string>4D902C811124ADB400E36DE4</string>
-											<string>4D902C8E1124AE6500E36DE4</string>
+											<string>4D902CCF1124B62C00E36DE4</string>
+											<string>4D902CE51124B91600E36DE4</string>
+											<string>4D902CE61124B91600E36DE4</string>
+											<string>4D902CD01124B62C00E36DE4</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -449,7 +451,7 @@
 									<key>GeometryConfiguration</key>
 									<dict>
 										<key>Frame</key>
-										<string>{{10, 27}, {977, -27}}</string>
+										<string>{{10, 27}, {977, 181}}</string>
 									</dict>
 									<key>Module</key>
 									<string>XCDetailModule</string>
@@ -709,7 +711,7 @@
 	<key>StatusbarIsVisible</key>
 	<true/>
 	<key>TimeStamp</key>
-	<real>287616684.63752198</real>
+	<real>287619372.27329499</real>
 	<key>ToolbarConfigUserDefaultsMinorVersion</key>
 	<string>2</string>
 	<key>ToolbarDisplayMode</key>
@@ -726,7 +728,6 @@
 	<integer>5</integer>
 	<key>WindowOrderList</key>
 	<array>
-		<string>4D902C901124AE6500E36DE4</string>
 		<string>4D902C211124A5E300E36DE4</string>
 		<string>4D902C171124A54200E36DE4</string>
 		<string>/Users/mark/projects/bordertownlabs/CONTRACTS/AlphaWolfSquadron/High5s_steffin/AlphaWolfSquad.xcodeproj</string>

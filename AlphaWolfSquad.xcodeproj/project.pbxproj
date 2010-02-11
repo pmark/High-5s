@@ -64,6 +64,7 @@
 		4D90186C111261E9009A47FA /* dialog.png in Resources */ = {isa = PBXBuildFile; fileRef = 4D90186B111261E9009A47FA /* dialog.png */; };
 		4D90187111126298009A47FA /* SettingsController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D90187011126298009A47FA /* SettingsController.m */; };
 		4D902C5B1124AC9D00E36DE4 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D902C5A1124AC9D00E36DE4 /* MessageUI.framework */; };
+		4D902CE01124B8D800E36DE4 /* Entitlements.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4D902CDF1124B8D800E36DE4 /* Entitlements.plist */; };
 		4DC9EFE91123C79300F97B5A /* HelpController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DC9EFE71123C79300F97B5A /* HelpController.m */; };
 		4DC9EFEA1123C79300F97B5A /* HelpController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4DC9EFE81123C79300F97B5A /* HelpController.xib */; };
 		C86D2BEA103DCD9D00EE8AF7 /* AlphaWolfView.m in Sources */ = {isa = PBXBuildFile; fileRef = C86D2BE9103DCD9D00EE8AF7 /* AlphaWolfView.m */; };
@@ -135,6 +136,7 @@
 		4D90186F11126298009A47FA /* SettingsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsController.h; sourceTree = "<group>"; };
 		4D90187011126298009A47FA /* SettingsController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SettingsController.m; sourceTree = "<group>"; };
 		4D902C5A1124AC9D00E36DE4 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
+		4D902CDF1124B8D800E36DE4 /* Entitlements.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Entitlements.plist; sourceTree = "<group>"; };
 		4DC9EFE61123C79300F97B5A /* HelpController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HelpController.h; sourceTree = "<group>"; };
 		4DC9EFE71123C79300F97B5A /* HelpController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HelpController.m; sourceTree = "<group>"; };
 		4DC9EFE81123C79300F97B5A /* HelpController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = HelpController.xib; path = Classes/HelpController.xib; sourceTree = "<group>"; };
@@ -217,6 +219,7 @@
 		29B97317FDCFA39411CA2CEA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				4D902CDF1124B8D800E36DE4 /* Entitlements.plist */,
 				4DC9EFE81123C79300F97B5A /* HelpController.xib */,
 				4D90183811126138009A47FA /* Settings.xib */,
 				2899E5210DE3E06400AC0155 /* AlphaWolfSquadViewController.xib */,
@@ -389,6 +392,7 @@
 				4D90186A111261A6009A47FA /* try-again-btn.png in Resources */,
 				4D90186C111261E9009A47FA /* dialog.png in Resources */,
 				4DC9EFEA1123C79300F97B5A /* HelpController.xib in Resources */,
+				4D902CE01124B8D800E36DE4 /* Entitlements.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -438,6 +442,35 @@
 			};
 			name = Release;
 		};
+		4D902CDB1124B8A800E36DE4 /* AdHoc */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				CODE_SIGN_ENTITLEMENTS = Entitlements.plist;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Peter Anderson";
+				GCC_C_LANGUAGE_STANDARD = c99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				PREBINDING = NO;
+				PROVISIONING_PROFILE = "";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "9F743177-130E-4516-938D-2F17EE4A5F9C";
+				SDKROOT = iphoneos3.0;
+			};
+			name = AdHoc;
+		};
+		4D902CDC1124B8A800E36DE4 /* AdHoc */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = AlphaWolfSquad_Prefix.pch;
+				INFOPLIST_FILE = "AlphaWolfSquad-Info.plist";
+				PRODUCT_NAME = AlphaWolfSquad;
+			};
+			name = AdHoc;
+		};
 		C01FCF4F08A954540054247B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -472,6 +505,7 @@
 			buildConfigurations = (
 				1D6058940D05DD3E006BFB54 /* Debug */,
 				1D6058950D05DD3E006BFB54 /* Release */,
+				4D902CDC1124B8A800E36DE4 /* AdHoc */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -481,6 +515,7 @@
 			buildConfigurations = (
 				C01FCF4F08A954540054247B /* Debug */,
 				C01FCF5008A954540054247B /* Release */,
+				4D902CDB1124B8A800E36DE4 /* AdHoc */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
