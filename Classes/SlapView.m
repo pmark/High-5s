@@ -62,5 +62,9 @@
   [self.controller handleSlap];
 }
 
+- (void)reset {
+  self.slapCount = 0;
+  countLabel.hidden = YES;
+}
 
 @end

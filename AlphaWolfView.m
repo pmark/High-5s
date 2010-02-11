@@ -1,4 +1,5 @@
 
+#import "High5s.h"
 #import "AlphaWolfView.h"
 #import <UIKit/UIKit.h>
 #import <QuartzCore/QuartzCore.h>
@@ -64,7 +65,7 @@
 	[self createBottom];
 	
 	[NSTimer scheduledTimerWithTimeInterval:1 target:self selector:@selector(animateHand) userInfo:nil repeats:NO];
-	[NSTimer scheduledTimerWithTimeInterval:1 target:self selector:@selector(createSettings) userInfo:nil repeats:NO];	
+//	[NSTimer scheduledTimerWithTimeInterval:1 target:self selector:@selector(createSettings) userInfo:nil repeats:NO];	
 	[NSTimer scheduledTimerWithTimeInterval:1 target:self selector:@selector(createHelp) userInfo:nil repeats:NO];	
 
 }
@@ -462,7 +463,7 @@
 	UIImage *buttonBackgroundPressed = [UIImage imageNamed:@"screen2_settingsOver.png"];
 	
 	CGRect frame = CGRectMake(-68, 30, 134, 26);
-	
+
 	settingsButton = [AlphaWolfView buttonWithTitle:@" "
 											 tag:@"settingsButton"
 										  target:self.controller		

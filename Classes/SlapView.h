@@ -23,5 +23,6 @@
 
 - (void)incrementCount;
 - (void)showSlapEffect;
+- (void)reset;
 
 @end

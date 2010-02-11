@@ -11,4 +11,4 @@
 - (void)handleSlap;
 @end
 
-
+#define HIDE_SETTINGS_BUTTON 1

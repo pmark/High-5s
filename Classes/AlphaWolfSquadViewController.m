@@ -10,13 +10,20 @@
 #import "SettingsController.h"
 #import "HelpController.h"
 
+#define SESSION_END_DELAY_SEC 1.8 
+
+#define MAIL_SUBJECT @"Send"
+#define MAIL_BODY @"Hello friend,\n\nI'm sending you %i High 5s. Click the link below to view these puppies on the internets.\n\n   %@\n\n"
+
 @implementation AlphaWolfSquadViewController
 
-@synthesize alphaview, slapview;
+@synthesize alphaview, slapview, sessionEndTimer, congrats;
 
 - (void)dealloc {
   [alphaview release];
   [slapview release];
+  [sessionEndTimer release];
+  [congrats release];
   [super dealloc];
 }
 
@@ -52,7 +59,6 @@
 	// e.g. self.myOutlet = nil;
 }
 
-#pragma mark -
 - (void)viewWillAppear:(BOOL)animated {
   [super viewWillAppear:animated];
   NSLog(@"[awsvc] viewWillAppear");
@@ -65,6 +71,61 @@
   [super viewWillDisappear:animated];
   [self.alphaview resignFirstResponder]; 
 } 
+
+#pragma mark Mail
++ (void) alertWithTitle:(NSString*)title message:(NSString*)message {
+	UIAlertView *alert = [[UIAlertView alloc] initWithTitle:title
+																									message:message
+																								 delegate:nil 
+                                        cancelButtonTitle:@"OK" 
+                                        otherButtonTitles:nil, nil];
+	[alert show];
+	[alert release];				
+}
+
+
+- (void) showEmailModalView:(NSString*)title emailBody:(NSString*)body recipientList:(NSArray*)recipients {
+	MFMailComposeViewController *picker = [[MFMailComposeViewController alloc] init];
+	picker.mailComposeDelegate = self; 
+
+	if (recipients != nil) {
+	  [picker setToRecipients:recipients];	
+	}
+  
+	[picker setSubject:title];
+	NSString *emailBody = [NSString stringWithFormat:body];
+	[picker setMessageBody:emailBody isHTML:NO]; 	
+	picker.navigationBar.barStyle = UIBarStyleBlack; 
+	picker.navigationBar.translucent = YES;
+	[self presentModalViewController:picker animated:YES];
+	[picker release];
+}
+
+/*
+ * delegate method to handle email
+ */
+- (void)mailComposeController:(MFMailComposeViewController*)controller didFinishWithResult:(MFMailComposeResult)result error:(NSError*)error
+{ 
+	switch (result)
+	{
+		case MFMailComposeResultCancelled:
+			break;
+		case MFMailComposeResultSaved:
+			break;
+		case MFMailComposeResultSent:
+			break;
+		case MFMailComposeResultFailed:
+			break;
+		default:
+		{
+      [AlphaWolfSquadViewController alertWithTitle:@"Email failed" message:@"Sorry, but this email could not be sent."];
+		}
+	 
+	  break;
+	}
+																																																								 
+	[self dismissModalViewControllerAnimated:YES];
+}
 
 #pragma mark -
 #pragma mark Motion
@@ -97,6 +158,7 @@
 #pragma mark -
 
 - (void)handleSlap {
+  congrats.hidden = YES;
   [alphaview clapper];
 
   AudioServicesPlayAlertSound(kSystemSoundID_Vibrate);
@@ -105,13 +167,33 @@
   [self.slapview incrementCount];
   
   // start timer
-  
+  if (sessionEndTimer) 
+    [sessionEndTimer invalidate];
+    
+	self.sessionEndTimer = [NSTimer scheduledTimerWithTimeInterval:SESSION_END_DELAY_SEC target:self selector:@selector(askToEndSession) userInfo:nil repeats:NO];  
+}
+
+- (void)askToEndSession {
+  NSLog(@"end session?");
+  congrats.hidden = NO;
+  [self.view bringSubviewToFront:congrats];
 }
 
 - (void)shakeDetected {
   NSLog(@"shake!!!!!");
   [self handleSlap];
 }
+
+- (IBAction)tryAgain {
+  congrats.hidden = YES;
+  [slapview reset];
+}
+
+- (IBAction)sendBatch {
+  [self showEmailModalView:MAIL_SUBJECT emailBody:MAIL_BODY recipientList:nil];
+}
+
+#pragma mark -
 
 
 @end
