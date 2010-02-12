@@ -6,14 +6,17 @@
 //  Copyright __MyCompanyName__ 2009. All rights reserved.
 //
 
+#import <CommonCrypto/CommonDigest.h>
 #import "AlphaWolfSquadViewController.h"
 #import "SettingsController.h"
 #import "HelpController.h"
 
 #define SESSION_END_DELAY_SEC 1.5
+#define CC_MD5_DIGEST_LENGTH 16
 
 #define MAIL_SUBJECT @"Have some high 5s"
 #define MAIL_BODY @"Hello friend,\n\nI'm sending you some High 5s. Click the link below to view these puppies on the internets.\n   %@\n\n"
+#define MAIL_BODY_HTML @"Hello friend,<br/><br/>\n\nI'm sending you some High 5s. <a href=\"%@\">Click here</a> to view these puppies on the internets.<br/>\n<br/>\n"
 
 @implementation AlphaWolfSquadViewController
 
@@ -93,9 +96,9 @@
 	}
   
 	[picker setSubject:title];
-	[picker setMessageBody:body isHTML:NO]; 	
+	[picker setMessageBody:body isHTML:YES]; 	
 	picker.navigationBar.barStyle = UIBarStyleBlack; 
-	picker.navigationBar.translucent = YES;
+	picker.navigationBar.translucent = NO;
 	[self presentModalViewController:picker animated:YES];
 	[picker release];
 }
@@ -188,12 +191,35 @@
 }
 
 - (IBAction)sendBatch {
-  NSString *link = [NSString stringWithFormat:@"http://www.havesomehigh5s.com/staging/includes/sendStuff_iPhone.php?"];
-  [self showEmailModalView:MAIL_SUBJECT emailBody:[NSString stringWithFormat:MAIL_BODY, link] recipientList:nil];
+  //NSString *link = [NSString stringWithFormat:@"http://www.havesomehigh5s.com/staging/includes/sendStuff_iPhone.php?"];
+  //NSString *link = @"http://www.havesomehigh5s.com/staging/index.php?id=26";
+  NSString *link = [self batchURL];
+  [self showEmailModalView:MAIL_SUBJECT emailBody:[NSString stringWithFormat:MAIL_BODY_HTML, link] recipientList:nil];
 }
 
 #pragma mark -
++ (NSString *)uniqueIDFromString:(NSString *)source {
+	const char *src = [[source lowercaseString] UTF8String];
+	unsigned char result[CC_MD5_DIGEST_LENGTH];
+	CC_MD5(src, strlen(src), result);
+  
+  NSString *ret = [[[NSString alloc] initWithFormat:@"%02X%02X%02X%02X%02X%02X%02X%02X%02X%02X%02X%02X%02X%02X%02X%02X", 
+                    result[0], result[1], result[2], result[3],
+                    result[4], result[5], result[6], result[7],
+                    result[8], result[9], result[10], result[11],
+                    result[12], result[13], result[14], result[15]
+                    ] autorelease];
+  
+  return ret;
+}
 
+- (NSString*)batchURL {
+  NSString *baseURL = @"http://www.havesomehigh5s.com/staging/index.php?batch=%@";
+  NSTimeInterval millis = [[NSDate date] timeIntervalSince1970];
+  NSString *tstamp = [NSString stringWithFormat:@"%f", millis];
+  NSString *token = [AlphaWolfSquadViewController uniqueIDFromString:tstamp];
+  return [NSString stringWithFormat:baseURL, token];
+}
 
 #pragma mark -
 

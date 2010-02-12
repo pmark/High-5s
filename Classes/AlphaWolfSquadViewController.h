@@ -30,7 +30,7 @@
 - (void)shakeDetected;
 - (IBAction)tryAgain;
 - (IBAction)sendBatch;
-
+- (NSString*)batchURL;
 
 @end
 

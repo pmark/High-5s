@@ -76,7 +76,7 @@
 		1D30AB110D05D00D00671497 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		1D3623240D0F684500981E51 /* AlphaWolfSquadAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlphaWolfSquadAppDelegate.h; sourceTree = "<group>"; };
 		1D3623250D0F684500981E51 /* AlphaWolfSquadAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlphaWolfSquadAppDelegate.m; sourceTree = "<group>"; };
-		1D6058910D05DD3D006BFB54 /* AlphaWolfSquad.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AlphaWolfSquad.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1D6058910D05DD3D006BFB54 /* High 5s.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "High 5s.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1DF5F4DF0D08C38300B7A737 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		288765A40DF7441C002DB57D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		2899E5210DE3E06400AC0155 /* AlphaWolfSquadViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AlphaWolfSquadViewController.xib; sourceTree = "<group>"; };
@@ -188,7 +188,7 @@
 		19C28FACFE9D520D11CA2CBB /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				1D6058910D05DD3D006BFB54 /* AlphaWolfSquad.app */,
+				1D6058910D05DD3D006BFB54 /* High 5s.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -318,7 +318,7 @@
 			);
 			name = AlphaWolfSquad;
 			productName = AlphaWolfSquad;
-			productReference = 1D6058910D05DD3D006BFB54 /* AlphaWolfSquad.app */;
+			productReference = 1D6058910D05DD3D006BFB54 /* High 5s.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -426,7 +426,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = AlphaWolfSquad_Prefix.pch;
 				INFOPLIST_FILE = "AlphaWolfSquad-Info.plist";
-				PRODUCT_NAME = AlphaWolfSquad;
+				PRODUCT_NAME = "High 5s";
 			};
 			name = Debug;
 		};
@@ -438,7 +438,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = AlphaWolfSquad_Prefix.pch;
 				INFOPLIST_FILE = "AlphaWolfSquad-Info.plist";
-				PRODUCT_NAME = AlphaWolfSquad;
+				PRODUCT_NAME = "High 5s";
 			};
 			name = Release;
 		};
@@ -447,14 +447,15 @@
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
 				CODE_SIGN_ENTITLEMENTS = Entitlements.plist;
-				CODE_SIGN_IDENTITY = "iPhone Distribution";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Peter Anderson";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Bordertown Labs, LLC";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Bordertown Labs, LLC";
 				GCC_C_LANGUAGE_STANDARD = c99;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				PREBINDING = NO;
-				PROVISIONING_PROFILE = "";
-				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "9F743177-130E-4516-938D-2F17EE4A5F9C";
+				PRODUCT_NAME = "High 5s";
+				PROVISIONING_PROFILE = "42863D0D-9510-4079-A6DE-364D53A11342";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "224830E5-1023-4F9D-BBCF-BB867B2D501A";
 				SDKROOT = iphoneos3.0;
 			};
 			name = AdHoc;
@@ -463,11 +464,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Bordertown Labs, LLC";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Bordertown Labs, LLC";
 				COPY_PHASE_STRIP = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = AlphaWolfSquad_Prefix.pch;
 				INFOPLIST_FILE = "AlphaWolfSquad-Info.plist";
-				PRODUCT_NAME = AlphaWolfSquad;
+				PRODUCT_NAME = "High 5s";
+				PROVISIONING_PROFILE = "42863D0D-9510-4079-A6DE-364D53A11342";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "224830E5-1023-4F9D-BBCF-BB867B2D501A";
 			};
 			name = AdHoc;
 		};
@@ -480,6 +485,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				PREBINDING = NO;
+				PRODUCT_NAME = "High 5s";
 				SDKROOT = iphoneos3.0;
 			};
 			name = Debug;
@@ -493,6 +499,7 @@
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				PREBINDING = NO;
+				PRODUCT_NAME = "High 5s";
 				SDKROOT = iphoneos3.0;
 			};
 			name = Release;
