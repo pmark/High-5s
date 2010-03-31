@@ -225,10 +225,11 @@
 }
 
 - (void)askToEndSession {
+    CGPoint screenCenter = CGPointMake(self.view.center.x, self.view.center.y-20);
     congratsText.text = [NSString stringWithFormat:CONGRATS_TEXT_FORMAT, slapview.slapCount, (slapview.slapCount != 1 ? @"s" : @"")];
     
     
-    congrats.center = CGPointMake(congrats.center.x, congrats.center.y + CONGRATS_OFFSET);
+    congrats.center = CGPointMake(screenCenter.x, screenCenter.y - CONGRATS_OFFSET);
     congrats.alpha = 0.0;
     congrats.hidden = NO;
     
@@ -238,7 +239,7 @@
     [UIView setAnimationDuration:CONGRATS_ANIMATION_DURATION];
     
     congrats.alpha = 1.0;
-    congrats.center = self.view.center;
+    congrats.center = screenCenter;
     
     [UIView commitAnimations];
 }
