@@ -1,8 +1,8 @@
 build
-*.xcodeproj/*.mode1v3
-*.xcodeproj/*.mode2v3
-*.xcodeproj/*.pbxuser
-*.xcodeproj/*.perspectivev3
+AlphaWolfSquad.xcodeproj/*.mode1v3
+AlphaWolfSquad.xcodeproj/*.mode2v3
+AlphaWolfSquad.xcodeproj/*.pbxuser
+AlphaWolfSquad.xcodeproj/*.perspectivev3
 *.swp
 *~.nib
 .DS_Store
