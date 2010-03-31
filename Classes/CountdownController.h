@@ -14,6 +14,7 @@
     UIImageView *counterStar;
 }
 
+- (void) startCountdownAfterDelay:(CGFloat)delay;
 - (void) startCountdown;
 - (void) cancelCountdown;
 - (void) beginAnimation;

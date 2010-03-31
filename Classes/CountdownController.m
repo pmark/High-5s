@@ -33,6 +33,10 @@
     [super dealloc];
 }
 
+- (void) startCountdownAfterDelay:(CGFloat)delay {
+    [self performSelector:@selector(startCountdown) withObject:nil afterDelay:delay];
+}
+
 - (void) startCountdown {
 	currentCount = 3;    
     self.view.hidden = NO;
@@ -48,13 +52,13 @@
     counterStar.image = [UIImage imageNamed:imgName];
     NSLog(@"animating %@", imgName);
     
+    CGFloat scaleDown = 0.15;
     UIView *v = self.view;
-    v.transform = CGAffineTransformMakeScale(0.02, 0.02);
-    v.alpha = 0.25;
+    v.transform = CGAffineTransformMakeScale(scaleDown, scaleDown);
+    v.alpha = 0.85;
     self.view.hidden = NO;
     
     CGFloat duration = 1.0f;
-    BOOL autoreverse = (currentCount > 0);
 
     // background
     [UIView beginAnimations:nil context:nil];
@@ -62,16 +66,12 @@
     [UIView setAnimationCurve:UIViewAnimationCurveEaseOut];
     [UIView setAnimationDelegate:self];
     [UIView setAnimationDidStopSelector:@selector(animationDidFinish)];
-    [UIView setAnimationRepeatAutoreverses:autoreverse];
+    [UIView setAnimationRepeatAutoreverses:NO];
     [UIView setAnimationRepeatCount:1];
     [UIView setAnimationBeginsFromCurrentState:NO];    
     v.transform = CGAffineTransformMakeScale(1.0, 1.0);
     v.alpha = 1.0f;
     [UIView commitAnimations];
-
-    if (autoreverse) {
-        [self performSelector:@selector(hide) withObject:nil afterDelay:(duration*2.0)];
-    }
 }
 
 - (void) hide {
@@ -81,10 +81,16 @@
 - (void) animationDidFinish {
     NSLog(@"animationDidFinish for %i", currentCount);
     if (currentCount > 0) {
+        self.view.hidden = YES;
         // update counter image
         currentCount--;
         [self beginAnimation];
+
+    } else {
+        // done
+        [self performSelector:@selector(hide) withObject:nil afterDelay:3.0];
     }
+
 }
 
 

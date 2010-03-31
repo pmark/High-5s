@@ -89,7 +89,7 @@
     [self performSelector:@selector(removeOverlay:) withObject:activeOverlay afterDelay:OVERLAY_TRANSITION_ANIMATION];
 
     if ([activeOverlay isKindOfClass:[WelcomeController class]]) {
-        [countdown startCountdown];
+        [countdown startCountdownAfterDelay:OVERLAY_TRANSITION_ANIMATION];
     }
 }
 
