@@ -12,6 +12,7 @@
 #import "HelpController.h"
 #import "WelcomeController.h"
 #import "ConfirmationController.h"
+#import "CountdownController.h"
 
 #define SESSION_END_DELAY_SEC 1.5
 #define CC_MD5_DIGEST_LENGTH 16
@@ -26,7 +27,8 @@
 
 @implementation AlphaWolfSquadViewController
 
-@synthesize alphaview, slapview, sessionEndTimer, congrats, congratsText; 
+@synthesize alphaview, slapview, sessionEndTimer, congrats, congratsText;
+@synthesize countdown;
 
 - (void)dealloc {
     [alphaview release];
@@ -34,6 +36,7 @@
     [sessionEndTimer release];
     [congrats release], congrats = nil;
     [congratsText release], congratsText = nil;
+    [countdown release];
     [super dealloc];
 }
 
@@ -50,6 +53,9 @@
     slapview.userInteractionEnabled = NO;
     slapview.controller = self;
     [alphaview addSubview:slapview]; 
+    
+    self.countdown = [[[CountdownController alloc] init] autorelease];
+    [self.view addSubview:countdown.view];
 }
 
 -(void)openOverlay:(OverlayController*)newOverlay {
@@ -81,6 +87,10 @@
     [UIView commitAnimations];
     
     [self performSelector:@selector(removeOverlay:) withObject:activeOverlay afterDelay:OVERLAY_TRANSITION_ANIMATION];
+
+    if ([activeOverlay isKindOfClass:[WelcomeController class]]) {
+        [countdown startCountdown];
+    }
 }
 
 -(void)acceleratedInX:(float)xx Y:(float)yy Z:(float)zz{
@@ -295,6 +305,7 @@
 }
 
 - (void) showConfirmationScreen {    
+    [slapview reset];
     congrats.hidden = YES;
     ConfirmationController *c = [[ConfirmationController alloc] init];
     [self openOverlay:c];

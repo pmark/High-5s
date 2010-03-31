@@ -97,6 +97,12 @@
 		4D7C2523116335D600F1C8D1 /* ConfirmationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D7C2521116335D600F1C8D1 /* ConfirmationController.m */; };
 		4D7C2524116335D600F1C8D1 /* ConfirmationController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4D7C2522116335D600F1C8D1 /* ConfirmationController.xib */; };
 		4D7C25281163379A00F1C8D1 /* confirmation-title.png in Resources */ = {isa = PBXBuildFile; fileRef = 4D7C25271163379A00F1C8D1 /* confirmation-title.png */; };
+		4D7C25681163B39600F1C8D1 /* CountdownController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D7C25671163B39600F1C8D1 /* CountdownController.m */; };
+		4D7C25701163B5EE00F1C8D1 /* countdown-stars.png in Resources */ = {isa = PBXBuildFile; fileRef = 4D7C256B1163B5EE00F1C8D1 /* countdown-stars.png */; };
+		4D7C25711163B5EE00F1C8D1 /* countdown-1.png in Resources */ = {isa = PBXBuildFile; fileRef = 4D7C256C1163B5EE00F1C8D1 /* countdown-1.png */; };
+		4D7C25721163B5EE00F1C8D1 /* countdown-2.png in Resources */ = {isa = PBXBuildFile; fileRef = 4D7C256D1163B5EE00F1C8D1 /* countdown-2.png */; };
+		4D7C25731163B5EE00F1C8D1 /* countdown-3.png in Resources */ = {isa = PBXBuildFile; fileRef = 4D7C256E1163B5EE00F1C8D1 /* countdown-3.png */; };
+		4D7C25741163B5EE00F1C8D1 /* countdown-0.png in Resources */ = {isa = PBXBuildFile; fileRef = 4D7C256F1163B5EE00F1C8D1 /* countdown-0.png */; };
 		4D90181911125E91009A47FA /* clap.wav in Resources */ = {isa = PBXBuildFile; fileRef = 4D90180511125E91009A47FA /* clap.wav */; };
 		4D90183911126138009A47FA /* Settings.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4D90183811126138009A47FA /* Settings.xib */; };
 		4D90187111126298009A47FA /* SettingsController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D90187011126298009A47FA /* SettingsController.m */; };
@@ -211,6 +217,13 @@
 		4D7C2521116335D600F1C8D1 /* ConfirmationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConfirmationController.m; sourceTree = "<group>"; };
 		4D7C2522116335D600F1C8D1 /* ConfirmationController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ConfirmationController.xib; sourceTree = "<group>"; };
 		4D7C25271163379A00F1C8D1 /* confirmation-title.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "confirmation-title.png"; sourceTree = "<group>"; };
+		4D7C25661163B39600F1C8D1 /* CountdownController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CountdownController.h; sourceTree = "<group>"; };
+		4D7C25671163B39600F1C8D1 /* CountdownController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CountdownController.m; sourceTree = "<group>"; };
+		4D7C256B1163B5EE00F1C8D1 /* countdown-stars.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "countdown-stars.png"; sourceTree = "<group>"; };
+		4D7C256C1163B5EE00F1C8D1 /* countdown-1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "countdown-1.png"; sourceTree = "<group>"; };
+		4D7C256D1163B5EE00F1C8D1 /* countdown-2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "countdown-2.png"; sourceTree = "<group>"; };
+		4D7C256E1163B5EE00F1C8D1 /* countdown-3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "countdown-3.png"; sourceTree = "<group>"; };
+		4D7C256F1163B5EE00F1C8D1 /* countdown-0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "countdown-0.png"; sourceTree = "<group>"; };
 		4D90180511125E91009A47FA /* clap.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = clap.wav; sourceTree = "<group>"; };
 		4D90183811126138009A47FA /* Settings.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Settings.xib; path = Classes/Settings.xib; sourceTree = "<group>"; };
 		4D90186F11126298009A47FA /* SettingsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsController.h; sourceTree = "<group>"; };
@@ -272,6 +285,8 @@
 				4D7C2520116335D600F1C8D1 /* ConfirmationController.h */,
 				4D7C2521116335D600F1C8D1 /* ConfirmationController.m */,
 				4D7C2522116335D600F1C8D1 /* ConfirmationController.xib */,
+				4D7C25661163B39600F1C8D1 /* CountdownController.h */,
+				4D7C25671163B39600F1C8D1 /* CountdownController.m */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -449,6 +464,11 @@
 			children = (
 				4D7C23241162DC4000F1C8D1 /* burst.png */,
 				4D7C23251162DC4000F1C8D1 /* countdown-star-blank.png */,
+				4D7C256B1163B5EE00F1C8D1 /* countdown-stars.png */,
+				4D7C256F1163B5EE00F1C8D1 /* countdown-0.png */,
+				4D7C256C1163B5EE00F1C8D1 /* countdown-1.png */,
+				4D7C256D1163B5EE00F1C8D1 /* countdown-2.png */,
+				4D7C256E1163B5EE00F1C8D1 /* countdown-3.png */,
 				4D7C23261162DC4000F1C8D1 /* fyi-ttl.png */,
 				4D7C23271162DC4000F1C8D1 /* hand.png */,
 				4D7C23281162DC4000F1C8D1 /* people.png */,
@@ -628,6 +648,11 @@
 				4D7C239C1162DEA600F1C8D1 /* welcome-body.png in Resources */,
 				4D7C2524116335D600F1C8D1 /* ConfirmationController.xib in Resources */,
 				4D7C25281163379A00F1C8D1 /* confirmation-title.png in Resources */,
+				4D7C25701163B5EE00F1C8D1 /* countdown-stars.png in Resources */,
+				4D7C25711163B5EE00F1C8D1 /* countdown-1.png in Resources */,
+				4D7C25721163B5EE00F1C8D1 /* countdown-2.png in Resources */,
+				4D7C25731163B5EE00F1C8D1 /* countdown-3.png in Resources */,
+				4D7C25741163B5EE00F1C8D1 /* countdown-0.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -648,6 +673,7 @@
 				4D7C238A1162DCA500F1C8D1 /* WelcomeController.m in Sources */,
 				4D7C23E31162F7DC00F1C8D1 /* OverlayController.m in Sources */,
 				4D7C2523116335D600F1C8D1 /* ConfirmationController.m in Sources */,
+				4D7C25681163B39600F1C8D1 /* CountdownController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

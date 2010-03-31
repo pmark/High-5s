@@ -12,6 +12,7 @@
 #import "High5s.h"
 #import "SlapView.h"
 #import "OverlayController.h"
+#import "CountdownController.h"
 
 @interface AlphaWolfSquadViewController : UIViewController <SlapDelegate, MFMailComposeViewControllerDelegate> {
 	AlphaWolfView *alphaview;
@@ -19,6 +20,7 @@
     NSTimer *sessionEndTimer;
     IBOutlet UIView *congrats;
     IBOutlet UILabel *congratsText;
+    CountdownController *countdown;
 }
 
 @property (nonatomic, retain) AlphaWolfView *alphaview;
@@ -26,6 +28,7 @@
 @property (nonatomic, retain) NSTimer *sessionEndTimer;
 @property (nonatomic, retain) IBOutlet UIView *congrats;
 @property (nonatomic, retain) IBOutlet UILabel *congratsText;
+@property (nonatomic, retain) CountdownController *countdown;
 
 - (void)viewDidLoad;
 - (void)acceleratedInX:(float)xx Y:(float)yy Z:(float)zz;

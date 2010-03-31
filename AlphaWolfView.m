@@ -71,7 +71,7 @@
 	[NSTimer scheduledTimerWithTimeInterval:1 target:self selector:@selector(animateHand) userInfo:nil repeats:NO];
     [NSTimer scheduledTimerWithTimeInterval:1 target:self selector:@selector(createSettings) userInfo:nil repeats:NO];	
 	[NSTimer scheduledTimerWithTimeInterval:1 target:self selector:@selector(createHelp) userInfo:nil repeats:NO];	
-	[NSTimer scheduledTimerWithTimeInterval:2.5 target:self selector:@selector(showWelcomeScreen) userInfo:nil repeats:NO];
+	[NSTimer scheduledTimerWithTimeInterval:2.05 target:self selector:@selector(showWelcomeScreen) userInfo:nil repeats:NO];
 }
 
 - (void)showWelcomeScreen {
