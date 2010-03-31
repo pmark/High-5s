@@ -11,6 +11,7 @@
 #import "SettingsController.h"
 #import "HelpController.h"
 #import "WelcomeController.h"
+#import "ConfirmationController.h"
 
 #define SESSION_END_DELAY_SEC 1.5
 #define CC_MD5_DIGEST_LENGTH 16
@@ -55,7 +56,7 @@
     newOverlay.host = self;
     newOverlay.view.hidden = YES;
     [self.view addSubview:newOverlay.view];        
-
+    
     [UIView beginAnimations:nil context:nil];
     [UIView setAnimationDuration:OVERLAY_TRANSITION_ANIMATION];
     [UIView setAnimationTransition:UIViewAnimationTransitionCurlDown forView:self.view cache:YES];
@@ -74,7 +75,7 @@
     [UIView beginAnimations:nil context:nil];
     [UIView setAnimationDuration:OVERLAY_TRANSITION_ANIMATION];
     [UIView setAnimationTransition:UIViewAnimationTransitionCurlUp forView:self.view cache:YES];
-
+    
 	activeOverlay.view.hidden = YES;
     
     [UIView commitAnimations];
@@ -153,6 +154,7 @@
 		case MFMailComposeResultSaved:
 			break;
 		case MFMailComposeResultSent:
+            [self showConfirmationScreen];
 			break;
 		case MFMailComposeResultFailed:
 			break;
@@ -163,8 +165,7 @@
             
             break;
 	}
-    
-	[self dismissModalViewControllerAnimated:YES];
+    [self dismissModalViewControllerAnimated:YES];    
 }
 
 #pragma mark -
@@ -220,7 +221,7 @@
     congrats.center = CGPointMake(congrats.center.x, congrats.center.y + CONGRATS_OFFSET);
     congrats.alpha = 0.0;
     congrats.hidden = NO;
-
+    
     [self.view bringSubviewToFront:congrats];
     
     [UIView beginAnimations:nil context:nil];
@@ -243,7 +244,7 @@
     [UIView beginAnimations:nil context:nil];
     [UIView setAnimationDuration:CONGRATS_ANIMATION_DURATION];
     [UIView setAnimationDidStopSelector:@selector(tryAgainAnimationDidFinish)];
-
+    
     congrats.alpha = 0.0;
     congrats.center = CGPointMake(congrats.center.x, congrats.center.y + CONGRATS_OFFSET);
     
@@ -291,6 +292,12 @@
 - (void) showWelcomeScreen {    
     WelcomeController *welcomeController = [[WelcomeController alloc] init];
     [self openOverlay:welcomeController];
+}
+
+- (void) showConfirmationScreen {    
+    congrats.hidden = YES;
+    ConfirmationController *c = [[ConfirmationController alloc] init];
+    [self openOverlay:c];
 }
 
 @end

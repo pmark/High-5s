@@ -36,6 +36,7 @@
 - (void)showWelcomeScreen;
 - (void)openOverlay:(OverlayController*)newOverlay;
 - (void)closeOverlay:(OverlayController*)activeOverlay;
+- (void) showConfirmationScreen;
 
 @end
 

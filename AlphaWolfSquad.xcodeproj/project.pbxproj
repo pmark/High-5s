@@ -94,6 +94,9 @@
 		4D7C239A1162DE0A00F1C8D1 /* have-some-high-5s.png in Resources */ = {isa = PBXBuildFile; fileRef = 4D7C23991162DE0A00F1C8D1 /* have-some-high-5s.png */; };
 		4D7C239C1162DEA600F1C8D1 /* welcome-body.png in Resources */ = {isa = PBXBuildFile; fileRef = 4D7C239B1162DEA600F1C8D1 /* welcome-body.png */; };
 		4D7C23E31162F7DC00F1C8D1 /* OverlayController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D7C23E21162F7DC00F1C8D1 /* OverlayController.m */; };
+		4D7C2523116335D600F1C8D1 /* ConfirmationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D7C2521116335D600F1C8D1 /* ConfirmationController.m */; };
+		4D7C2524116335D600F1C8D1 /* ConfirmationController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4D7C2522116335D600F1C8D1 /* ConfirmationController.xib */; };
+		4D7C25281163379A00F1C8D1 /* confirmation-title.png in Resources */ = {isa = PBXBuildFile; fileRef = 4D7C25271163379A00F1C8D1 /* confirmation-title.png */; };
 		4D90181911125E91009A47FA /* clap.wav in Resources */ = {isa = PBXBuildFile; fileRef = 4D90180511125E91009A47FA /* clap.wav */; };
 		4D90183911126138009A47FA /* Settings.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4D90183811126138009A47FA /* Settings.xib */; };
 		4D90187111126298009A47FA /* SettingsController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D90187011126298009A47FA /* SettingsController.m */; };
@@ -204,6 +207,10 @@
 		4D7C239B1162DEA600F1C8D1 /* welcome-body.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "welcome-body.png"; sourceTree = "<group>"; };
 		4D7C23E11162F7DC00F1C8D1 /* OverlayController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OverlayController.h; sourceTree = "<group>"; };
 		4D7C23E21162F7DC00F1C8D1 /* OverlayController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OverlayController.m; sourceTree = "<group>"; };
+		4D7C2520116335D600F1C8D1 /* ConfirmationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConfirmationController.h; sourceTree = "<group>"; };
+		4D7C2521116335D600F1C8D1 /* ConfirmationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConfirmationController.m; sourceTree = "<group>"; };
+		4D7C2522116335D600F1C8D1 /* ConfirmationController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ConfirmationController.xib; sourceTree = "<group>"; };
+		4D7C25271163379A00F1C8D1 /* confirmation-title.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "confirmation-title.png"; sourceTree = "<group>"; };
 		4D90180511125E91009A47FA /* clap.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = clap.wav; sourceTree = "<group>"; };
 		4D90183811126138009A47FA /* Settings.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Settings.xib; path = Classes/Settings.xib; sourceTree = "<group>"; };
 		4D90186F11126298009A47FA /* SettingsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsController.h; sourceTree = "<group>"; };
@@ -262,6 +269,9 @@
 				4D7C23891162DCA500F1C8D1 /* WelcomeController.xib */,
 				4D7C23E11162F7DC00F1C8D1 /* OverlayController.h */,
 				4D7C23E21162F7DC00F1C8D1 /* OverlayController.m */,
+				4D7C2520116335D600F1C8D1 /* ConfirmationController.h */,
+				4D7C2521116335D600F1C8D1 /* ConfirmationController.m */,
+				4D7C2522116335D600F1C8D1 /* ConfirmationController.xib */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -358,6 +368,7 @@
 		4D7C22F31162DC4000F1C8D1 /* confirm */ = {
 			isa = PBXGroup;
 			children = (
+				4D7C25271163379A00F1C8D1 /* confirmation-title.png */,
 				4D7C22F41162DC4000F1C8D1 /* ConfirmationScreen-ref.png */,
 				4D7C22F51162DC4000F1C8D1 /* ConfirmPanelSubHead.png */,
 			);
@@ -615,6 +626,8 @@
 				4D7C238E1162DD6700F1C8D1 /* do-it-already.png in Resources */,
 				4D7C239A1162DE0A00F1C8D1 /* have-some-high-5s.png in Resources */,
 				4D7C239C1162DEA600F1C8D1 /* welcome-body.png in Resources */,
+				4D7C2524116335D600F1C8D1 /* ConfirmationController.xib in Resources */,
+				4D7C25281163379A00F1C8D1 /* confirmation-title.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -634,6 +647,7 @@
 				4DC9EFE91123C79300F97B5A /* HelpController.m in Sources */,
 				4D7C238A1162DCA500F1C8D1 /* WelcomeController.m in Sources */,
 				4D7C23E31162F7DC00F1C8D1 /* OverlayController.m in Sources */,
+				4D7C2523116335D600F1C8D1 /* ConfirmationController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
