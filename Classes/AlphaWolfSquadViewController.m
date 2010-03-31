@@ -183,13 +183,13 @@
 }  
 
 - (void)clickSettings {
-    SettingsController *c = [[[SettingsController alloc] initWithNibName:@"Settings" bundle:nil] autorelease];
-    [self presentModalViewController:c animated:YES];
+    SettingsController *c = [[SettingsController alloc] init];
+    [self openOverlay:c];
 }
 
 - (void)clickHelp {
-    HelpController *c = [[[HelpController alloc] initWithNibName:@"HelpController" bundle:nil] autorelease];
-    [self presentModalViewController:c animated:YES];
+    HelpController *c = [[HelpController alloc] init];
+    [self openOverlay:c];
 }
 
 #pragma mark -

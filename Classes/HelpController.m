@@ -11,7 +11,7 @@
 
 @implementation HelpController
 
-@synthesize textView;
+@synthesize scrollView;
 
 /*
  // The designated initializer.  Override if you create the controller programmatically and want to perform customization that is not appropriate for viewDidLoad.
@@ -23,16 +23,22 @@
 }
 */
 
-/*
 // Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
 - (void)viewDidLoad {
     [super viewDidLoad];
+
+    UIImage *img = [UIImage imageNamed:@"HelpContent.png"];
+    [scrollView setContentSize:CGSizeMake(img.size.width,
+                               img.size.height)];
+    
+//    UIImageView *content = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"HelpContent.png"]];
+//    [scrollView addSubview:content];
+//    [content release];
 }
-*/
 
 - (void)viewDidAppear:(BOOL)animated {
   [super viewDidAppear:animated];
-  [textView flashScrollIndicators];
+  [scrollView flashScrollIndicators];
 }
 
 /*
@@ -57,13 +63,9 @@
 
 
 - (void)dealloc {
-  [textView release];
+  [scrollView release];
   [super dealloc];
 }
 
-
-- (IBAction)close {
-  [self dismissModalViewControllerAnimated:YES];
-}
 
 @end

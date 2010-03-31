@@ -7,9 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "OverlayController.h"
 
-
-@interface SettingsController : UIViewController {
+@interface SettingsController : OverlayController {
 
 }
 

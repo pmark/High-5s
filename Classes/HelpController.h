@@ -7,14 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "OverlayController.h"
 
-
-@interface HelpController : UIViewController {
-  IBOutlet UITextView *textView;
+@interface HelpController : OverlayController {
+  IBOutlet UIScrollView *scrollView;
 }
 
-@property (nonatomic, retain) IBOutlet UITextView *textView;
-
-- (IBAction)close;
+@property (nonatomic, retain) IBOutlet UIScrollView *scrollView;
 
 @end
