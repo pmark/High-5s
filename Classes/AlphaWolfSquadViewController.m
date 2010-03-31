@@ -15,6 +15,8 @@
 #define SESSION_END_DELAY_SEC 1.5
 #define CC_MD5_DIGEST_LENGTH 16
 #define OVERLAY_TRANSITION_ANIMATION 0.75
+#define CONGRATS_OFFSET 10
+#define CONGRATS_ANIMATION_DURATION 0.33
 
 #define MAIL_SUBJECT @"Have some high 5s"
 #define MAIL_BODY @"Hello friend,\n\nI'm sending you some High 5s. Click the link below to view these puppies on the internets.\n   %@\n\n"
@@ -23,7 +25,6 @@
 @implementation AlphaWolfSquadViewController
 
 @synthesize alphaview, slapview, sessionEndTimer, congrats; 
-//@synthesize overlay;
 
 - (void)dealloc {
     [alphaview release];
@@ -211,8 +212,19 @@
 }
 
 - (void)askToEndSession {
+    congrats.center = CGPointMake(congrats.center.x, congrats.center.y + CONGRATS_OFFSET);
+    congrats.alpha = 0.0;
     congrats.hidden = NO;
+
     [self.view bringSubviewToFront:congrats];
+    
+    [UIView beginAnimations:nil context:nil];
+    [UIView setAnimationDuration:CONGRATS_ANIMATION_DURATION];
+    
+    congrats.alpha = 1.0;
+    congrats.center = self.view.center;
+    
+    [UIView commitAnimations];
 }
 
 - (void)shakeDetected {
@@ -221,8 +233,22 @@
 }
 
 - (IBAction)tryAgain {
-    congrats.hidden = YES;
+    congrats.alpha = 1.0;
+    
+    [UIView beginAnimations:nil context:nil];
+    [UIView setAnimationDuration:CONGRATS_ANIMATION_DURATION];
+    [UIView setAnimationDidStopSelector:@selector(tryAgainAnimationDidFinish)];
+
+    congrats.alpha = 0.0;
+    congrats.center = CGPointMake(congrats.center.x, congrats.center.y + CONGRATS_OFFSET);
+    
+    [UIView commitAnimations];
+    
     [slapview reset];
+}
+
+- (void)tryAgainAnimationDidFinish {
+    congrats.center = self.view.center;
 }
 
 - (IBAction)sendBatch {

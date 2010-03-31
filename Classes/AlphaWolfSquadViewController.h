@@ -13,21 +13,17 @@
 #import "SlapView.h"
 #import "OverlayController.h"
 
-
-
 @interface AlphaWolfSquadViewController : UIViewController <SlapDelegate, MFMailComposeViewControllerDelegate> {
 	AlphaWolfView *alphaview;
     SlapView *slapview;
     NSTimer *sessionEndTimer;
     IBOutlet UIView *congrats;
-//    OverlayController *overlay;
 }
 
 @property (nonatomic, retain) AlphaWolfView *alphaview;
 @property (nonatomic, retain) SlapView *slapview;
 @property (nonatomic, retain) NSTimer *sessionEndTimer;
 @property (nonatomic, retain) IBOutlet UIView *congrats;
-//@property (nonatomic, retain) OverlayController *overlay;
 
 - (void)viewDidLoad;
 - (void)acceleratedInX:(float)xx Y:(float)yy Z:(float)zz;
@@ -36,8 +32,8 @@
 - (IBAction)sendBatch;
 - (NSString*)batchURL;
 - (void)showWelcomeScreen;
--(void)openOverlay:(OverlayController*)newOverlay;
--(void)closeOverlay:(OverlayController*)activeOverlay;
+- (void)openOverlay:(OverlayController*)newOverlay;
+- (void)closeOverlay:(OverlayController*)activeOverlay;
 
 @end
 

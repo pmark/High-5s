@@ -13,6 +13,4 @@
 
 }
 
-- (IBAction)close;
-
 @end
