@@ -14,6 +14,7 @@
 
 #define SESSION_END_DELAY_SEC 1.5
 #define CC_MD5_DIGEST_LENGTH 16
+#define OVERLAY_TRANSITION_ANIMATION 0.75
 
 #define MAIL_SUBJECT @"Have some high 5s"
 #define MAIL_BODY @"Hello friend,\n\nI'm sending you some High 5s. Click the link below to view these puppies on the internets.\n   %@\n\n"
@@ -49,12 +50,33 @@
 
 -(void)openOverlay:(OverlayController*)newOverlay {
     newOverlay.host = self;
+    newOverlay.view.hidden = YES;
     [self.view addSubview:newOverlay.view];        
+
+    [UIView beginAnimations:nil context:nil];
+    [UIView setAnimationDuration:OVERLAY_TRANSITION_ANIMATION];
+    [UIView setAnimationTransition:UIViewAnimationTransitionCurlDown forView:self.view cache:YES];
+    
+	newOverlay.view.hidden = NO;
+    
+    [UIView commitAnimations];
+}
+
+-(void)removeOverlay:(OverlayController*)overlay {
+	[overlay.view removeFromSuperview];
+    [overlay release];
 }
 
 -(void)closeOverlay:(OverlayController*)activeOverlay {
-	[activeOverlay.view removeFromSuperview];
-    [activeOverlay release];
+    [UIView beginAnimations:nil context:nil];
+    [UIView setAnimationDuration:OVERLAY_TRANSITION_ANIMATION];
+    [UIView setAnimationTransition:UIViewAnimationTransitionCurlUp forView:self.view cache:YES];
+
+	activeOverlay.view.hidden = YES;
+    
+    [UIView commitAnimations];
+    
+    [self performSelector:@selector(removeOverlay:) withObject:activeOverlay afterDelay:OVERLAY_TRANSITION_ANIMATION];
 }
 
 -(void)acceleratedInX:(float)xx Y:(float)yy Z:(float)zz{

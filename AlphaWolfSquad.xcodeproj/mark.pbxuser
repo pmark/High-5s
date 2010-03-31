@@ -29,9 +29,9 @@
 	};
 	28D7ACF70DDB3853001CB0EB /* AlphaWolfSquadViewController.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1805.09, 6150}}";
-			sepNavSelRange = "{1431, 0}";
-			sepNavVisRange = "{1061, 578}";
+			sepNavIntBoundsRect = "{{0, 0}, {1805.09, 6850}}";
+			sepNavSelRange = "{1932, 0}";
+			sepNavVisRange = "{1546, 502}";
 			sepNavWindowFrame = "{{0, 4}, {1280, 774}}";
 		};
 	};
@@ -187,6 +187,15 @@
 			4D7C24601162FED700F1C8D1 /* PBXTextBookmark */ = 4D7C24601162FED700F1C8D1 /* PBXTextBookmark */;
 			4D7C24611162FED700F1C8D1 /* PBXTextBookmark */ = 4D7C24611162FED700F1C8D1 /* PBXTextBookmark */;
 			4D7C24661162FF1600F1C8D1 /* PBXTextBookmark */ = 4D7C24661162FF1600F1C8D1 /* PBXTextBookmark */;
+			4D7C246A1162FF7200F1C8D1 /* PBXTextBookmark */ = 4D7C246A1162FF7200F1C8D1 /* PBXTextBookmark */;
+			4D7C246B1162FF7200F1C8D1 /* PBXTextBookmark */ = 4D7C246B1162FF7200F1C8D1 /* PBXTextBookmark */;
+			4D7C246F1162FFD400F1C8D1 /* PBXTextBookmark */ = 4D7C246F1162FFD400F1C8D1 /* PBXTextBookmark */;
+			4D7C24731163020800F1C8D1 /* PBXTextBookmark */ = 4D7C24731163020800F1C8D1 /* PBXTextBookmark */;
+			4D7C247B1163021F00F1C8D1 /* XCBuildMessageTextBookmark */ = 4D7C247B1163021F00F1C8D1 /* XCBuildMessageTextBookmark */;
+			4D7C247C1163021F00F1C8D1 /* PBXTextBookmark */ = 4D7C247C1163021F00F1C8D1 /* PBXTextBookmark */;
+			4D7C24801163023800F1C8D1 /* PBXTextBookmark */ = 4D7C24801163023800F1C8D1 /* PBXTextBookmark */;
+			4D7C2486116302B500F1C8D1 /* XCBuildMessageTextBookmark */ = 4D7C2486116302B500F1C8D1 /* XCBuildMessageTextBookmark */;
+			4D7C2487116302B500F1C8D1 /* PBXTextBookmark */ = 4D7C2487116302B500F1C8D1 /* PBXTextBookmark */;
 			4DC9EFEC1123C7CD00F97B5A = 4DC9EFEC1123C7CD00F97B5A /* PBXTextBookmark */;
 			4DC9F01A11248EA300F97B5A = 4DC9F01A11248EA300F97B5A /* PBXTextBookmark */;
 		};
@@ -254,7 +263,7 @@
 		isa = PBXTextBookmark;
 		fRef = 28D7ACF70DDB3853001CB0EB /* AlphaWolfSquadViewController.m */;
 		rLen = 7;
-		rLoc = 5414;
+		rLoc = 6215;
 		rType = 0;
 	};
 	4D67492B112F1AEA000EC3D8 /* PBXTextBookmark */ = {
@@ -262,7 +271,7 @@
 		fRef = 28D7ACF70DDB3853001CB0EB /* AlphaWolfSquadViewController.m */;
 		name = "AlphaWolfSquadViewController.m: 176";
 		rLen = 0;
-		rLoc = 5585;
+		rLoc = 6386;
 		rType = 0;
 		vrLen = 773;
 		vrLoc = 4687;
@@ -306,7 +315,7 @@
 		fRef = 28D7ACF70DDB3853001CB0EB /* AlphaWolfSquadViewController.m */;
 		name = "AlphaWolfSquadViewController.m: 179";
 		rLen = 0;
-		rLoc = 5585;
+		rLoc = 6386;
 		rType = 0;
 		vrLen = 612;
 		vrLoc = 4687;
@@ -316,7 +325,7 @@
 		fRef = 28D7ACF70DDB3853001CB0EB /* AlphaWolfSquadViewController.m */;
 		name = "AlphaWolfSquadViewController.m: 177";
 		rLen = 0;
-		rLoc = 5553;
+		rLoc = 6354;
 		rType = 0;
 		vrLen = 632;
 		vrLoc = 3624;
@@ -362,7 +371,7 @@
 		fRef = 28D7ACF70DDB3853001CB0EB /* AlphaWolfSquadViewController.m */;
 		name = "AlphaWolfSquadViewController.m: 43";
 		rLen = 0;
-		rLoc = 1464;
+		rLoc = 1506;
 		rType = 0;
 		vrLen = 689;
 		vrLoc = 982;
@@ -460,7 +469,7 @@
 		fRef = 28D7ACF70DDB3853001CB0EB /* AlphaWolfSquadViewController.m */;
 		name = "AlphaWolfSquadViewController.m: 27";
 		rLen = 0;
-		rLoc = 877;
+		rLoc = 919;
 		rType = 0;
 		vrLen = 598;
 		vrLoc = 408;
@@ -480,7 +489,7 @@
 		fRef = 28D7ACF70DDB3853001CB0EB /* AlphaWolfSquadViewController.m */;
 		name = "AlphaWolfSquadViewController.m: 225";
 		rLen = 26;
-		rLoc = 7259;
+		rLoc = 8060;
 		rType = 0;
 		vrLen = 916;
 		vrLoc = 6236;
@@ -549,7 +558,7 @@
 		fRef = 28D7ACF70DDB3853001CB0EB /* AlphaWolfSquadViewController.m */;
 		name = "AlphaWolfSquadViewController.m: 226";
 		rLen = 0;
-		rLoc = 7411;
+		rLoc = 8212;
 		rType = 0;
 		vrLen = 627;
 		vrLoc = 6525;
@@ -559,7 +568,7 @@
 		fRef = 28D7ACF70DDB3853001CB0EB /* AlphaWolfSquadViewController.m */;
 		name = "AlphaWolfSquadViewController.m: 226";
 		rLen = 0;
-		rLoc = 7411;
+		rLoc = 8212;
 		rType = 0;
 		vrLen = 542;
 		vrLoc = 6610;
@@ -608,7 +617,7 @@
 		isa = PBXTextBookmark;
 		fRef = 28D7ACF70DDB3853001CB0EB /* AlphaWolfSquadViewController.m */;
 		rLen = 13;
-		rLoc = 1113;
+		rLoc = 1155;
 		rType = 0;
 	};
 	4D7C23D01162F4B900F1C8D1 /* PBXTextBookmark */ = {
@@ -616,7 +625,7 @@
 		fRef = 28D7ACF70DDB3853001CB0EB /* AlphaWolfSquadViewController.m */;
 		name = "AlphaWolfSquadViewController.m: 37";
 		rLen = 0;
-		rLoc = 1170;
+		rLoc = 1212;
 		rType = 0;
 		vrLen = 516;
 		vrLoc = 920;
@@ -626,7 +635,7 @@
 		fRef = 28D7ACF70DDB3853001CB0EB /* AlphaWolfSquadViewController.m */;
 		name = "AlphaWolfSquadViewController.m: 37";
 		rLen = 0;
-		rLoc = 1170;
+		rLoc = 1212;
 		rType = 0;
 		vrLen = 516;
 		vrLoc = 920;
@@ -662,7 +671,7 @@
 		isa = PBXTextBookmark;
 		fRef = 28D7ACF70DDB3853001CB0EB /* AlphaWolfSquadViewController.m */;
 		rLen = 0;
-		rLoc = 240;
+		rLoc = 262;
 		rType = 1;
 	};
 	4D7C23D71162F4F200F1C8D1 /* PBXTextBookmark */ = {
@@ -670,7 +679,7 @@
 		fRef = 28D7ACF70DDB3853001CB0EB /* AlphaWolfSquadViewController.m */;
 		name = "AlphaWolfSquadViewController.m: 227";
 		rLen = 0;
-		rLoc = 7411;
+		rLoc = 8212;
 		rType = 0;
 		vrLen = 542;
 		vrLoc = 6640;
@@ -754,7 +763,7 @@
 		fRef = 28D7ACF70DDB3853001CB0EB /* AlphaWolfSquadViewController.m */;
 		name = "AlphaWolfSquadViewController.m: 54";
 		rLen = 0;
-		rLoc = 1698;
+		rLoc = 2376;
 		rType = 0;
 		vrLen = 374;
 		vrLoc = 1462;
@@ -764,7 +773,7 @@
 		fRef = 28D7ACF70DDB3853001CB0EB /* AlphaWolfSquadViewController.m */;
 		name = "AlphaWolfSquadViewController.m: 54";
 		rLen = 0;
-		rLoc = 1698;
+		rLoc = 2376;
 		rType = 0;
 		vrLen = 376;
 		vrLoc = 1460;
@@ -774,7 +783,7 @@
 		fRef = 28D7ACF70DDB3853001CB0EB /* AlphaWolfSquadViewController.m */;
 		name = "AlphaWolfSquadViewController.m: 54";
 		rLen = 0;
-		rLoc = 1698;
+		rLoc = 2376;
 		rType = 0;
 		vrLen = 374;
 		vrLoc = 1462;
@@ -784,7 +793,7 @@
 		fRef = 28D7ACF70DDB3853001CB0EB /* AlphaWolfSquadViewController.m */;
 		name = "AlphaWolfSquadViewController.m: 50";
 		rLen = 0;
-		rLoc = 1584;
+		rLoc = 1660;
 		rType = 0;
 		vrLen = 402;
 		vrLoc = 1462;
@@ -794,7 +803,7 @@
 		fRef = 28D7ACF70DDB3853001CB0EB /* AlphaWolfSquadViewController.m */;
 		name = "AlphaWolfSquadViewController.m: 50";
 		rLen = 0;
-		rLoc = 1584;
+		rLoc = 1660;
 		rType = 0;
 		vrLen = 402;
 		vrLoc = 1462;
@@ -804,7 +813,7 @@
 		fRef = 28D7ACF70DDB3853001CB0EB /* AlphaWolfSquadViewController.m */;
 		name = "AlphaWolfSquadViewController.m: 50";
 		rLen = 0;
-		rLoc = 1584;
+		rLoc = 1660;
 		rType = 0;
 		vrLen = 356;
 		vrLoc = 1462;
@@ -821,6 +830,7 @@
 	};
 	4D7C24161162FAFC00F1C8D1 /* asm objc_msgSend  0x922e1ec0 */ = {
 		isa = PBXFileReference;
+		lastKnownFileType = text;
 		path = "asm objc_msgSend  0x922e1ec0";
 		sourceTree = "<group>";
 	};
@@ -846,7 +856,7 @@
 		fRef = 28D7ACF70DDB3853001CB0EB /* AlphaWolfSquadViewController.m */;
 		name = "AlphaWolfSquadViewController.m: 50";
 		rLen = 0;
-		rLoc = 1584;
+		rLoc = 1660;
 		rType = 0;
 		vrLen = 402;
 		vrLoc = 1462;
@@ -989,7 +999,7 @@
 		fRef = 28D7ACF70DDB3853001CB0EB /* AlphaWolfSquadViewController.m */;
 		name = "AlphaWolfSquadViewController.m: 45";
 		rLen = 0;
-		rLoc = 1431;
+		rLoc = 1473;
 		rType = 0;
 		vrLen = 578;
 		vrLoc = 1061;
@@ -1121,6 +1131,94 @@
 		vrLen = 293;
 		vrLoc = 554;
 	};
+	4D7C246A1162FF7200F1C8D1 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 28D7ACF70DDB3853001CB0EB /* AlphaWolfSquadViewController.m */;
+		name = "AlphaWolfSquadViewController.m: 45";
+		rLen = 0;
+		rLoc = 1473;
+		rType = 0;
+		vrLen = 578;
+		vrLoc = 1061;
+	};
+	4D7C246B1162FF7200F1C8D1 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 28D7ACF70DDB3853001CB0EB /* AlphaWolfSquadViewController.m */;
+		name = "AlphaWolfSquadViewController.m: 56";
+		rLen = 0;
+		rLoc = 2276;
+		rType = 0;
+		vrLen = 644;
+		vrLoc = 1432;
+	};
+	4D7C246F1162FFD400F1C8D1 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 28D7ACF70DDB3853001CB0EB /* AlphaWolfSquadViewController.m */;
+		name = "AlphaWolfSquadViewController.m: 57";
+		rLen = 0;
+		rLoc = 2277;
+		rType = 0;
+		vrLen = 644;
+		vrLoc = 1464;
+	};
+	4D7C24731163020800F1C8D1 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 28D7ACF70DDB3853001CB0EB /* AlphaWolfSquadViewController.m */;
+		name = "AlphaWolfSquadViewController.m: 66";
+		rLen = 0;
+		rLoc = 2450;
+		rType = 0;
+		vrLen = 696;
+		vrLoc = 1505;
+	};
+	4D7C247B1163021F00F1C8D1 /* XCBuildMessageTextBookmark */ = {
+		isa = PBXTextBookmark;
+		comments = "'OverlayController' may not respond to '-removeFromSuperview'";
+		fRef = 28D7ACF70DDB3853001CB0EB /* AlphaWolfSquadViewController.m */;
+		fallbackIsa = XCBuildMessageTextBookmark;
+		rLen = 1;
+		rLoc = 65;
+		rType = 1;
+	};
+	4D7C247C1163021F00F1C8D1 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 28D7ACF70DDB3853001CB0EB /* AlphaWolfSquadViewController.m */;
+		name = "AlphaWolfSquadViewController.m: 56";
+		rLen = 0;
+		rLoc = 2062;
+		rType = 0;
+		vrLen = 577;
+		vrLoc = 1639;
+	};
+	4D7C24801163023800F1C8D1 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 28D7ACF70DDB3853001CB0EB /* AlphaWolfSquadViewController.m */;
+		name = "AlphaWolfSquadViewController.m: 64";
+		rLen = 0;
+		rLoc = 2277;
+		rType = 0;
+		vrLen = 533;
+		vrLoc = 1728;
+	};
+	4D7C2486116302B500F1C8D1 /* XCBuildMessageTextBookmark */ = {
+		isa = PBXTextBookmark;
+		comments = "'activeOverlay' undeclared (first use in this function)";
+		fRef = 28D7ACF70DDB3853001CB0EB /* AlphaWolfSquadViewController.m */;
+		fallbackIsa = XCBuildMessageTextBookmark;
+		rLen = 1;
+		rLoc = 59;
+		rType = 1;
+	};
+	4D7C2487116302B500F1C8D1 /* PBXTextBookmark */ = {
+		isa = PBXTextBookmark;
+		fRef = 28D7ACF70DDB3853001CB0EB /* AlphaWolfSquadViewController.m */;
+		name = "AlphaWolfSquadViewController.m: 60";
+		rLen = 0;
+		rLoc = 1932;
+		rType = 0;
+		vrLen = 502;
+		vrLoc = 1546;
+	};
 	4D90186F11126298009A47FA /* SettingsController.h */ = {
 		uiCtxt = {
 			sepNavIntBoundsRect = "{{0, 0}, {925, 641}}";
@@ -1183,16 +1281,16 @@
 	};
 	C86D2BE8103DCD9D00EE8AF7 /* AlphaWolfView.h */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1219, 2900}}";
-			sepNavSelRange = "{213, 13}";
-			sepNavVisRange = "{339, 279}";
+			sepNavIntBoundsRect = "{{0, 0}, {925, 2900}}";
+			sepNavSelRange = "{164, 6}";
+			sepNavVisRange = "{0, 549}";
 		};
 	};
 	C86D2BE9103DCD9D00EE8AF7 /* AlphaWolfView.m */ = {
 		uiCtxt = {
-			sepNavIntBoundsRect = "{{0, 0}, {1286.61, 17525}}";
-			sepNavSelRange = "{749, 0}";
-			sepNavVisRange = "{554, 293}";
+			sepNavIntBoundsRect = "{{0, 0}, {1351.42, 17225}}";
+			sepNavSelRange = "{2353, 0}";
+			sepNavVisRange = "{1769, 948}";
 		};
 	};
 }

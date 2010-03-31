@@ -355,7 +355,7 @@
 								</array>
 							</array>
 							<key>PBXSmartGroupTreeModuleOutlineStateVisibleRectKey</key>
-							<string>{{0, 17}, {272, 660}}</string>
+							<string>{{0, 24}, {272, 660}}</string>
 						</dict>
 						<key>PBXTopSmartGroupGIDs</key>
 						<array/>
@@ -390,7 +390,7 @@
 								<key>PBXProjectModuleGUID</key>
 								<string>4D15F8111062EACE00E199B8</string>
 								<key>PBXProjectModuleLabel</key>
-								<string>AlphaWolfView.m</string>
+								<string>AlphaWolfSquadViewController.m</string>
 								<key>PBXSplitModuleInNavigatorKey</key>
 								<dict>
 									<key>Split0</key>
@@ -398,11 +398,11 @@
 										<key>PBXProjectModuleGUID</key>
 										<string>4D15F8121062EACE00E199B8</string>
 										<key>PBXProjectModuleLabel</key>
-										<string>AlphaWolfView.m</string>
+										<string>AlphaWolfSquadViewController.m</string>
 										<key>_historyCapacity</key>
 										<integer>0</integer>
 										<key>bookmark</key>
-										<string>4D7C24661162FF1600F1C8D1</string>
+										<string>4D7C2487116302B500F1C8D1</string>
 										<key>history</key>
 										<array>
 											<string>4DC9EFEC1123C7CD00F97B5A</string>
@@ -414,9 +414,7 @@
 											<string>4D7C24021162FA3100F1C8D1</string>
 											<string>4D7C24031162FA3100F1C8D1</string>
 											<string>4D7C24041162FA3100F1C8D1</string>
-											<string>4D7C24431162FDEC00F1C8D1</string>
-											<string>4D7C24441162FDEC00F1C8D1</string>
-											<string>4D7C24611162FED700F1C8D1</string>
+											<string>4D7C2486116302B500F1C8D1</string>
 										</array>
 									</dict>
 									<key>SplitCount</key>
@@ -471,9 +469,7 @@
 									<key>GeometryConfiguration</key>
 									<dict>
 										<key>Frame</key>
-										<string>{{10, 27}, {986, 175}}</string>
-										<key>RubberWindowFrame</key>
-										<string>0 59 1280 719 0 0 1280 778 </string>
+										<string>{{10, 27}, {986, -27}}</string>
 									</dict>
 									<key>Module</key>
 									<string>PBXProjectFindModule</string>
@@ -512,6 +508,8 @@
 									<dict>
 										<key>Frame</key>
 										<string>{{10, 27}, {986, 175}}</string>
+										<key>RubberWindowFrame</key>
+										<string>0 59 1280 719 0 0 1280 778 </string>
 									</dict>
 									<key>Module</key>
 									<string>PBXBuildResultsModule</string>
@@ -715,7 +713,7 @@
 	<key>StatusbarIsVisible</key>
 	<true/>
 	<key>TimeStamp</key>
-	<real>291700502.78865701</real>
+	<real>291701429.79901803</real>
 	<key>ToolbarConfigUserDefaultsMinorVersion</key>
 	<string>2</string>
 	<key>ToolbarDisplayMode</key>
@@ -732,7 +730,7 @@
 	<integer>5</integer>
 	<key>WindowOrderList</key>
 	<array>
-		<string>4D7C24671162FF1600F1C8D1</string>
+		<string>4D7C2488116302B500F1C8D1</string>
 		<string>4D7C23BB1162F1DE00F1C8D1</string>
 		<string>4D7C23AD1162EE8800F1C8D1</string>
 		<string>/Users/mark/projects/bordertownlabs/CONTRACTS/AlphaWolfSquadron/High5s_steffin/AlphaWolfSquad.xcodeproj</string>
