@@ -3,6 +3,7 @@
 #import "AlphaWolfView.h"
 #import <UIKit/UIKit.h>
 #import <QuartzCore/QuartzCore.h>
+#import "AlphaWolfSquadViewController.h"
 
 @implementation AlphaWolfView
 
@@ -28,12 +29,14 @@
 @synthesize startButton;
 
 @synthesize controller;
+@synthesize beginButtonClicked;
 
 - (id)initWithFrame:(CGRect)frame {
 	
 	if (self = [super initWithFrame:frame]) {
+        beginButtonClicked = NO;
 		[self setUpInitView];
-    [self setupAudio];
+        [self setupAudio];
 	}
 	return self;
 }
@@ -56,7 +59,7 @@
 }
 
 - (BOOL)canBecomeFirstResponder {  
-  return YES; 
+    return YES; 
 } 
 
 - (void)buildInteraction{
@@ -66,9 +69,14 @@
 	[self createBottom];
 	
 	[NSTimer scheduledTimerWithTimeInterval:1 target:self selector:@selector(animateHand) userInfo:nil repeats:NO];
-//	[NSTimer scheduledTimerWithTimeInterval:1 target:self selector:@selector(createSettings) userInfo:nil repeats:NO];	
+    //	[NSTimer scheduledTimerWithTimeInterval:1 target:self selector:@selector(createSettings) userInfo:nil repeats:NO];	
 	[NSTimer scheduledTimerWithTimeInterval:1 target:self selector:@selector(createHelp) userInfo:nil repeats:NO];	
+	[NSTimer scheduledTimerWithTimeInterval:2.5 target:self selector:@selector(showWelcomeScreen) userInfo:nil repeats:NO];
+}
 
+- (void)showWelcomeScreen {
+    [controller showWelcomeScreen];
+    controller.slapview.userInteractionEnabled = YES;
 }
 
 //-----------ITWEEN---------------------------------------------------------------------------------
@@ -101,12 +109,12 @@
 		CGFloat originalOffsetX = fromX - midX;
 		CGFloat originalOffsetY = fromY - midY;
 		CGFloat offsetDivider = 4.0;
-	
+        
 		BOOL stopBouncing = NO;
-	
+        
 		CGPathMoveToPoint(thePath, NULL,fromX, fromY);
 		CGPathAddLineToPoint(thePath, NULL, midX, midY);
-	
+        
 		while (stopBouncing != YES) {
 			CGPathAddLineToPoint(thePath, NULL, midX + originalOffsetX/offsetDivider, midY + originalOffsetY/offsetDivider);
 			CGPathAddLineToPoint(thePath, NULL, midX, midY);
@@ -120,9 +128,9 @@
 		
 		CGPathMoveToPoint(thePath, NULL, fromX, fromY);
 		CGPathAddLineToPoint(thePath, NULL, toX, toY);
-	
+        
 	}
-		
+    
 	bounceAnimation.path = thePath;
 	bounceAnimation.duration = animationDuration;
 	CGPathRelease(thePath);
@@ -148,7 +156,7 @@
 		theGroup.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseIn];
 	}else{
 		theGroup.timingFunction = [CAMediaTimingFunction functionWithName:kCAMediaTimingFunctionEaseOut];
-
+        
 	}
 	
 	theGroup.animations = [NSArray arrayWithObjects:bounceAnimation, transformAnimation,  nil];
@@ -158,7 +166,7 @@
 	// End of animation state
 	welcomeLayer.opacity = toO;
 	welcomeLayer.position = CGPointMake(toX,toY);
-
+    
 	
 }
 -(void)pulse:(id)MC toScale:(float)toScale fromScale:(float)fromScale time:(float)time {
@@ -182,7 +190,7 @@
 				 imagePressed:(UIImage *)imagePressed
 				darkTextColor:(BOOL)darkTextColor
 {	
-  UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
+    UIButton *button = [UIButton buttonWithType:UIButtonTypeCustom];
 	button.frame = frame;
 	
 	button.contentVerticalAlignment = UIControlContentVerticalAlignmentCenter;
@@ -222,7 +230,7 @@
 										   image:buttonBackground
 									imagePressed:buttonBackgroundPressed
 								   darkTextColor:YES];
-	
+    
 	[self addSubview:beginButton];
 	
 	[self bringSubviewToFront:beginButton];
@@ -403,7 +411,7 @@
 	[hand setImage:[UIImage imageNamed:@"screen2_hand.png"]];
 	hand.center = CGPointMake(160,770);
 	[self addSubview:hand];
-			
+    
 }
 - (void)animateHand{
 	[self ITween:hand.layer
@@ -419,7 +427,7 @@
 		  bounce:FALSE
 			ease:@"in"
 	 ];	
-
+    
 }
 - (void)createTop{	
 	top = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, 320, 92)];
@@ -464,19 +472,19 @@
 	UIImage *buttonBackgroundPressed = [UIImage imageNamed:@"screen2_settingsOver.png"];
 	
 	CGRect frame = CGRectMake(-68, 30, 134, 26);
-
+    
 	settingsButton = [AlphaWolfView buttonWithTitle:@" "
-											 tag:@"settingsButton"
-										  target:self.controller		
-										selector:@selector(clickSettings)
-										   frame:frame
-										   image:buttonBackground
-									imagePressed:buttonBackgroundPressed
-								   darkTextColor:YES];
+                                                tag:@"settingsButton"
+                                             target:self.controller		
+                                           selector:@selector(clickSettings)
+                                              frame:frame
+                                              image:buttonBackground
+                                       imagePressed:buttonBackgroundPressed
+                                      darkTextColor:YES];
 	
-//  settingsButton.hidden = YES;
+    //  settingsButton.hidden = YES;
 	[self addSubview:settingsButton];
-		
+    
 	[self ITween:settingsButton.layer
 		instance:@"settingsB"
 			 toX:68
@@ -498,13 +506,13 @@
 	CGRect frame = CGRectMake(360, 30, 79, 23);
 	
 	helpButton = [AlphaWolfView buttonWithTitle:@" "
-												tag:@"helpButton"
-											 target:self.controller	
-										   selector:@selector(clickHelp)
-											  frame:frame
-											  image:buttonBackground
-									   imagePressed:buttonBackgroundPressed
-									  darkTextColor:YES];
+                                            tag:@"helpButton"
+                                         target:self.controller	
+                                       selector:@selector(clickHelp)
+                                          frame:frame
+                                          image:buttonBackground
+                                   imagePressed:buttonBackgroundPressed
+                                  darkTextColor:YES];
 	
 	[self addSubview:helpButton];
 	
@@ -530,6 +538,10 @@
 
 //-------------------- ACTIONS --------------------------------------------------------
 -(void)clickBegin{
+    if (beginButtonClicked)
+        return;
+    beginButtonClicked = YES;
+    
 	[self pulse:beginButton toScale:1.05 fromScale:1 time:0.2];
 	[self tearDownScreen1];
 	
@@ -541,19 +553,19 @@
 }
 
 - (void)DropThatShit{
-		[self ITween:beginButton.layer
-			instance:@"dropIt1"
-				 toX:160 
-				 toY:530 
-				 toO:0 
-			   fromX:beginButton.center.x 
-			   fromY:beginButton.center.y 
-			   fromO:1
-			   timeA:0.3
-			   timeO:0.3
-			  bounce:FALSE
-				ease:@"out"
-	];
+    [self ITween:beginButton.layer
+        instance:@"dropIt1"
+             toX:160 
+             toY:530 
+             toO:0 
+           fromX:beginButton.center.x 
+           fromY:beginButton.center.y 
+           fromO:1
+           timeA:0.3
+           timeO:0.3
+          bounce:FALSE
+            ease:@"out"
+     ];
 }
 - (void)DropThatShit2{
 	[self ITween:mike.layer instance:@"mikeHead" toX:380  toY:210 toO:1  fromX:mike.center.x  fromY:mike.center.y fromO:1  timeA:1  timeO:1 bounce:FALSE ease:@"out" ];
@@ -569,12 +581,12 @@
 - (void)animationDidStop:(CAAnimation *)theGroup finished:(BOOL)flag {
 	//Animation delegate method called when the animation's finished:
 	id instance =[theGroup valueForKey:@"ITweenGroup"];
-		if([instance isEqualToString:@"scottArm"]){
-			//UIAlertView *alert = [[UIAlertView alloc] initWithTitle:nil message:instance delegate:self cancelButtonTitle:@"sweet!" otherButtonTitles:nil];
-			//[alert show];
-			//[alert release];
-			//[self clapper];
-		}
+    if([instance isEqualToString:@"scottArm"]){
+        //UIAlertView *alert = [[UIAlertView alloc] initWithTitle:nil message:instance delegate:self cancelButtonTitle:@"sweet!" otherButtonTitles:nil];
+        //[alert show];
+        //[alert release];
+        //[self clapper];
+    }
 	if([instance isEqualToString:@"starKiller"]){
 		[self killScreen1];
 		[self buildInteraction];
@@ -593,9 +605,9 @@
 }
 
 -(void)clapper {
-
+    
 	//[self soundObject:@"clap" type:@"wav"];
-  //AudioServicesPlaySystemSound(pmph);
+    //AudioServicesPlaySystemSound(pmph);
 	AudioServicesPlayAlertSound(clapSound);
 }
 -(void)soundObject:(NSString *)file type:(NSString *)type {
@@ -622,7 +634,7 @@
 	[starL removeFromSuperview];
 	[starR removeFromSuperview];
 	[header removeFromSuperview];
-		
+    
 }
 
 -(void)killScreen2{	
@@ -630,7 +642,7 @@
 
 - (void)dealloc {
 	[self killScreen1];
-
+    
 	[beginButton release];
 	[scottArm release];
 	[scott release];
@@ -639,29 +651,29 @@
 	[starL release];
 	[starR release];
 	[header release];
-  
-  [controller release];
-
+    
+    [controller release];
+    
 	[super dealloc];	
 }
 
 
 /*
-- (void)motionBegan:(UIEventSubtype)motion withEvent:(UIEvent *)event {
-  NSLog(@"[AWV] motionBegan");
-	[super motionBegan: motion withEvent: event];
-	if (motion == UIEventSubtypeMotionShake) {
-    NSLog(@"shake!!!!!");
-  }
-}
-
-- (void)motionCancelled:(UIEventSubtype)motion withEvent:(UIEvent *)event {
-	[super motionCancelled: motion withEvent: event];
-}
-
-- (void)motionEnded:(UIEventSubtype)motion withEvent:(UIEvent *)event {
-	[super motionEnded: motion withEvent: event];
-}  
-*/
+ - (void)motionBegan:(UIEventSubtype)motion withEvent:(UIEvent *)event {
+ NSLog(@"[AWV] motionBegan");
+ [super motionBegan: motion withEvent: event];
+ if (motion == UIEventSubtypeMotionShake) {
+ NSLog(@"shake!!!!!");
+ }
+ }
+ 
+ - (void)motionCancelled:(UIEventSubtype)motion withEvent:(UIEvent *)event {
+ [super motionCancelled: motion withEvent: event];
+ }
+ 
+ - (void)motionEnded:(UIEventSubtype)motion withEvent:(UIEvent *)event {
+ [super motionEnded: motion withEvent: event];
+ }  
+ */
 
 @end

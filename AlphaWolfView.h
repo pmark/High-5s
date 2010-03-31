@@ -26,9 +26,10 @@
 	UIButton *settingsButton;
 	UIButton *helpButton;
 	UIButton *startButton;
-
-  AlphaWolfSquadViewController *controller;
-	SystemSoundID clapSound;    
+    
+    AlphaWolfSquadViewController *controller;
+	SystemSoundID clapSound;  
+    BOOL beginButtonClicked;
 }
 // screen 1
 @property (nonatomic, retain)UIButton *beginButton;
@@ -50,7 +51,7 @@
 @property (nonatomic, retain)UIImageView *burst;
 @property (nonatomic, retain)UIImageView *instruction;
 @property (nonatomic, retain)AlphaWolfSquadViewController *controller;
-
+@property (nonatomic, assign)BOOL beginButtonClicked;
 
 
 // create object
@@ -86,9 +87,9 @@
 
 // animation classes
 - (void)pulse:(id)MC 
-	 toScale:(float)toScale 
-   fromScale:(float)fromScale 
-		time:(float)time;
+      toScale:(float)toScale 
+    fromScale:(float)fromScale 
+         time:(float)time;
 - (void)ITween:(id)MC 
 	  instance:(NSString *)instance
 		   toX:(float)toX 

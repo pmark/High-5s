@@ -10,6 +10,7 @@
 #import "AlphaWolfSquadViewController.h"
 #import "SettingsController.h"
 #import "HelpController.h"
+#import "WelcomeController.h"
 
 #define SESSION_END_DELAY_SEC 1.5
 #define CC_MD5_DIGEST_LENGTH 16
@@ -20,28 +21,40 @@
 
 @implementation AlphaWolfSquadViewController
 
-@synthesize alphaview, slapview, sessionEndTimer, congrats;
+@synthesize alphaview, slapview, sessionEndTimer, congrats; 
+//@synthesize overlay;
 
 - (void)dealloc {
-  [alphaview release];
-  [slapview release];
-  [sessionEndTimer release];
-  [congrats release];
-  [super dealloc];
+    [alphaview release];
+    [slapview release];
+    [sessionEndTimer release];
+    [congrats release], congrats = nil;
+    [super dealloc];
 }
 
 - (void)viewDidLoad {
-  [super viewDidLoad];
+    [super viewDidLoad];
 	AlphaWolfView *aBegin = [[AlphaWolfView alloc] init];
+    aBegin.controller = self;
 	self.alphaview = aBegin;
 	alphaview.frame = CGRectMake(0,0,320,480);
 	[aBegin release];
 	[self.view addSubview:alphaview];
 	
-  self.slapview = [[[SlapView alloc] initWithFrame:CGRectMake(0,90,320,326)] autorelease];
-  slapview.controller = self;
-  //slapview.hidden = YES;
-  [alphaview addSubview:slapview];  
+    self.slapview = [[[SlapView alloc] initWithFrame:CGRectMake(0,90,320,326)] autorelease];
+    slapview.userInteractionEnabled = NO;
+    slapview.controller = self;
+    [alphaview addSubview:slapview]; 
+}
+
+-(void)openOverlay:(OverlayController*)newOverlay {
+    newOverlay.host = self;
+    [self.view addSubview:newOverlay.view];        
+}
+
+-(void)closeOverlay:(OverlayController*)activeOverlay {
+	[activeOverlay.view removeFromSuperview];
+    [activeOverlay release];
 }
 
 -(void)acceleratedInX:(float)xx Y:(float)yy Z:(float)zz{
@@ -52,7 +65,7 @@
 
 - (void)didReceiveMemoryWarning {
 	// Releases the view if it doesn't have a superview.
-  [super didReceiveMemoryWarning];
+    [super didReceiveMemoryWarning];
 	
 	// Release any cached data, images, etc that aren't in use.
 }
@@ -63,25 +76,25 @@
 }
 
 - (void)viewWillAppear:(BOOL)animated {
-  [super viewWillAppear:animated];
-  NSLog(@"[awsvc] viewWillAppear");
-  [self.alphaview becomeFirstResponder]; // For shake gesture.
+    [super viewWillAppear:animated];
+    NSLog(@"[awsvc] viewWillAppear");
+    [self.alphaview becomeFirstResponder]; // For shake gesture.
 }
 
 
 - (void)viewWillDisappear:(BOOL)animated {
-  NSLog(@"[awsvc] viewWillDisappear");
-  [super viewWillDisappear:animated];
-  [self.alphaview resignFirstResponder]; 
+    NSLog(@"[awsvc] viewWillDisappear");
+    [super viewWillDisappear:animated];
+    [self.alphaview resignFirstResponder]; 
 } 
 
 #pragma mark Mail
 + (void) alertWithTitle:(NSString*)title message:(NSString*)message {
 	UIAlertView *alert = [[UIAlertView alloc] initWithTitle:title
-																									message:message
-																								 delegate:nil 
-                                        cancelButtonTitle:@"OK" 
-                                        otherButtonTitles:nil, nil];
+                                                    message:message
+                                                   delegate:nil 
+                                          cancelButtonTitle:@"OK" 
+                                          otherButtonTitles:nil, nil];
 	[alert show];
 	[alert release];				
 }
@@ -90,11 +103,11 @@
 - (void) showEmailModalView:(NSString*)title emailBody:(NSString*)body recipientList:(NSArray*)recipients {
 	MFMailComposeViewController *picker = [[MFMailComposeViewController alloc] init];
 	picker.mailComposeDelegate = self; 
-
+    
 	if (recipients != nil) {
-	  [picker setToRecipients:recipients];	
+        [picker setToRecipients:recipients];	
 	}
-  
+    
 	[picker setSubject:title];
 	[picker setMessageBody:body isHTML:YES]; 	
 	picker.navigationBar.barStyle = UIBarStyleBlack; 
@@ -120,12 +133,12 @@
 			break;
 		default:
 		{
-      [AlphaWolfSquadViewController alertWithTitle:@"Email failed" message:@"Sorry, but this email could not be sent."];
+            [AlphaWolfSquadViewController alertWithTitle:@"Email failed" message:@"Sorry, but this email could not be sent."];
 		}
-	 
-	  break;
+            
+            break;
 	}
-																																																								 
+    
 	[self dismissModalViewControllerAnimated:YES];
 }
 
@@ -135,8 +148,8 @@
 - (void)motionBegan:(UIEventSubtype)motion withEvent:(UIEvent *)event {
 	[super motionBegan: motion withEvent: event];
 	if (motion == UIEventSubtypeMotionShake) {
-    [self shakeDetected];
-  }
+        [self shakeDetected];
+    }
 }
 
 - (void)motionCancelled:(UIEventSubtype)motion withEvent:(UIEvent *)event {
@@ -148,53 +161,53 @@
 }  
 
 - (void)clickSettings {
-  SettingsController *c = [[[SettingsController alloc] initWithNibName:@"Settings" bundle:nil] autorelease];
-  [self presentModalViewController:c animated:YES];
+    SettingsController *c = [[[SettingsController alloc] initWithNibName:@"Settings" bundle:nil] autorelease];
+    [self presentModalViewController:c animated:YES];
 }
 
-- (void)clickHelp{
-  HelpController *c = [[[HelpController alloc] initWithNibName:@"HelpController" bundle:nil] autorelease];
-  [self presentModalViewController:c animated:YES];
+- (void)clickHelp {
+    HelpController *c = [[[HelpController alloc] initWithNibName:@"HelpController" bundle:nil] autorelease];
+    [self presentModalViewController:c animated:YES];
 }
 
 #pragma mark -
 
 - (void)handleSlap {
-  congrats.hidden = YES;
-  [alphaview clapper];
-
-  AudioServicesPlayAlertSound(kSystemSoundID_Vibrate);
-
-  [self.slapview showSlapEffect];
-  [self.slapview incrementCount];
-  
-  // start timer
-  if (sessionEndTimer) 
-    [sessionEndTimer invalidate];
+    congrats.hidden = YES;
+    [alphaview clapper];
+    
+    AudioServicesPlayAlertSound(kSystemSoundID_Vibrate);
+    
+    [self.slapview showSlapEffect];
+    [self.slapview incrementCount];
+    
+    // start timer
+    if (sessionEndTimer) 
+        [sessionEndTimer invalidate];
     
 	self.sessionEndTimer = [NSTimer scheduledTimerWithTimeInterval:SESSION_END_DELAY_SEC target:self selector:@selector(askToEndSession) userInfo:nil repeats:NO];  
 }
 
 - (void)askToEndSession {
-  congrats.hidden = NO;
-  [self.view bringSubviewToFront:congrats];
+    congrats.hidden = NO;
+    [self.view bringSubviewToFront:congrats];
 }
 
 - (void)shakeDetected {
-  NSLog(@"shake!!!!!");
-  [self handleSlap];
+    NSLog(@"shake!!!!!");
+    [self handleSlap];
 }
 
 - (IBAction)tryAgain {
-  congrats.hidden = YES;
-  [slapview reset];
+    congrats.hidden = YES;
+    [slapview reset];
 }
 
 - (IBAction)sendBatch {
-  //NSString *link = [NSString stringWithFormat:@"http://www.havesomehigh5s.com/staging/includes/sendStuff_iPhone.php?"];
-  //NSString *link = @"http://www.havesomehigh5s.com/staging/index.php?id=26";
-  NSString *link = [self batchURL];
-  [self showEmailModalView:MAIL_SUBJECT emailBody:[NSString stringWithFormat:MAIL_BODY_HTML, link] recipientList:nil];
+    //NSString *link = [NSString stringWithFormat:@"http://www.havesomehigh5s.com/staging/includes/sendStuff_iPhone.php?"];
+    //NSString *link = @"http://www.havesomehigh5s.com/staging/index.php?id=26";
+    NSString *link = [self batchURL];
+    [self showEmailModalView:MAIL_SUBJECT emailBody:[NSString stringWithFormat:MAIL_BODY_HTML, link] recipientList:nil];
 }
 
 #pragma mark -
@@ -202,25 +215,29 @@
 	const char *src = [[source lowercaseString] UTF8String];
 	unsigned char result[CC_MD5_DIGEST_LENGTH];
 	CC_MD5(src, strlen(src), result);
-  
-  NSString *ret = [[[NSString alloc] initWithFormat:@"%02X%02X%02X%02X%02X%02X%02X%02X%02X%02X%02X%02X%02X%02X%02X%02X", 
-                    result[0], result[1], result[2], result[3],
-                    result[4], result[5], result[6], result[7],
-                    result[8], result[9], result[10], result[11],
-                    result[12], result[13], result[14], result[15]
-                    ] autorelease];
-  
-  return ret;
+    
+    NSString *ret = [[[NSString alloc] initWithFormat:@"%02X%02X%02X%02X%02X%02X%02X%02X%02X%02X%02X%02X%02X%02X%02X%02X", 
+                      result[0], result[1], result[2], result[3],
+                      result[4], result[5], result[6], result[7],
+                      result[8], result[9], result[10], result[11],
+                      result[12], result[13], result[14], result[15]
+                      ] autorelease];
+    
+    return ret;
 }
 
 - (NSString*)batchURL {
-  NSString *baseURL = @"http://www.havesomehigh5s.com/staging/index.php?batch=%@";
-  NSTimeInterval millis = [[NSDate date] timeIntervalSince1970];
-  NSString *tstamp = [NSString stringWithFormat:@"%f", millis];
-  NSString *token = [AlphaWolfSquadViewController uniqueIDFromString:tstamp];
-  return [NSString stringWithFormat:baseURL, token];
+    NSString *baseURL = @"http://www.havesomehigh5s.com/staging/index.php?batch=%@";
+    NSTimeInterval millis = [[NSDate date] timeIntervalSince1970];
+    NSString *tstamp = [NSString stringWithFormat:@"%f", millis];
+    NSString *token = [AlphaWolfSquadViewController uniqueIDFromString:tstamp];
+    return [NSString stringWithFormat:baseURL, token];
 }
 
 #pragma mark -
+- (void) showWelcomeScreen {    
+    WelcomeController *welcomeController = [[WelcomeController alloc] init];
+    [self openOverlay:welcomeController];
+}
 
 @end
