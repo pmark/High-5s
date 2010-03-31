@@ -18,12 +18,14 @@
     SlapView *slapview;
     NSTimer *sessionEndTimer;
     IBOutlet UIView *congrats;
+    IBOutlet UILabel *congratsText;
 }
 
 @property (nonatomic, retain) AlphaWolfView *alphaview;
 @property (nonatomic, retain) SlapView *slapview;
 @property (nonatomic, retain) NSTimer *sessionEndTimer;
 @property (nonatomic, retain) IBOutlet UIView *congrats;
+@property (nonatomic, retain) IBOutlet UILabel *congratsText;
 
 - (void)viewDidLoad;
 - (void)acceleratedInX:(float)xx Y:(float)yy Z:(float)zz;

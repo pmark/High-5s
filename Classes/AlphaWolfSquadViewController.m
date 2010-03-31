@@ -21,16 +21,18 @@
 #define MAIL_SUBJECT @"Have some high 5s"
 #define MAIL_BODY @"Hello friend,\n\nI'm sending you some High 5s. Click the link below to view these puppies on the internets.\n   %@\n\n"
 #define MAIL_BODY_HTML @"Hello friend,<br/><br/>\n\nI'm sending you some High 5s. <a href=\"%@\">Click here</a> to view these puppies on the internets.<br/>\n<br/>\n"
+#define CONGRATS_TEXT_FORMAT @"You just completed %i High5%@.  You have skills. Now press \"Send.\" Or \"Try Again\" to redeem yourself."
 
 @implementation AlphaWolfSquadViewController
 
-@synthesize alphaview, slapview, sessionEndTimer, congrats; 
+@synthesize alphaview, slapview, sessionEndTimer, congrats, congratsText; 
 
 - (void)dealloc {
     [alphaview release];
     [slapview release];
     [sessionEndTimer release];
     [congrats release], congrats = nil;
+    [congratsText release], congratsText = nil;
     [super dealloc];
 }
 
@@ -212,6 +214,9 @@
 }
 
 - (void)askToEndSession {
+    congratsText.text = [NSString stringWithFormat:CONGRATS_TEXT_FORMAT, slapview.slapCount, (slapview.slapCount != 1 ? @"s" : @"")];
+    
+    
     congrats.center = CGPointMake(congrats.center.x, congrats.center.y + CONGRATS_OFFSET);
     congrats.alpha = 0.0;
     congrats.hidden = NO;
