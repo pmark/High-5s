@@ -46,7 +46,7 @@
 // UIAccelerometerDelegate method, called when the device accelerates.
 - (void)accelerometer:(UIAccelerometer *)accelerometer didAccelerate:(UIAcceleration *)acceleration {
   // Update the accelerometer graph view
-  [viewController.alphaview acceleratedInX:acceleration.x Y:acceleration.y Z:acceleration.z];
+  [viewController acceleratedInX:acceleration.x Y:acceleration.y Z:acceleration.z];
 }
 
 - (void)clapper {

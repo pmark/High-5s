@@ -12,6 +12,8 @@
 @end
 
 #define RELEASE(object) if(object){[object release]; object=nil;}
+#define DEGREES_TO_RADIANS(__ANGLE__) ((__ANGLE__) / 180.0 * M_PI)
+#define RADIANS_TO_DEGREES(__ANGLE__) ((__ANGLE__) * 180.0 / M_PI)
 
 #define PREF_SAVE_OBJECT(name, value) [[NSUserDefaults standardUserDefaults] setObject:value forKey:name]
 #define PREF_READ_OBJECT(name) [[NSUserDefaults standardUserDefaults] objectForKey:name]

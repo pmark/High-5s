@@ -13,6 +13,7 @@
 #import "SlapView.h"
 #import "OverlayController.h"
 #import "CountdownController.h"
+//#import "SM3DAR.h"
 
 @interface AlphaWolfSquadViewController : UIViewController <SlapDelegate, MFMailComposeViewControllerDelegate> {
 	AlphaWolfView *alphaview;
@@ -21,6 +22,7 @@
     IBOutlet UIView *congrats;
     IBOutlet UILabel *congratsText;
     CountdownController *countdown;
+    //    SM3DAR_Controller *sm3dar;
 }
 
 @property (nonatomic, retain) AlphaWolfView *alphaview;
@@ -29,6 +31,7 @@
 @property (nonatomic, retain) IBOutlet UIView *congrats;
 @property (nonatomic, retain) IBOutlet UILabel *congratsText;
 @property (nonatomic, retain) CountdownController *countdown;
+//@property (nonatomic, assign) SM3DAR_Controller *sm3dar;
 
 - (void)viewDidLoad;
 - (void)acceleratedInX:(float)xx Y:(float)yy Z:(float)zz;
@@ -39,7 +42,8 @@
 - (void)showWelcomeScreen;
 - (void)openOverlay:(OverlayController*)newOverlay;
 - (void)closeOverlay:(OverlayController*)activeOverlay;
-- (void) showConfirmationScreen;
+- (void)showConfirmationScreen;
+-(NSString*)sorno;
 
 @end
 

@@ -21,9 +21,11 @@
 #define CONGRATS_OFFSET 10
 #define CONGRATS_ANIMATION_DURATION 0.33
 
-#define MAIL_SUBJECT @"Have some high 5s"
-#define MAIL_BODY @"Hello friend,\n\nI'm sending you some High 5s. Click the link below to view these puppies on the internets.\n   %@\n\n"
-#define MAIL_BODY_HTML @"Hello friend,<br/><br/>\n\nI'm sending you some High 5s. <a href=\"%@\">Click here</a> to view these puppies on the internets.<br/>\n<br/>\n"
+#define MAIL_SUBJECT @"Have Some High 5s"
+//#define MAIL_BODY @"Hello friend,\n\nI'm sending you some High 5s. Click the link below to view these puppies on the internets.\n   %@\n\n"
+//#define MAIL_BODY_HTML @"Hello friend,<br/><br/>\n\nI'm sending you some High 5s. <a href=\"%@\">Click here</a> to view these puppies on the internets.<br/>\n<br/>\n"
+//#define MAIL_BODY_HTML @"Hello friend,\n\nI'm sending you some High 5s. Click the link below to view these puppies on the internets.\n\n%@"
+#define MAIL_BODY_TEXT @"I am sending you %i High 5%@. I worked hard for them and hope you will appreciate the fruits they bear. Click the link below to witness the awesome spectacle these High 5s offer.\n\n%@"
 #define CONGRATS_TEXT_FORMAT @"You just completed %i High5%@.  You have skills. Now press \"Send.\" Or \"Try Again\" to redeem yourself."
 
 @implementation AlphaWolfSquadViewController
@@ -57,6 +59,9 @@
     
     self.countdown = [[[CountdownController alloc] init] autorelease];
     [self.view addSubview:countdown.view];
+    
+//    self.sm3dar = [SM3DAR_Controller sharedSM3DAR_Controller];
+//    sm3dar.delegate = self;
 }
 
 -(void)openOverlay:(OverlayController*)newOverlay {
@@ -94,9 +99,28 @@
     }
 }
 
+-(NSString*)sorno {
+	return (slapview.slapCount != 1 ? @"s" : @"");    
+}
+
 -(void)acceleratedInX:(float)xx Y:(float)yy Z:(float)zz{
-	// I just pass along the info.
-	[alphaview acceleratedInX:xx Y:yy Z:zz];
+    // which axis is pitch?
+    CGFloat xdeg = RADIANS_TO_DEGREES(xx);
+    CGFloat ydeg = RADIANS_TO_DEGREES(yy);
+    CGFloat zdeg = RADIANS_TO_DEGREES(zz);
+
+    if (xdeg > 90.0) {
+        NSLog(@"x: %f", xdeg);
+    }
+    
+    if (ydeg > 90.0) {
+        NSLog(@"y: %f", ydeg);
+    }
+
+    if (zdeg > 90.0) {
+        NSLog(@"z: %f", zdeg);
+    }
+
 }
 
 
@@ -146,7 +170,7 @@
 	}
     
 	[picker setSubject:title];
-	[picker setMessageBody:body isHTML:YES]; 	
+	[picker setMessageBody:body isHTML:NO]; 	
 	picker.navigationBar.barStyle = UIBarStyleBlack; 
 	picker.navigationBar.translucent = NO;
 	[self presentModalViewController:picker animated:YES];
@@ -229,7 +253,7 @@
 
 - (void)askToEndSession {
     CGPoint screenCenter = CGPointMake(self.view.center.x, self.view.center.y-20);
-    congratsText.text = [NSString stringWithFormat:CONGRATS_TEXT_FORMAT, slapview.slapCount, (slapview.slapCount != 1 ? @"s" : @"")];
+    congratsText.text = [NSString stringWithFormat:CONGRATS_TEXT_FORMAT, slapview.slapCount, [self sorno]];
     
     
     congrats.center = CGPointMake(screenCenter.x, screenCenter.y - CONGRATS_OFFSET);
@@ -272,10 +296,8 @@
 }
 
 - (IBAction)sendBatch {
-    //NSString *link = [NSString stringWithFormat:@"http://www.havesomehigh5s.com/staging/includes/sendStuff_iPhone.php?"];
-    //NSString *link = @"http://www.havesomehigh5s.com/staging/index.php?id=26";
     NSString *link = [self batchURL];
-    [self showEmailModalView:MAIL_SUBJECT emailBody:[NSString stringWithFormat:MAIL_BODY_HTML, link] recipientList:nil];
+    [self showEmailModalView:MAIL_SUBJECT emailBody:[NSString stringWithFormat:MAIL_BODY_TEXT, slapview.slapCount, [self sorno], link] recipientList:nil];
 }
 
 #pragma mark -
@@ -295,11 +317,15 @@
 }
 
 - (NSString*)batchURL {
-    NSString *baseURL = @"http://www.havesomehigh5s.com/staging/index.php?batch=%@";
+    
+    NSString *baseURL = @"http://www.havesomehigh5s.com/staging/index.php?batch=%@&vidNumber=%i";
+    //NSString *baseURL = @"http://www.havesomehigh5s.com/staging/includes/sendStuff_iPhone.php?batch=%@&vidNumber=%i";
     NSTimeInterval millis = [[NSDate date] timeIntervalSince1970];
     NSString *tstamp = [NSString stringWithFormat:@"%f", millis];
     NSString *token = [AlphaWolfSquadViewController uniqueIDFromString:tstamp];
-    return [NSString stringWithFormat:baseURL, token];
+    NSInteger vidNumber = [slapview slapCount];
+    if (vidNumber > 23) vidNumber = 23;
+    return [NSString stringWithFormat:baseURL, token, vidNumber];
 }
 
 #pragma mark -
@@ -317,5 +343,9 @@
     ConfirmationController *c = [[ConfirmationController alloc] init];
     [self openOverlay:c];
 }
+
+//-(void) didChangeOrientationYaw:(CGFloat)yaw pitch:(CGFloat)pitch roll:(CGFloat)roll {
+//    
+//}
 
 @end
