@@ -49,6 +49,7 @@
     [UIView setAnimationsEnabled:NO];
     cancel = YES;
     self.view.hidden = YES;
+    [UIView setAnimationsEnabled:YES];
 }
 
 - (void) beginAnimation {

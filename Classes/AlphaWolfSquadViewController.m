@@ -237,7 +237,7 @@
     congrats.hidden = NO;
     
     [self.view bringSubviewToFront:congrats];
-    
+
     [UIView beginAnimations:nil context:nil];
     [UIView setAnimationDuration:CONGRATS_ANIMATION_DURATION];
     
