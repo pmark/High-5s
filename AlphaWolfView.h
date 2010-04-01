@@ -27,6 +27,7 @@
 	UIButton *helpButton;
 	UIButton *startButton;
     UILabel *globalCounterLabel;
+    UILabel *localCounterLabel;
     
     AlphaWolfSquadViewController *controller;
 	SystemSoundID clapSound;  
@@ -54,6 +55,7 @@
 @property (nonatomic, retain)AlphaWolfSquadViewController *controller;
 @property (nonatomic, assign)BOOL beginButtonClicked;
 @property (nonatomic, retain)UILabel *globalCounterLabel;
+@property (nonatomic, retain)UILabel *localCounterLabel;
 
 // create object
 - (void)createBeginButton;
@@ -105,7 +107,9 @@
 		  ease:(NSString *)ease;
 
 
--(void)setupAudio;
+- (void)setupAudio;
+- (void)updateLocalCounterLabel;
+- (void)updateGlobalCounterLabel;
 
 @end
 

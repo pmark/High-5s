@@ -20,6 +20,7 @@
 @property (nonatomic, retain) IBOutlet AlphaWolfSquadViewController *viewController;
 @property (nonatomic, assign) NSInteger globalCount;
 
+- (void)incrementLocalCountBy:(NSInteger)adder;
 - (void)accelerometer:(UIAccelerometer *)accelerometer didAccelerate:(UIAcceleration *)acceleration;
 - (void)clapper;
 

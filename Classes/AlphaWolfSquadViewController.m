@@ -308,7 +308,10 @@
     [self openOverlay:welcomeController];
 }
 
-- (void) showConfirmationScreen {    
+- (void) showConfirmationScreen {
+    [APP_DELEGATE incrementLocalCountBy:slapview.slapCount];
+    [alphaview updateLocalCounterLabel];
+
     [slapview reset];
     congrats.hidden = YES;
     ConfirmationController *c = [[ConfirmationController alloc] init];

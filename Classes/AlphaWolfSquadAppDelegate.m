@@ -59,5 +59,9 @@
     [super dealloc];
 }
 
-
+- (void)incrementLocalCountBy:(NSInteger)adder {
+    NSNumber *localCount = (NSNumber*)PREF_READ_OBJECT(PREF_KEY_LOCAL_COUNT);
+    NSInteger i = [localCount intValue] + adder;
+    PREF_SAVE_OBJECT(PREF_KEY_LOCAL_COUNT, [NSNumber numberWithInt:i]);
+}
 @end

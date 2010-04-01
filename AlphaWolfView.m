@@ -29,6 +29,7 @@
 @synthesize helpButton;
 @synthesize startButton;
 @synthesize globalCounterLabel;
+@synthesize localCounterLabel;
 
 @synthesize controller;
 @synthesize beginButtonClicked;
@@ -446,6 +447,19 @@
     }
 }
 
+- (void)updateLocalCounterLabel {
+    NSNumber *count = (NSNumber*)PREF_READ_OBJECT(PREF_KEY_LOCAL_COUNT);
+
+    if (count == nil) {
+        count = [NSNumber numberWithInt:0];
+    }
+    
+    NSNumberFormatter *numberFormatter = [[NSNumberFormatter alloc] init];
+    [numberFormatter setNumberStyle: NSNumberFormatterDecimalStyle];
+    localCounterLabel.text = [numberFormatter stringFromNumber:count];
+    [numberFormatter release];        
+}
+
 - (void)createTop{	
 	top = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, 320, 92)];
 	[top setImage:[UIImage imageNamed:@"screen2_header.png"]];
@@ -466,7 +480,6 @@
 	 ];
     
     
-    //UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(180, 142, 153, 27)];
     UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(155, 55, 153, 30)];
     label.font = [UIFont fontWithName:@"Courier" size:20];
     label.textAlignment = UITextAlignmentRight;
@@ -495,7 +508,17 @@
 		  bounce:FALSE
 			ease:@"in"
 	 ];
+
+    UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(110, 5, 120, 30)];
+    label.font = [UIFont fontWithName:@"Courier" size:20];
+    label.textAlignment = UITextAlignmentLeft;
+    [bottom addSubview:label];
+    self.localCounterLabel = label;
+    [label release];
+    
+    [self updateLocalCounterLabel];
 }
+
 - (void)createSettings{	
 	UIImage *buttonBackground = [UIImage imageNamed:@"screen2_settings.png"];
 	UIImage *buttonBackgroundPressed = [UIImage imageNamed:@"screen2_settingsOver.png"];
