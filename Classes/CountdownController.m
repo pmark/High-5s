@@ -39,16 +39,20 @@
 }
 
 - (void) startCountdown {
+    cancel = NO;
 	currentCount = 3;
     self.view.hidden = NO;
     [self beginAnimation];
 }
 
 - (void) cancelCountdown {
+    [UIView setAnimationsEnabled:NO];
+    cancel = YES;
     self.view.hidden = YES;
 }
 
 - (void) beginAnimation {
+    if (cancel) return;
     self.view.hidden = YES;
     NSString *imgName = [NSString stringWithFormat:@"countdown-%i.png", currentCount];
     counterStar.image = [UIImage imageNamed:imgName];
@@ -87,6 +91,7 @@
 }
 
 - (void) animationDidFinish {
+    if (cancel) return;
     [APP_DELEGATE clapper];
 
     if (currentCount > 0) {        
@@ -94,7 +99,8 @@
         [self performSelector:@selector(beginAnimation) withObject:nil afterDelay:0.25];
 
     } else {
-        [self performSelector:@selector(fade) withObject:nil afterDelay:1.0];
+        if (!cancel)
+            [self performSelector:@selector(fade) withObject:nil afterDelay:1.0];
     }
 }
 

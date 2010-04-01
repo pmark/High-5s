@@ -28,22 +28,23 @@
         CGFloat x = centerPoint.x - (w/2);
         CGFloat y = centerPoint.y - (h/2);
         self.frame = CGRectMake(x, y, w, h);
+
         
-        UIImage *blank = [UIImage imageNamed:@"star-blank.png"];
-        UIImageView *fg = [[UIImageView alloc] initWithImage:blank];
-        w = blank.size.width;
-        h = blank.size.height;
-        x = bg.frame.size.width/2 - blank.size.width/2;
-        y = bg.frame.size.height/2 - blank.size.height/2;
-        fg.frame = CGRectMake(x, y, w, h);
-        [self addSubview:fg];
-        self.foreground = fg;
-        [fg release];
+//        UIImage *blank = [UIImage imageNamed:@"star-blank.png"];
+//        UIImageView *fg = [[UIImageView alloc] initWithImage:blank];
+//        w = blank.size.width;
+//        h = blank.size.height;
+//        x = bg.frame.size.width/2 - blank.size.width/2;
+//        y = bg.frame.size.height/2 - blank.size.height/2;
+//        fg.frame = CGRectMake(x, y, w, h);
+//        [self addSubview:fg];
+//        self.foreground = fg;
+//        [fg release];
 
         self.countLabel = [[[UILabel alloc] init] autorelease];
         countLabel.backgroundColor = [UIColor clearColor];
         countLabel.textColor = [UIColor blackColor];
-        countLabel.font = [UIFont fontWithName:@"Courier" size:24];
+        countLabel.font = [UIFont fontWithName:@"Courier" size:96];
         //countLabel.font = [UIFont systemFontOfSize:32];
         countLabel.shadowColor = [UIColor whiteColor];
         countLabel.shadowOffset = CGSizeMake(2, 2);
@@ -51,7 +52,8 @@
         countLabel.text = @"0";
         [countLabel sizeToFit];
         h = countLabel.frame.size.height;
-        countLabel.frame = CGRectMake(4, (80-h/2), self.frame.size.width, h);
+        y = (stars.size.height/2) - (h/2);
+        countLabel.frame = CGRectMake(0, y, self.frame.size.width, h);
         [self addSubview:countLabel];
         self.hidden = YES;
     }
@@ -96,7 +98,7 @@
 
 - (void)reset {
     self.slapCount = 0;
-    countLabel.hidden = YES;
+    self.hidden = YES;
 }
 
 @end

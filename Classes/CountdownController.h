@@ -12,6 +12,7 @@
 @interface CountdownController : UIViewController {
 	NSInteger currentCount;
     UIImageView *counterStar;
+    BOOL cancel;
 }
 
 - (void) startCountdownAfterDelay:(CGFloat)delay;

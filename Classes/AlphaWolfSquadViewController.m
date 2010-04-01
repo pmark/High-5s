@@ -8,6 +8,7 @@
 
 #import <CommonCrypto/CommonDigest.h>
 #import "AlphaWolfSquadViewController.h"
+#import "AlphaWolfSquadAppDelegate.h"
 #import "SettingsController.h"
 #import "HelpController.h"
 #import "WelcomeController.h"
@@ -49,7 +50,7 @@
 	[aBegin release];
 	[self.view addSubview:alphaview];
 	
-    self.slapview = [[[SlapView alloc] initWithCenter:CGPointMake(160, 240)] autorelease];
+    self.slapview = [[[SlapView alloc] initWithCenter:CGPointMake(133, 280)] autorelease];
     slapview.userInteractionEnabled = NO;
     slapview.controller = self;
     [alphaview addSubview:slapview]; 
@@ -209,8 +210,10 @@
 #pragma mark -
 
 - (void)handleSlap {
+    [countdown cancelCountdown];
+    
     congrats.hidden = YES;
-    [alphaview clapper];
+    [APP_DELEGATE clapper];
     
     AudioServicesPlayAlertSound(kSystemSoundID_Vibrate);
     
