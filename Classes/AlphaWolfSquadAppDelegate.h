@@ -19,6 +19,7 @@
 @property (nonatomic, retain) IBOutlet AlphaWolfSquadViewController *viewController;
 
 - (void)accelerometer:(UIAccelerometer *)accelerometer didAccelerate:(UIAcceleration *)acceleration;
+- (void)clapper;
 
 @end
 

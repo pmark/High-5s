@@ -8,6 +8,7 @@
 
 #import "AlphaWolfSquadAppDelegate.h"
 #import "AlphaWolfSquadViewController.h"
+#import "High5s.h"
 
 @implementation AlphaWolfSquadAppDelegate
 
@@ -32,6 +33,10 @@
 - (void)accelerometer:(UIAccelerometer *)accelerometer didAccelerate:(UIAcceleration *)acceleration {
   // Update the accelerometer graph view
   [viewController.alphaview acceleratedInX:acceleration.x Y:acceleration.y Z:acceleration.z];
+}
+
+- (void)clapper {
+	[[NSNotificationCenter defaultCenter] postNotification:[NSNotification notificationWithName:NOTIF_PLAY_CLAP_SOUND object:nil]];    
 }
 
 - (void)dealloc {

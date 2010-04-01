@@ -9,62 +9,94 @@
 #import "SlapView.h"
 
 @implementation SlapView
-@synthesize countLabel, slapCount, controller;
+@synthesize countLabel, slapCount, controller, background, foreground;
 
-- (id)initWithFrame:(CGRect)frame {
-  if (self = [super initWithFrame:frame]) {
-    // Initialization code    
-    self.backgroundColor = [UIColor clearColor];
+- (id)initWithCenter:(CGPoint)centerPoint {
+    if (self = [super init]) {
 
-    self.countLabel = [[[UILabel alloc] initWithFrame:CGRectMake(0, 0, 320, 326)] autorelease];
-    countLabel.backgroundColor = [UIColor clearColor];
-    countLabel.textColor = [UIColor blackColor];
-    countLabel.font = [UIFont systemFontOfSize:128];
-    countLabel.shadowColor = [UIColor whiteColor];
-    countLabel.shadowOffset = CGSizeMake(2, 2);
-    countLabel.textAlignment = UITextAlignmentCenter;
-    [self addSubview:countLabel];
-    
+        self.backgroundColor = [UIColor clearColor];
+                
+        UIImage *stars = [UIImage imageNamed:@"countdown-stars.png"];
+        UIImageView *bg = [[UIImageView alloc] initWithImage:stars];
+        [self addSubview:bg];
+        self.background = bg;
+        [background release];
 
-  }
-  return self;
+        // set the frame
+        CGFloat w = stars.size.width;
+        CGFloat h = stars.size.height;
+        CGFloat x = centerPoint.x - (w/2);
+        CGFloat y = centerPoint.y - (h/2);
+        self.frame = CGRectMake(x, y, w, h);
+        
+        UIImage *blank = [UIImage imageNamed:@"star-blank.png"];
+        UIImageView *fg = [[UIImageView alloc] initWithImage:blank];
+        w = blank.size.width;
+        h = blank.size.height;
+        x = bg.frame.size.width/2 - blank.size.width/2;
+        y = bg.frame.size.height/2 - blank.size.height/2;
+        fg.frame = CGRectMake(x, y, w, h);
+        [self addSubview:fg];
+        self.foreground = fg;
+        [fg release];
+
+        self.countLabel = [[[UILabel alloc] init] autorelease];
+        countLabel.backgroundColor = [UIColor clearColor];
+        countLabel.textColor = [UIColor blackColor];
+        countLabel.font = [UIFont fontWithName:@"Courier" size:24];
+        //countLabel.font = [UIFont systemFontOfSize:32];
+        countLabel.shadowColor = [UIColor whiteColor];
+        countLabel.shadowOffset = CGSizeMake(2, 2);
+        countLabel.textAlignment = UITextAlignmentCenter;
+        countLabel.text = @"0";
+        [countLabel sizeToFit];
+        h = countLabel.frame.size.height;
+        countLabel.frame = CGRectMake(4, (80-h/2), self.frame.size.width, h);
+        [self addSubview:countLabel];
+        self.hidden = YES;
+    }
+
+    return self;
 }
 
 - (void)showSlapEffect {
+    self.hidden = NO;
 }
 
 - (void)incrementCount {
-  [self.superview bringSubviewToFront:self];
-  self.hidden = NO;
-  self.slapCount++;
-
-  countLabel.text = [NSString stringWithFormat:@"%i", slapCount];
-  [self bringSubviewToFront:countLabel];
-  countLabel.hidden = NO;
-  NSLog(@"inc: %i", self.slapCount);
-  
+    [self.superview bringSubviewToFront:self];
+    self.hidden = NO;
+    self.slapCount++;
+    
+    countLabel.text = [NSString stringWithFormat:@"%i", slapCount];
+    [self bringSubviewToFront:countLabel];
+    countLabel.hidden = NO;
+    NSLog(@"inc: %i", self.slapCount);
+    
 }
 
 - (void)drawRect:(CGRect)rect {
-  // Drawing code
+    // Drawing code
 }
 
 
 - (void)dealloc {
-  [countLabel release];
-  [super dealloc];
+    [countLabel release];
+    [background release];
+    [foreground release];
+    [super dealloc];
 }
 
 - (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
-  UITouch *touch = [touches anyObject];
-  NSLog(@"Touched view %@", touch.view);
-  
-  [self.controller handleSlap];
+    UITouch *touch = [touches anyObject];
+    NSLog(@"Touched view %@", touch.view);
+    
+    [self.controller handleSlap];
 }
 
 - (void)reset {
-  self.slapCount = 0;
-  countLabel.hidden = YES;
+    self.slapCount = 0;
+    countLabel.hidden = YES;
 }
 
 @end

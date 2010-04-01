@@ -12,3 +12,5 @@
 @end
 
 #define HIDE_SETTINGS_BUTTON 1
+#define NOTIF_PLAY_CLAP_SOUND @"NOTIF_PLAY_CLAP_SOUND"
+#define APP_DELEGATE (AlphaWolfSquadAppDelegate*)[[UIApplication sharedApplication] delegate]

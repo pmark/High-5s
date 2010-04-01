@@ -7,9 +7,15 @@
 //
 
 #import "CountdownController.h"
-
+#import "High5s.h"
+#import "AlphaWolfSquadAppDelegate.h"
 
 @implementation CountdownController
+
+- (void)dealloc {
+    [counterStar release];
+    [super dealloc];
+}
 
 - (void)loadView {    
     self.view = [[[UIView alloc] initWithFrame:CGRectMake(32, 141, 255, 207)] autorelease];
@@ -28,42 +34,37 @@
     self.view.hidden = YES;
 }
 
-- (void)dealloc {
-    [counterStar release];
-    [super dealloc];
-}
-
 - (void) startCountdownAfterDelay:(CGFloat)delay {
     [self performSelector:@selector(startCountdown) withObject:nil afterDelay:delay];
 }
 
 - (void) startCountdown {
-	currentCount = 3;    
+	currentCount = 3;
     self.view.hidden = NO;
     [self beginAnimation];
 }
 
 - (void) cancelCountdown {
-    self.view.hidden = YES;    
+    self.view.hidden = YES;
 }
 
 - (void) beginAnimation {
+    self.view.hidden = YES;
     NSString *imgName = [NSString stringWithFormat:@"countdown-%i.png", currentCount];
     counterStar.image = [UIImage imageNamed:imgName];
-    NSLog(@"animating %@", imgName);
     
-    CGFloat scaleDown = 0.15;
+    CGFloat scaleDown = 0.35;
     UIView *v = self.view;
     v.transform = CGAffineTransformMakeScale(scaleDown, scaleDown);
     v.alpha = 0.85;
     self.view.hidden = NO;
     
-    CGFloat duration = 1.0f;
+    CGFloat duration = 0.75f;
 
     // background
     [UIView beginAnimations:nil context:nil];
     [UIView setAnimationDuration:duration];
-    [UIView setAnimationCurve:UIViewAnimationCurveEaseOut];
+    [UIView setAnimationCurve:UIViewAnimationCurveEaseIn];
     [UIView setAnimationDelegate:self];
     [UIView setAnimationDidStopSelector:@selector(animationDidFinish)];
     [UIView setAnimationRepeatAutoreverses:NO];
@@ -74,23 +75,27 @@
     [UIView commitAnimations];
 }
 
-- (void) hide {
-    self.view.hidden = YES;
+- (void) fade {
+    UIView *v = self.view;
+    v.alpha = 1.0f;
+    [UIView beginAnimations:nil context:nil];
+    [UIView setAnimationDuration:0.25];
+    [UIView setAnimationCurve:UIViewAnimationCurveEaseIn];
+    v.transform = CGAffineTransformMakeScale(0.1, 0.1);
+    v.alpha = 0.0f;
+    [UIView commitAnimations];
 }
 
 - (void) animationDidFinish {
-    NSLog(@"animationDidFinish for %i", currentCount);
-    if (currentCount > 0) {
-        self.view.hidden = YES;
-        // update counter image
+    [APP_DELEGATE clapper];
+
+    if (currentCount > 0) {        
         currentCount--;
-        [self beginAnimation];
+        [self performSelector:@selector(beginAnimation) withObject:nil afterDelay:0.25];
 
     } else {
-        // done
-        [self performSelector:@selector(hide) withObject:nil afterDelay:3.0];
+        [self performSelector:@selector(fade) withObject:nil afterDelay:1.0];
     }
-
 }
 
 

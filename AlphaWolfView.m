@@ -37,6 +37,8 @@
         beginButtonClicked = NO;
 		[self setUpInitView];
         [self setupAudio];
+        
+        [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(clapper) name:NOTIF_PLAY_CLAP_SOUND object:nil];
 	}
 	return self;
 }

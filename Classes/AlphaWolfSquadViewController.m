@@ -49,7 +49,7 @@
 	[aBegin release];
 	[self.view addSubview:alphaview];
 	
-    self.slapview = [[[SlapView alloc] initWithFrame:CGRectMake(0,90,320,326)] autorelease];
+    self.slapview = [[[SlapView alloc] initWithCenter:CGPointMake(160, 240)] autorelease];
     slapview.userInteractionEnabled = NO;
     slapview.controller = self;
     [alphaview addSubview:slapview]; 

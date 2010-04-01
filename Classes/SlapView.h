@@ -12,15 +12,20 @@
 @protocol SlapDelegate;
 
 @interface SlapView : UIView {
-  UILabel *countLabel;
-  NSInteger slapCount;
-  id<SlapDelegate> controller;
+    UILabel *countLabel;
+    NSInteger slapCount;
+    UIImageView *background;
+    UIImageView *foreground;
+    id<SlapDelegate> controller;
 }
 
 @property (nonatomic, retain) UILabel *countLabel;
 @property (nonatomic, assign) NSInteger slapCount;
 @property (nonatomic, assign) id<SlapDelegate> controller;
+@property (nonatomic, retain) UIImageView *background;
+@property (nonatomic, retain) UIImageView *foreground;
 
+- (id)initWithCenter:(CGPoint)centerPoint;
 - (void)incrementCount;
 - (void)showSlapEffect;
 - (void)reset;
