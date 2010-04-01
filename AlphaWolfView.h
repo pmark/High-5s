@@ -26,6 +26,7 @@
 	UIButton *settingsButton;
 	UIButton *helpButton;
 	UIButton *startButton;
+    UILabel *globalCounterLabel;
     
     AlphaWolfSquadViewController *controller;
 	SystemSoundID clapSound;  
@@ -52,7 +53,7 @@
 @property (nonatomic, retain)UIImageView *instruction;
 @property (nonatomic, retain)AlphaWolfSquadViewController *controller;
 @property (nonatomic, assign)BOOL beginButtonClicked;
-
+@property (nonatomic, retain)UILabel *globalCounterLabel;
 
 // create object
 - (void)createBeginButton;

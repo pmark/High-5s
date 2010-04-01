@@ -14,9 +14,21 @@
 
 @synthesize window;
 @synthesize viewController;
+@synthesize globalCount;
 
 // Constant for the number of times per second (Hertz) to sample acceleration.
 #define kAccelerometerFrequency     40
+
+- (void)getGlobalCount {
+	NSURL *url = [NSURL URLWithString:GLOBAL_COUNT_URL];
+    NSString *countStr = [NSString stringWithContentsOfURL:url encoding:NSUTF8StringEncoding error:nil];
+
+    if ([countStr length] > 0) {
+		self.globalCount = [countStr integerValue];      
+    } else {
+        self.globalCount = GLOBAL_COUNT_NA;
+    }
+}
 
 - (void)applicationDidFinishLaunching:(UIApplication *)application {    
     
@@ -27,6 +39,8 @@
 	// Configure and start the accelerometer
     [[UIAccelerometer sharedAccelerometer] setUpdateInterval:(1.0 / kAccelerometerFrequency)];
     [[UIAccelerometer sharedAccelerometer] setDelegate:self];
+    
+    [self getGlobalCount];
 }
 
 // UIAccelerometerDelegate method, called when the device accelerates.

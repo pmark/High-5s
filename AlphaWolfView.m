@@ -4,6 +4,7 @@
 #import <UIKit/UIKit.h>
 #import <QuartzCore/QuartzCore.h>
 #import "AlphaWolfSquadViewController.h"
+#import "AlphaWolfSquadAppDelegate.h"
 
 @implementation AlphaWolfView
 
@@ -27,6 +28,7 @@
 @synthesize settingsButton;
 @synthesize helpButton;
 @synthesize startButton;
+@synthesize globalCounterLabel;
 
 @synthesize controller;
 @synthesize beginButtonClicked;
@@ -431,6 +433,19 @@
 	 ];	
     
 }
+
+- (void)updateGlobalCounterLabel {
+    NSInteger count = APP_DELEGATE.globalCount;
+    if (count == GLOBAL_COUNT_NA) {
+        globalCounterLabel.text = @"N/A";
+    } else {
+        NSNumberFormatter *numberFormatter = [[NSNumberFormatter alloc] init];
+        [numberFormatter setNumberStyle: NSNumberFormatterDecimalStyle];
+        globalCounterLabel.text = [numberFormatter stringFromNumber:[NSNumber numberWithInteger:count]];
+        [numberFormatter release];        
+    }
+}
+
 - (void)createTop{	
 	top = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, 320, 92)];
 	[top setImage:[UIImage imageNamed:@"screen2_header.png"]];
@@ -449,7 +464,19 @@
 		  bounce:FALSE
 			ease:@"in"
 	 ];
+    
+    
+    //UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(180, 142, 153, 27)];
+    UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(155, 55, 153, 30)];
+    label.font = [UIFont fontWithName:@"Courier" size:20];
+    label.textAlignment = UITextAlignmentRight;
+    [top addSubview:label];
+    self.globalCounterLabel = label;
+    [label release];
+    
+    [self updateGlobalCounterLabel];
 }
+
 - (void)createBottom{	
 	bottom = [[UIImageView alloc] initWithFrame:CGRectMake(0, 0, 320, 48)];
 	[bottom setImage:[UIImage imageNamed:@"screen2_footer.png"]];
@@ -640,19 +667,21 @@
 }
 
 -(void)killScreen2{	
+    [burst release];
+    [top release];
+    [bottom release];
+    [instruction release];
+    [hand release];
+    [instTxt release];
+    [settingsButton release];
+    [helpButton release];
+    [startButton release];
+    [globalCounterLabel release];
 }
 
 - (void)dealloc {
 	[self killScreen1];
-    
-	[beginButton release];
-	[scottArm release];
-	[scott release];
-	[mike release];
-	[mikeArm release];
-	[starL release];
-	[starR release];
-	[header release];
+	[self killScreen2];
     
     [controller release];
     

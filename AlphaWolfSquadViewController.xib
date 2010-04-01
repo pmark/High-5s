@@ -258,17 +258,17 @@
 						<reference key="object" ref="533398729"/>
 						<object class="NSMutableArray" key="children">
 							<bool key="EncodedWithXMLCoder">YES</bool>
-							<reference ref="15423235"/>
-							<reference ref="100266574"/>
-							<reference ref="319082014"/>
 							<reference ref="915330050"/>
+							<reference ref="319082014"/>
+							<reference ref="100266574"/>
 							<reference ref="1002778454"/>
+							<reference ref="15423235"/>
 						</object>
 						<reference key="parent" ref="774585933"/>
 					</object>
 					<object class="IBObjectRecord">
-						<int key="objectID">9</int>
-						<reference key="object" ref="15423235"/>
+						<int key="objectID">15</int>
+						<reference key="object" ref="915330050"/>
 						<reference key="parent" ref="533398729"/>
 					</object>
 					<object class="IBObjectRecord">
@@ -283,13 +283,13 @@
 						<reference key="parent" ref="533398729"/>
 					</object>
 					<object class="IBObjectRecord">
-						<int key="objectID">15</int>
-						<reference key="object" ref="915330050"/>
+						<int key="objectID">19</int>
+						<reference key="object" ref="1002778454"/>
 						<reference key="parent" ref="533398729"/>
 					</object>
 					<object class="IBObjectRecord">
-						<int key="objectID">19</int>
-						<reference key="object" ref="1002778454"/>
+						<int key="objectID">9</int>
+						<reference key="object" ref="15423235"/>
 						<reference key="parent" ref="533398729"/>
 					</object>
 				</object>
@@ -318,7 +318,7 @@
 					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
-					<string>{{649, 276}, {320, 480}}</string>
+					<string>{{616, 276}, {320, 480}}</string>
 					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 				</object>

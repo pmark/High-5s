@@ -13,10 +13,12 @@
 @interface AlphaWolfSquadAppDelegate : NSObject <UIAccelerometerDelegate> {
     UIWindow *window;
     AlphaWolfSquadViewController *viewController;
+    NSInteger globalCount;
 }
 
 @property (nonatomic, retain) IBOutlet UIWindow *window;
 @property (nonatomic, retain) IBOutlet AlphaWolfSquadViewController *viewController;
+@property (nonatomic, assign) NSInteger globalCount;
 
 - (void)accelerometer:(UIAccelerometer *)accelerometer didAccelerate:(UIAcceleration *)acceleration;
 - (void)clapper;
