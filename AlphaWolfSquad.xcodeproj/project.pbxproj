@@ -120,6 +120,7 @@
 		4D7C25721163B5EE00F1C8D1 /* countdown-2.png in Resources */ = {isa = PBXBuildFile; fileRef = 4D7C256D1163B5EE00F1C8D1 /* countdown-2.png */; };
 		4D7C25731163B5EE00F1C8D1 /* countdown-3.png in Resources */ = {isa = PBXBuildFile; fileRef = 4D7C256E1163B5EE00F1C8D1 /* countdown-3.png */; };
 		4D7C25741163B5EE00F1C8D1 /* countdown-0.png in Resources */ = {isa = PBXBuildFile; fileRef = 4D7C256F1163B5EE00F1C8D1 /* countdown-0.png */; };
+		4D9014AF116C677C0041CA43 /* SM3DARLibrary.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D9014AE116C677C0041CA43 /* SM3DARLibrary.a */; };
 		4D90181911125E91009A47FA /* clap.wav in Resources */ = {isa = PBXBuildFile; fileRef = 4D90180511125E91009A47FA /* clap.wav */; };
 		4D90183911126138009A47FA /* Settings.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4D90183811126138009A47FA /* Settings.xib */; };
 		4D90187111126298009A47FA /* SettingsController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D90187011126298009A47FA /* SettingsController.m */; };
@@ -132,7 +133,6 @@
 		4DCBF241112B17D6007DA71F /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 4DCBF23E112B17D6007DA71F /* Icon.png */; };
 		4DDCA9AB116AA60200ACA2B1 /* DeviceMovementArc.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DDCA9AA116AA60200ACA2B1 /* DeviceMovementArc.m */; };
 		4DDCA9B4116AAF6D00ACA2B1 /* DeviceMovement.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DDCA9B3116AAF6D00ACA2B1 /* DeviceMovement.m */; };
-		4DDCAADF116BD74D00ACA2B1 /* SM3DARLibrary.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DDCAADE116BD74D00ACA2B1 /* SM3DARLibrary.a */; };
 		C86D2BEA103DCD9D00EE8AF7 /* AlphaWolfView.m in Sources */ = {isa = PBXBuildFile; fileRef = C86D2BE9103DCD9D00EE8AF7 /* AlphaWolfView.m */; };
 		C86D2C2E103DCE1F00EE8AF7 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C86D2C2D103DCE1F00EE8AF7 /* QuartzCore.framework */; };
 		C8A21DA1104DD13A00FC9464 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C8A21DA0104DD13A00FC9464 /* AudioToolbox.framework */; };
@@ -262,6 +262,7 @@
 		4D7C256D1163B5EE00F1C8D1 /* countdown-2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "countdown-2.png"; sourceTree = "<group>"; };
 		4D7C256E1163B5EE00F1C8D1 /* countdown-3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "countdown-3.png"; sourceTree = "<group>"; };
 		4D7C256F1163B5EE00F1C8D1 /* countdown-0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "countdown-0.png"; sourceTree = "<group>"; };
+		4D9014AE116C677C0041CA43 /* SM3DARLibrary.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = SM3DARLibrary.a; sourceTree = "<group>"; };
 		4D90180511125E91009A47FA /* clap.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = clap.wav; sourceTree = "<group>"; };
 		4D90183811126138009A47FA /* Settings.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Settings.xib; path = Classes/Settings.xib; sourceTree = "<group>"; };
 		4D90186F11126298009A47FA /* SettingsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsController.h; sourceTree = "<group>"; };
@@ -279,7 +280,6 @@
 		4DDCA9AA116AA60200ACA2B1 /* DeviceMovementArc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DeviceMovementArc.m; sourceTree = "<group>"; };
 		4DDCA9B2116AAF6D00ACA2B1 /* DeviceMovement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DeviceMovement.h; sourceTree = "<group>"; };
 		4DDCA9B3116AAF6D00ACA2B1 /* DeviceMovement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DeviceMovement.m; sourceTree = "<group>"; };
-		4DDCAADE116BD74D00ACA2B1 /* SM3DARLibrary.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = SM3DARLibrary.a; path = "../../../../Spot Metrix/PROJECTS/SM3DAR/SM3DARLibrary/SM3DARLibrary/build/Debug-iphoneos/SM3DARLibrary.a"; sourceTree = SOURCE_ROOT; };
 		8D1107310486CEB800E47090 /* AlphaWolfSquad-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "AlphaWolfSquad-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
 		C86D2BE8103DCD9D00EE8AF7 /* AlphaWolfView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlphaWolfView.h; sourceTree = SOURCE_ROOT; };
 		C86D2BE9103DCD9D00EE8AF7 /* AlphaWolfView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlphaWolfView.m; sourceTree = SOURCE_ROOT; };
@@ -301,7 +301,7 @@
 				4D7A959611649C14008F1BB1 /* CoreLocation.framework in Frameworks */,
 				4D7A959811649C14008F1BB1 /* MapKit.framework in Frameworks */,
 				4D7A959A11649C14008F1BB1 /* OpenGLES.framework in Frameworks */,
-				4DDCAADF116BD74D00ACA2B1 /* SM3DARLibrary.a in Frameworks */,
+				4D9014AF116C677C0041CA43 /* SM3DARLibrary.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -318,22 +318,22 @@
 				1D3623250D0F684500981E51 /* AlphaWolfSquadAppDelegate.m */,
 				28D7ACF60DDB3853001CB0EB /* AlphaWolfSquadViewController.h */,
 				28D7ACF70DDB3853001CB0EB /* AlphaWolfSquadViewController.m */,
-				4D6C9DB710FE92FF006D94FD /* SlapView.h */,
-				4D6C9DB810FE92FF006D94FD /* SlapView.m */,
-				4D90186F11126298009A47FA /* SettingsController.h */,
-				4D90187011126298009A47FA /* SettingsController.m */,
-				4DC9EFE61123C79300F97B5A /* HelpController.h */,
-				4DC9EFE71123C79300F97B5A /* HelpController.m */,
-				4D7C23871162DCA500F1C8D1 /* WelcomeController.h */,
-				4D7C23881162DCA500F1C8D1 /* WelcomeController.m */,
-				4D7C23891162DCA500F1C8D1 /* WelcomeController.xib */,
-				4D7C23E11162F7DC00F1C8D1 /* OverlayController.h */,
-				4D7C23E21162F7DC00F1C8D1 /* OverlayController.m */,
 				4D7C2520116335D600F1C8D1 /* ConfirmationController.h */,
 				4D7C2521116335D600F1C8D1 /* ConfirmationController.m */,
 				4D7C2522116335D600F1C8D1 /* ConfirmationController.xib */,
 				4D7C25661163B39600F1C8D1 /* CountdownController.h */,
 				4D7C25671163B39600F1C8D1 /* CountdownController.m */,
+				4DC9EFE61123C79300F97B5A /* HelpController.h */,
+				4DC9EFE71123C79300F97B5A /* HelpController.m */,
+				4D7C23E11162F7DC00F1C8D1 /* OverlayController.h */,
+				4D7C23E21162F7DC00F1C8D1 /* OverlayController.m */,
+				4D90186F11126298009A47FA /* SettingsController.h */,
+				4D90187011126298009A47FA /* SettingsController.m */,
+				4D6C9DB710FE92FF006D94FD /* SlapView.h */,
+				4D6C9DB810FE92FF006D94FD /* SlapView.m */,
+				4D7C23871162DCA500F1C8D1 /* WelcomeController.h */,
+				4D7C23881162DCA500F1C8D1 /* WelcomeController.m */,
+				4D7C23891162DCA500F1C8D1 /* WelcomeController.xib */,
 			);
 			path = Classes;
 			sourceTree = "<group>";
@@ -406,7 +406,7 @@
 		4D7A94B311649BA1008F1BB1 /* 3DAR */ = {
 			isa = PBXGroup;
 			children = (
-				4DDCAADE116BD74D00ACA2B1 /* SM3DARLibrary.a */,
+				4D9014AE116C677C0041CA43 /* SM3DARLibrary.a */,
 				4D7A94B411649BA1008F1BB1 /* 128_white.png */,
 				4D7A94B511649BA1008F1BB1 /* 3dar.plist */,
 				4D7A94B611649BA1008F1BB1 /* 64_white.png */,

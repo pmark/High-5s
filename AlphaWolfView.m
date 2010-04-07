@@ -266,7 +266,7 @@
 			 toO:1 
 		   fromX:mike.center.x
 		   fromY:mike.center.y
-		   fromO:0
+		   fromO:1
 		   timeA:0.8
 		   timeO:0.8
 		  bounce:FALSE
@@ -285,7 +285,7 @@
 			 toO:1 
 		   fromX:scott.center.x
 		   fromY:scott.center.y
-		   fromO:0
+		   fromO:1
 		   timeA:0.8
 		   timeO:0.8
 		  bounce:FALSE
@@ -729,12 +729,12 @@
  */
 
 - (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
-//    UITouch *touch = [touches anyObject];
-//    CGPoint point = [touch locationInView:self];
+    UITouch *touch = [touches anyObject];
+    CGPoint point = [touch locationInView:self];
 
-//    if (point.y > 90 && point.y < 413) {
-//        [self.controller handleSlap];        
-//    }
+    if (point.y > 90 && point.y < 413) {
+        [self.controller handleSlap];        
+    }
 }
 
 @end

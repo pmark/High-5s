@@ -64,4 +64,5 @@
     NSInteger i = [localCount intValue] + adder;
     PREF_SAVE_OBJECT(PREF_KEY_LOCAL_COUNT, [NSNumber numberWithInt:i]);
 }
+
 @end

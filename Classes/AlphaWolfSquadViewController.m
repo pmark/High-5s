@@ -29,7 +29,7 @@
 //#define MAIL_BODY_TEXT @"I am sending you %i High 5%@. I worked hard for them and hope you will appreciate the fruits they bear. Click the link below to witness the awesome spectacle these High 5s offer.\n\n%@"
 #define MAIL_BODY_SINGULAR_HTML @"I am sending you a High 5. I worked hard for it and hope you will appreciate the fruit it bears. <a href=\"%@\">Click here</a> to witness the awesome spectacle this High 5 offers."
 #define MAIL_BODY_PLURAL_HTML @"I am sending you %i High 5s. I worked hard for them and hope you will appreciate the fruits they bear. <a href=\"%@\">Click here</a> to witness the awesome spectacle these High 5s offer."
-#define CONGRATS_TEXT_FORMAT @"You just completed %i High5%@.  You have skills. Now press \"Send.\" Or \"Try Again\" to redeem yourself."
+#define CONGRATS_TEXT_FORMAT @"You just completed %i High 5%@.  You have skills. Now press \"Send.\" Or \"Try Again\" to redeem yourself."
 
 @implementation AlphaWolfSquadViewController
 
@@ -111,12 +111,20 @@
 
 -(NSString*)messageBody {
     NSString *link = [self batchURL];
-    NSString *html = (slapview.slapCount != 1 ? MAIL_BODY_SINGULAR_HTML : MAIL_BODY_PLURAL_HTML);
-	return [NSString stringWithFormat:html, slapview.slapCount, link];
+    
+    NSString *body = nil;
+
+    if (slapview.slapCount == 1) {
+        body = [NSString stringWithFormat:MAIL_BODY_SINGULAR_HTML, link];
+    } else {
+        body = [NSString stringWithFormat:MAIL_BODY_PLURAL_HTML, slapview.slapCount, link];
+    }
+
+	return body;
 }
 
 -(NSString*)theLetterS {
-    return (slapview.slapCount != 1 ? @"" : @"s");
+    return (slapview.slapCount == 1 ? @"" : @"s");
 }
 
 -(void)acceleratedInX:(float)xx Y:(float)yy Z:(float)zz{
@@ -202,20 +210,18 @@
 { 
 	switch (result)
 	{
-		case MFMailComposeResultCancelled:
-			break;
 		case MFMailComposeResultSaved:
+		case MFMailComposeResultFailed:
+		case MFMailComposeResultCancelled:
+            [APP_DELEGATE incrementLocalCountBy:-slapview.slapCount];
+            [alphaview updateLocalCounterLabel];            
 			break;
+
 		case MFMailComposeResultSent:
             [self showConfirmationScreen];
 			break;
-		case MFMailComposeResultFailed:
-			break;
 		default:
-		{
             [AlphaWolfSquadViewController alertWithTitle:@"Email failed" message:@"Sorry, but this email could not be sent."];
-		}
-            
             break;
 	}
     [self dismissModalViewControllerAnimated:YES];    
@@ -313,7 +319,10 @@
 }
 
 - (IBAction)sendBatch {
-    [self showEmailModalView:MAIL_SUBJECT emailBody:[self messageBody] recipientList:nil];
+    [APP_DELEGATE incrementLocalCountBy:slapview.slapCount];
+    [alphaview updateLocalCounterLabel];
+    NSString *body = [self messageBody];
+    [self showEmailModalView:MAIL_SUBJECT emailBody:body recipientList:nil];
 }
 
 #pragma mark -
@@ -332,8 +341,7 @@
     return ret;
 }
 
-- (NSString*)batchURL {
-    
+- (NSString*)batchURL {    
     NSString *baseURL = @"http://www.havesomehigh5s.com/index.php?token=%@&vidNumber=%i";
     NSTimeInterval millis = [[NSDate date] timeIntervalSince1970];
     NSString *tstamp = [NSString stringWithFormat:@"%f", millis];
@@ -350,9 +358,6 @@
 }
 
 - (void) showConfirmationScreen {
-    [APP_DELEGATE incrementLocalCountBy:slapview.slapCount];
-    [alphaview updateLocalCounterLabel];
-
     [slapview reset];
     congrats.hidden = YES;
     ConfirmationController *c = [[ConfirmationController alloc] init];

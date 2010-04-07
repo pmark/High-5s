@@ -10,6 +10,9 @@
 #import "High5s.h"
 #import "AlphaWolfSquadAppDelegate.h"
 
+#define ITERATION_DURATION 0.5
+#define ITERATION_DELAY 0.15
+
 @implementation CountdownController
 
 - (void)dealloc {
@@ -64,11 +67,9 @@
     v.alpha = 0.85;
     self.view.hidden = NO;
     
-    CGFloat duration = 0.75f;
-
     // background
     [UIView beginAnimations:nil context:nil];
-    [UIView setAnimationDuration:duration];
+    [UIView setAnimationDuration:ITERATION_DURATION];
     [UIView setAnimationCurve:UIViewAnimationCurveEaseIn];
     [UIView setAnimationDelegate:self];
     [UIView setAnimationDidStopSelector:@selector(animationDidFinish)];
@@ -97,7 +98,7 @@
 
     if (currentCount > 0) {        
         currentCount--;
-        [self performSelector:@selector(beginAnimation) withObject:nil afterDelay:0.25];
+        [self performSelector:@selector(beginAnimation) withObject:nil afterDelay:ITERATION_DELAY];
 
     } else {
         if (!cancel)
