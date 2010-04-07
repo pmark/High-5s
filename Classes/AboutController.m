@@ -1,17 +1,15 @@
 //
-//  HelpController.m
+//  AboutController.m
 //  AlphaWolfSquad
 //
-//  Created by P. Mark Anderson on 2/10/10.
-//  Copyright 2010 Bordertown Labs, LLC. All rights reserved.
+//  Created by P. Mark Anderson on 4/7/10.
+//  Copyright 2010 Spot Metrix, Inc. All rights reserved.
 //
 
-#import "HelpController.h"
+#import "AboutController.h"
 
 
-@implementation HelpController
-
-@synthesize scrollView;
+@implementation AboutController
 
 /*
  // The designated initializer.  Override if you create the controller programmatically and want to perform customization that is not appropriate for viewDidLoad.
@@ -23,23 +21,12 @@
 }
 */
 
+/*
 // Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
 - (void)viewDidLoad {
     [super viewDidLoad];
-
-    UIImage *img = [UIImage imageNamed:@"HelpContent320.png"];
-    [scrollView setContentSize:CGSizeMake(img.size.width,
-                               img.size.height)];
-    
-    UIImageView *content = [[UIImageView alloc] initWithImage:img];
-    [scrollView addSubview:content];
-    [content release];
 }
-
-- (void)viewDidAppear:(BOOL)animated {
-  [super viewDidAppear:animated];
-  [scrollView flashScrollIndicators];
-}
+*/
 
 /*
 // Override to allow orientations other than the default portrait orientation.
@@ -63,8 +50,7 @@
 
 
 - (void)dealloc {
-  [scrollView release];
-  [super dealloc];
+    [super dealloc];
 }
 
 

@@ -69,7 +69,6 @@
 		4D7C235F1162DC4000F1C8D1 /* WM-HandFrame03.png in Resources */ = {isa = PBXBuildFile; fileRef = 4D7C23111162DC4000F1C8D1 /* WM-HandFrame03.png */; };
 		4D7C23601162DC4000F1C8D1 /* help-btn.png in Resources */ = {isa = PBXBuildFile; fileRef = 4D7C23131162DC4000F1C8D1 /* help-btn.png */; };
 		4D7C23611162DC4000F1C8D1 /* help_title.png in Resources */ = {isa = PBXBuildFile; fileRef = 4D7C23141162DC4000F1C8D1 /* help_title.png */; };
-		4D7C23621162DC4000F1C8D1 /* HelpContent.png in Resources */ = {isa = PBXBuildFile; fileRef = 4D7C23151162DC4000F1C8D1 /* HelpContent.png */; };
 		4D7C23631162DC4000F1C8D1 /* begin-btn.png in Resources */ = {isa = PBXBuildFile; fileRef = 4D7C23171162DC4000F1C8D1 /* begin-btn.png */; };
 		4D7C23641162DC4000F1C8D1 /* begin.png in Resources */ = {isa = PBXBuildFile; fileRef = 4D7C23181162DC4000F1C8D1 /* begin.png */; };
 		4D7C23651162DC4000F1C8D1 /* beginOver.png in Resources */ = {isa = PBXBuildFile; fileRef = 4D7C23191162DC4000F1C8D1 /* beginOver.png */; };
@@ -121,6 +120,15 @@
 		4D7C25731163B5EE00F1C8D1 /* countdown-3.png in Resources */ = {isa = PBXBuildFile; fileRef = 4D7C256E1163B5EE00F1C8D1 /* countdown-3.png */; };
 		4D7C25741163B5EE00F1C8D1 /* countdown-0.png in Resources */ = {isa = PBXBuildFile; fileRef = 4D7C256F1163B5EE00F1C8D1 /* countdown-0.png */; };
 		4D9014AF116C677C0041CA43 /* SM3DARLibrary.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D9014AE116C677C0041CA43 /* SM3DARLibrary.a */; };
+		4D9014DF116C6BB40041CA43 /* HelpContent320.png in Resources */ = {isa = PBXBuildFile; fileRef = 4D9014DE116C6BB40041CA43 /* HelpContent320.png */; };
+		4D9014EC116C6E040041CA43 /* DownArrow.png in Resources */ = {isa = PBXBuildFile; fileRef = 4D9014EA116C6E040041CA43 /* DownArrow.png */; };
+		4D9014ED116C6E040041CA43 /* UpArrow.png in Resources */ = {isa = PBXBuildFile; fileRef = 4D9014EB116C6E040041CA43 /* UpArrow.png */; };
+		4D90150F116C740C0041CA43 /* AboutController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D90150D116C740C0041CA43 /* AboutController.m */; };
+		4D901510116C740C0041CA43 /* AboutController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4D90150E116C740C0041CA43 /* AboutController.xib */; };
+		4D90151C116C764B0041CA43 /* seanote_icon215x215.png in Resources */ = {isa = PBXBuildFile; fileRef = 4D90151B116C764B0041CA43 /* seanote_icon215x215.png */; };
+		4D90151E116C76990041CA43 /* periscope_icon169x28.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4D90151D116C76990041CA43 /* periscope_icon169x28.jpg */; };
+		4D901520116C78520041CA43 /* seanote_icon280x73.png in Resources */ = {isa = PBXBuildFile; fileRef = 4D90151F116C78520041CA43 /* seanote_icon280x73.png */; };
+		4D901522116C79030041CA43 /* 3dar_icon280x89.png in Resources */ = {isa = PBXBuildFile; fileRef = 4D901521116C79030041CA43 /* 3dar_icon280x89.png */; };
 		4D90181911125E91009A47FA /* clap.wav in Resources */ = {isa = PBXBuildFile; fileRef = 4D90180511125E91009A47FA /* clap.wav */; };
 		4D90183911126138009A47FA /* Settings.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4D90183811126138009A47FA /* Settings.xib */; };
 		4D90187111126298009A47FA /* SettingsController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D90187011126298009A47FA /* SettingsController.m */; };
@@ -263,6 +271,16 @@
 		4D7C256E1163B5EE00F1C8D1 /* countdown-3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "countdown-3.png"; sourceTree = "<group>"; };
 		4D7C256F1163B5EE00F1C8D1 /* countdown-0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "countdown-0.png"; sourceTree = "<group>"; };
 		4D9014AE116C677C0041CA43 /* SM3DARLibrary.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = SM3DARLibrary.a; sourceTree = "<group>"; };
+		4D9014DE116C6BB40041CA43 /* HelpContent320.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = HelpContent320.png; sourceTree = "<group>"; };
+		4D9014EA116C6E040041CA43 /* DownArrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = DownArrow.png; sourceTree = "<group>"; };
+		4D9014EB116C6E040041CA43 /* UpArrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = UpArrow.png; sourceTree = "<group>"; };
+		4D90150C116C740C0041CA43 /* AboutController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AboutController.h; sourceTree = "<group>"; };
+		4D90150D116C740C0041CA43 /* AboutController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AboutController.m; sourceTree = "<group>"; };
+		4D90150E116C740C0041CA43 /* AboutController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AboutController.xib; sourceTree = "<group>"; };
+		4D90151B116C764B0041CA43 /* seanote_icon215x215.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = seanote_icon215x215.png; sourceTree = "<group>"; };
+		4D90151D116C76990041CA43 /* periscope_icon169x28.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = periscope_icon169x28.jpg; sourceTree = "<group>"; };
+		4D90151F116C78520041CA43 /* seanote_icon280x73.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = seanote_icon280x73.png; sourceTree = "<group>"; };
+		4D901521116C79030041CA43 /* 3dar_icon280x89.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 3dar_icon280x89.png; sourceTree = "<group>"; };
 		4D90180511125E91009A47FA /* clap.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = clap.wav; sourceTree = "<group>"; };
 		4D90183811126138009A47FA /* Settings.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Settings.xib; path = Classes/Settings.xib; sourceTree = "<group>"; };
 		4D90186F11126298009A47FA /* SettingsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsController.h; sourceTree = "<group>"; };
@@ -311,7 +329,9 @@
 		080E96DDFE201D6D7F000001 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				4DC9F03E112491F800F97B5A /* High5s.h */,
+				4D90150C116C740C0041CA43 /* AboutController.h */,
+				4D90150D116C740C0041CA43 /* AboutController.m */,
+				4D90150E116C740C0041CA43 /* AboutController.xib */,
 				C86D2BE8103DCD9D00EE8AF7 /* AlphaWolfView.h */,
 				C86D2BE9103DCD9D00EE8AF7 /* AlphaWolfView.m */,
 				1D3623240D0F684500981E51 /* AlphaWolfSquadAppDelegate.h */,
@@ -325,6 +345,7 @@
 				4D7C25671163B39600F1C8D1 /* CountdownController.m */,
 				4DC9EFE61123C79300F97B5A /* HelpController.h */,
 				4DC9EFE71123C79300F97B5A /* HelpController.m */,
+				4DC9F03E112491F800F97B5A /* High5s.h */,
 				4D7C23E11162F7DC00F1C8D1 /* OverlayController.h */,
 				4D7C23E21162F7DC00F1C8D1 /* OverlayController.m */,
 				4D90186F11126298009A47FA /* SettingsController.h */,
@@ -452,12 +473,18 @@
 		4D7C22EC1162DC4000F1C8D1 /* common */ = {
 			isa = PBXGroup;
 			children = (
+				4D901521116C79030041CA43 /* 3dar_icon280x89.png */,
+				4D90151B116C764B0041CA43 /* seanote_icon215x215.png */,
 				4D7C22ED1162DC4000F1C8D1 /* back-btn.png */,
 				4D7C22EE1162DC4000F1C8D1 /* background.png */,
 				4D7C22EF1162DC4000F1C8D1 /* bust-btn.png */,
 				4D7C22F01162DC4000F1C8D1 /* dialog.png */,
+				4D9014EA116C6E040041CA43 /* DownArrow.png */,
 				4D7C22F11162DC4000F1C8D1 /* HighFiveScreens_v2_07.png */,
+				4D90151D116C76990041CA43 /* periscope_icon169x28.jpg */,
+				4D90151F116C78520041CA43 /* seanote_icon280x73.png */,
 				4D7C22F21162DC4000F1C8D1 /* try-again-btn.png */,
+				4D9014EB116C6E040041CA43 /* UpArrow.png */,
 			);
 			path = common;
 			sourceTree = "<group>";
@@ -518,6 +545,7 @@
 				4D7C23131162DC4000F1C8D1 /* help-btn.png */,
 				4D7C23141162DC4000F1C8D1 /* help_title.png */,
 				4D7C23151162DC4000F1C8D1 /* HelpContent.png */,
+				4D9014DE116C6BB40041CA43 /* HelpContent320.png */,
 			);
 			path = help;
 			sourceTree = "<group>";
@@ -700,7 +728,6 @@
 				4D7C235F1162DC4000F1C8D1 /* WM-HandFrame03.png in Resources */,
 				4D7C23601162DC4000F1C8D1 /* help-btn.png in Resources */,
 				4D7C23611162DC4000F1C8D1 /* help_title.png in Resources */,
-				4D7C23621162DC4000F1C8D1 /* HelpContent.png in Resources */,
 				4D7C23631162DC4000F1C8D1 /* begin-btn.png in Resources */,
 				4D7C23641162DC4000F1C8D1 /* begin.png in Resources */,
 				4D7C23651162DC4000F1C8D1 /* beginOver.png in Resources */,
@@ -761,6 +788,14 @@
 				4D7A955411649BA1008F1BB1 /* bubble1.png in Resources */,
 				4D7A958711649BA1008F1BB1 /* SM3DAR_keys.txt in Resources */,
 				4D7A96071164A777008F1BB1 /* screen2_hand.png in Resources */,
+				4D9014DF116C6BB40041CA43 /* HelpContent320.png in Resources */,
+				4D9014EC116C6E040041CA43 /* DownArrow.png in Resources */,
+				4D9014ED116C6E040041CA43 /* UpArrow.png in Resources */,
+				4D901510116C740C0041CA43 /* AboutController.xib in Resources */,
+				4D90151C116C764B0041CA43 /* seanote_icon215x215.png in Resources */,
+				4D90151E116C76990041CA43 /* periscope_icon169x28.jpg in Resources */,
+				4D901520116C78520041CA43 /* seanote_icon280x73.png in Resources */,
+				4D901522116C79030041CA43 /* 3dar_icon280x89.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -784,6 +819,7 @@
 				4D7C25681163B39600F1C8D1 /* CountdownController.m in Sources */,
 				4DDCA9AB116AA60200ACA2B1 /* DeviceMovementArc.m in Sources */,
 				4DDCA9B4116AAF6D00ACA2B1 /* DeviceMovement.m in Sources */,
+				4D90150F116C740C0041CA43 /* AboutController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

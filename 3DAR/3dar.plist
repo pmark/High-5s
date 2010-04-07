@@ -13,7 +13,7 @@
 	<key>3darLookMode</key>
 	<string>free</string>
 	<key>3darDisableLocationUpdates</key>
-	<false/>
+	<true/>
 	<key>3darDisableMotionFiltering</key>
 	<false/>
 	<key>3darHeadless</key>

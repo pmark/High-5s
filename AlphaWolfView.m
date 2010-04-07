@@ -436,15 +436,27 @@
 }
 
 - (void)updateGlobalCounterLabel {
+    NSString *countString = nil;
     NSInteger count = APP_DELEGATE.globalCount;
+
     if (count == GLOBAL_COUNT_NA) {
-        globalCounterLabel.text = @"N/A";
+        NSNumber *countNum = (NSNumber*)PREF_READ_OBJECT(PREF_KEY_GLOBAL_COUNT);
+        
+        if (countNum != nil) {
+            count = [countNum integerValue];
+        }
+    }
+    
+    if (count == GLOBAL_COUNT_NA || count == 0) {
+		countString = @"???";
     } else {
         NSNumberFormatter *numberFormatter = [[NSNumberFormatter alloc] init];
         [numberFormatter setNumberStyle: NSNumberFormatterDecimalStyle];
-        globalCounterLabel.text = [numberFormatter stringFromNumber:[NSNumber numberWithInteger:count]];
-        [numberFormatter release];        
+        countString = [numberFormatter stringFromNumber:[NSNumber numberWithInteger:count]];
+        [numberFormatter release];                
     }
+    
+    globalCounterLabel.text = countString;
 }
 
 - (void)updateLocalCounterLabel {
@@ -508,7 +520,20 @@
 		  bounce:FALSE
 			ease:@"in"
 	 ];
-
+    
+    // 48x27
+    UIImage *aboutImage = [UIImage imageNamed:@"people.png"];
+	UIButton *aboutButton = [AlphaWolfView buttonWithTitle:@" "
+                                                tag:@"aboutButton"
+                                             target:self.controller		
+                                           selector:@selector(clickAbout)
+                                              frame:CGRectMake(266, 419, 48, 27)
+                                              image:aboutImage
+                                       imagePressed:aboutImage
+                                      darkTextColor:YES];
+	
+	[self addSubview:aboutButton];
+    
     UILabel *label = [[UILabel alloc] initWithFrame:CGRectMake(110, 5, 120, 30)];
     label.font = [UIFont fontWithName:@"Courier" size:20];
     label.textAlignment = UITextAlignmentLeft;

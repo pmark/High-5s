@@ -14,6 +14,9 @@
 #import "WelcomeController.h"
 #import "ConfirmationController.h"
 #import "CountdownController.h"
+#import "AboutController.h"
+
+#define SHAKE_FOR_5 1
 
 #define SESSION_END_DELAY_SEC 2.5
 #define CC_MD5_DIGEST_LENGTH 16
@@ -70,11 +73,11 @@
     
     SM3DAR_Controller *sm3dar = [SM3DAR_Controller sharedSM3DAR_Controller];
     sm3dar.delegate = self;
-
-    //[NSTimer scheduledTimerWithTimeInterval:0.75 target:self selector:@selector(printPitch) userInfo:nil repeats:YES];
 }
 
 -(void)openOverlay:(OverlayController*)newOverlay {
+    ready = NO;
+    
     newOverlay.host = self;
     newOverlay.view.hidden = YES;
     [self.view addSubview:newOverlay.view];        
@@ -107,6 +110,8 @@
     if ([activeOverlay isKindOfClass:[WelcomeController class]]) {
         [countdown startCountdownAfterDelay:OVERLAY_TRANSITION_ANIMATION];
     }
+
+    ready = YES;
 }
 
 -(NSString*)messageBody {
@@ -229,7 +234,8 @@
 
 #pragma mark -
 #pragma mark Motion
-/*
+
+#ifdef SHAKE_FOR_5
 - (void)motionBegan:(UIEventSubtype)motion withEvent:(UIEvent *)event {
 	[super motionBegan: motion withEvent: event];
 	if (motion == UIEventSubtypeMotionShake) {
@@ -244,7 +250,13 @@
 - (void)motionEnded:(UIEventSubtype)motion withEvent:(UIEvent *)event {
 	[super motionEnded: motion withEvent: event];
 }  
-*/
+
+- (void)shakeDetected {
+    NSLog(@"shake!!!!!");
+    [self handleSlap];
+}
+
+#endif
 
 - (void)clickSettings {
     SettingsController *c = [[SettingsController alloc] init];
@@ -256,9 +268,16 @@
     [self openOverlay:c];
 }
 
+- (void)clickAbout {
+    AboutController *c = [[AboutController alloc] init];
+    [self openOverlay:c];
+}
+
 #pragma mark -
 
 - (void)handleSlap {
+    if (!ready) return;
+    
     [alphaview clapper];
 
     [countdown cancelCountdown];    
@@ -277,8 +296,7 @@
 - (void)askToEndSession {
     CGPoint screenCenter = CGPointMake(self.view.center.x, self.view.center.y-20);
     congratsText.text = [NSString stringWithFormat:CONGRATS_TEXT_FORMAT, slapview.slapCount, [self theLetterS]];
-    
-    
+
     congrats.center = CGPointMake(screenCenter.x, screenCenter.y - CONGRATS_OFFSET);
     congrats.alpha = 0.0;
     congrats.hidden = NO;
@@ -292,11 +310,6 @@
     congrats.center = screenCenter;
     
     [UIView commitAnimations];
-}
-
-- (void)shakeDetected {
-    NSLog(@"shake!!!!!");
-    //[self handleSlap];
 }
 
 - (IBAction)tryAgain {
@@ -364,6 +377,13 @@
     [self openOverlay:c];
 }
 
+#ifdef SHAKE_FOR_5
+- (void) didChangeOrientationYaw:(CGFloat)yaw pitch:(CGFloat)pitch roll:(CGFloat)roll {    
+    lastPitch = pitch;
+}
+#endif
+
+#ifndef SHAKE_FOR_5
 - (void) didChangeOrientationYaw:(CGFloat)yaw pitch:(CGFloat)pitch roll:(CGFloat)roll {    
     CGFloat pitchDelta = pitch - lastPitch;
     
@@ -442,9 +462,6 @@
     
     lastPitch = pitch;    
 }
-
-- (void)printPitch {
-	NSLog(@"pitch: %.1f", lastPitch);    
-}
+#endif
 
 @end

@@ -29,3 +29,4 @@
 #define GLOBAL_COUNT_URL @"http://www.havesomehigh5s.com/includes/totalCount.php"
 #define GLOBAL_COUNT_NA -1
 #define PREF_KEY_LOCAL_COUNT @"PREF_KEY_LOCAL_COUNT"
+#define PREF_KEY_GLOBAL_COUNT @"PREF_KEY_GLOBAL_COUNT"

@@ -27,6 +27,7 @@
     DeviceMovementArc *arc;
     NSInteger movementPhase;
     CGFloat lastPitch;
+    BOOL ready;
 }
 
 @property (nonatomic, retain) AlphaWolfView *alphaview;
