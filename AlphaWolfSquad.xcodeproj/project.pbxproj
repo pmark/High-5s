@@ -130,6 +130,9 @@
 		4DCBF23F112B17D6007DA71F /* iTunesArtwork in Resources */ = {isa = PBXBuildFile; fileRef = 4DCBF23C112B17D6007DA71F /* iTunesArtwork */; };
 		4DCBF240112B17D6007DA71F /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 4DCBF23D112B17D6007DA71F /* Default.png */; };
 		4DCBF241112B17D6007DA71F /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 4DCBF23E112B17D6007DA71F /* Icon.png */; };
+		4DDCA9AB116AA60200ACA2B1 /* DeviceMovementArc.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DDCA9AA116AA60200ACA2B1 /* DeviceMovementArc.m */; };
+		4DDCA9B4116AAF6D00ACA2B1 /* DeviceMovement.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DDCA9B3116AAF6D00ACA2B1 /* DeviceMovement.m */; };
+		4DDCAADF116BD74D00ACA2B1 /* SM3DARLibrary.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4DDCAADE116BD74D00ACA2B1 /* SM3DARLibrary.a */; };
 		C86D2BEA103DCD9D00EE8AF7 /* AlphaWolfView.m in Sources */ = {isa = PBXBuildFile; fileRef = C86D2BE9103DCD9D00EE8AF7 /* AlphaWolfView.m */; };
 		C86D2C2E103DCE1F00EE8AF7 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C86D2C2D103DCE1F00EE8AF7 /* QuartzCore.framework */; };
 		C8A21DA1104DD13A00FC9464 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C8A21DA0104DD13A00FC9464 /* AudioToolbox.framework */; };
@@ -272,6 +275,11 @@
 		4DCBF23C112B17D6007DA71F /* iTunesArtwork */ = {isa = PBXFileReference; lastKnownFileType = file; path = iTunesArtwork; sourceTree = "<group>"; };
 		4DCBF23D112B17D6007DA71F /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		4DCBF23E112B17D6007DA71F /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
+		4DDCA9A9116AA60200ACA2B1 /* DeviceMovementArc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DeviceMovementArc.h; sourceTree = "<group>"; };
+		4DDCA9AA116AA60200ACA2B1 /* DeviceMovementArc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DeviceMovementArc.m; sourceTree = "<group>"; };
+		4DDCA9B2116AAF6D00ACA2B1 /* DeviceMovement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DeviceMovement.h; sourceTree = "<group>"; };
+		4DDCA9B3116AAF6D00ACA2B1 /* DeviceMovement.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DeviceMovement.m; sourceTree = "<group>"; };
+		4DDCAADE116BD74D00ACA2B1 /* SM3DARLibrary.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = SM3DARLibrary.a; path = "../../../../Spot Metrix/PROJECTS/SM3DAR/SM3DARLibrary/SM3DARLibrary/build/Debug-iphoneos/SM3DARLibrary.a"; sourceTree = SOURCE_ROOT; };
 		8D1107310486CEB800E47090 /* AlphaWolfSquad-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "AlphaWolfSquad-Info.plist"; plistStructureDefinitionIdentifier = "com.apple.xcode.plist.structure-definition.iphone.info-plist"; sourceTree = "<group>"; };
 		C86D2BE8103DCD9D00EE8AF7 /* AlphaWolfView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlphaWolfView.h; sourceTree = SOURCE_ROOT; };
 		C86D2BE9103DCD9D00EE8AF7 /* AlphaWolfView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlphaWolfView.m; sourceTree = SOURCE_ROOT; };
@@ -293,6 +301,7 @@
 				4D7A959611649C14008F1BB1 /* CoreLocation.framework in Frameworks */,
 				4D7A959811649C14008F1BB1 /* MapKit.framework in Frameworks */,
 				4D7A959A11649C14008F1BB1 /* OpenGLES.framework in Frameworks */,
+				4DDCAADF116BD74D00ACA2B1 /* SM3DARLibrary.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -340,6 +349,7 @@
 		29B97314FDCFA39411CA2CEA /* CustomTemplate */ = {
 			isa = PBXGroup;
 			children = (
+				4DDCA9A8116AA5F800ACA2B1 /* Movement */,
 				4D7A94B311649BA1008F1BB1 /* 3DAR */,
 				4D7C22EB1162DC4000F1C8D1 /* images */,
 				4D90180411125E91009A47FA /* sounds */,
@@ -396,6 +406,7 @@
 		4D7A94B311649BA1008F1BB1 /* 3DAR */ = {
 			isa = PBXGroup;
 			children = (
+				4DDCAADE116BD74D00ACA2B1 /* SM3DARLibrary.a */,
 				4D7A94B411649BA1008F1BB1 /* 128_white.png */,
 				4D7A94B511649BA1008F1BB1 /* 3dar.plist */,
 				4D7A94B611649BA1008F1BB1 /* 64_white.png */,
@@ -591,6 +602,17 @@
 			path = sounds;
 			sourceTree = "<group>";
 		};
+		4DDCA9A8116AA5F800ACA2B1 /* Movement */ = {
+			isa = PBXGroup;
+			children = (
+				4DDCA9B2116AAF6D00ACA2B1 /* DeviceMovement.h */,
+				4DDCA9B3116AAF6D00ACA2B1 /* DeviceMovement.m */,
+				4DDCA9A9116AA60200ACA2B1 /* DeviceMovementArc.h */,
+				4DDCA9AA116AA60200ACA2B1 /* DeviceMovementArc.m */,
+			);
+			path = Movement;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -760,6 +782,8 @@
 				4D7C23E31162F7DC00F1C8D1 /* OverlayController.m in Sources */,
 				4D7C2523116335D600F1C8D1 /* ConfirmationController.m in Sources */,
 				4D7C25681163B39600F1C8D1 /* CountdownController.m in Sources */,
+				4DDCA9AB116AA60200ACA2B1 /* DeviceMovementArc.m in Sources */,
+				4DDCA9B4116AAF6D00ACA2B1 /* DeviceMovement.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -781,6 +805,7 @@
 					"$(inherited)",
 					"\"$(SRCROOT)/3DAR/SM3DAR_Common/Lib/HTTPRiot/httpriot-0.6.6/Vendor/gh-unit-iphone\"",
 					"\"$(SRCROOT)/3DAR\"",
+					"\"$(SRCROOT)/../../../../Spot Metrix/PROJECTS/SM3DAR/SM3DARLibrary/SM3DARLibrary/build/Debug-iphoneos\"",
 				);
 				OTHER_LDFLAGS = (
 					"-lxml2",
@@ -803,6 +828,7 @@
 					"$(inherited)",
 					"\"$(SRCROOT)/3DAR/SM3DAR_Common/Lib/HTTPRiot/httpriot-0.6.6/Vendor/gh-unit-iphone\"",
 					"\"$(SRCROOT)/3DAR\"",
+					"\"$(SRCROOT)/../../../../Spot Metrix/PROJECTS/SM3DAR/SM3DARLibrary/SM3DARLibrary/build/Debug-iphoneos\"",
 				);
 				OTHER_LDFLAGS = (
 					"-lxml2",
@@ -845,6 +871,7 @@
 					"$(inherited)",
 					"\"$(SRCROOT)/3DAR/SM3DAR_Common/Lib/HTTPRiot/httpriot-0.6.6/Vendor/gh-unit-iphone\"",
 					"\"$(SRCROOT)/3DAR\"",
+					"\"$(SRCROOT)/../../../../Spot Metrix/PROJECTS/SM3DAR/SM3DARLibrary/SM3DARLibrary/build/Debug-iphoneos\"",
 				);
 				OTHER_LDFLAGS = (
 					"-lxml2",

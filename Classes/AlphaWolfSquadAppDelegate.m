@@ -17,7 +17,7 @@
 @synthesize globalCount;
 
 // Constant for the number of times per second (Hertz) to sample acceleration.
-#define kAccelerometerFrequency     40
+//#define kAccelerometerFrequency     40
 
 - (void)getGlobalCount {
 	NSURL *url = [NSURL URLWithString:GLOBAL_COUNT_URL];
@@ -37,17 +37,17 @@
     [window makeKeyAndVisible];
 	
 	// Configure and start the accelerometer
-    [[UIAccelerometer sharedAccelerometer] setUpdateInterval:(1.0 / kAccelerometerFrequency)];
-    [[UIAccelerometer sharedAccelerometer] setDelegate:self];
+//    [[UIAccelerometer sharedAccelerometer] setUpdateInterval:(1.0 / kAccelerometerFrequency)];
+//    [[UIAccelerometer sharedAccelerometer] setDelegate:self];
     
     [self getGlobalCount];
 }
 
 // UIAccelerometerDelegate method, called when the device accelerates.
-- (void)accelerometer:(UIAccelerometer *)accelerometer didAccelerate:(UIAcceleration *)acceleration {
-  // Update the accelerometer graph view
-  [viewController acceleratedInX:acceleration.x Y:acceleration.y Z:acceleration.z];
-}
+//- (void)accelerometer:(UIAccelerometer *)accelerometer didAccelerate:(UIAcceleration *)acceleration {
+//  // Update the accelerometer graph view
+//  [viewController acceleratedInX:acceleration.x Y:acceleration.y Z:acceleration.z];
+//}
 
 - (void)clapper {
 	[[NSNotificationCenter defaultCenter] postNotification:[NSNotification notificationWithName:NOTIF_PLAY_CLAP_SOUND object:nil]];    

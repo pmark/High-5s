@@ -26,6 +26,6 @@
 #define HIDE_SETTINGS_BUTTON 1
 #define NOTIF_PLAY_CLAP_SOUND @"NOTIF_PLAY_CLAP_SOUND"
 #define APP_DELEGATE ((AlphaWolfSquadAppDelegate*)[[UIApplication sharedApplication] delegate])
-#define GLOBAL_COUNT_URL @"http://www.havesomehigh5s.com/staging/includes/totalCount.php"
+#define GLOBAL_COUNT_URL @"http://www.havesomehigh5s.com/includes/totalCount.php"
 #define GLOBAL_COUNT_NA -1
 #define PREF_KEY_LOCAL_COUNT @"PREF_KEY_LOCAL_COUNT"

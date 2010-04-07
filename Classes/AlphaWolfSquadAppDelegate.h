@@ -10,7 +10,7 @@
 
 @class AlphaWolfSquadViewController;
 
-@interface AlphaWolfSquadAppDelegate : NSObject <UIAccelerometerDelegate> {
+@interface AlphaWolfSquadAppDelegate : NSObject { //<UIAccelerometerDelegate> {
     UIWindow *window;
     AlphaWolfSquadViewController *viewController;
     NSInteger globalCount;
@@ -21,7 +21,6 @@
 @property (nonatomic, assign) NSInteger globalCount;
 
 - (void)incrementLocalCountBy:(NSInteger)adder;
-- (void)accelerometer:(UIAccelerometer *)accelerometer didAccelerate:(UIAcceleration *)acceleration;
 - (void)clapper;
 
 @end

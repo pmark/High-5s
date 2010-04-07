@@ -13,16 +13,20 @@
 #import "SlapView.h"
 #import "OverlayController.h"
 #import "CountdownController.h"
-//#import "SM3DAR.h"
+#import "SM3DAR.h"
+#import "DeviceMovement.h"
+#import "DeviceMovementArc.h"
 
-@interface AlphaWolfSquadViewController : UIViewController <SlapDelegate, MFMailComposeViewControllerDelegate> {
+@interface AlphaWolfSquadViewController : UIViewController <SlapDelegate, MFMailComposeViewControllerDelegate, SM3DAR_Delegate> {
 	AlphaWolfView *alphaview;
     SlapView *slapview;
     NSTimer *sessionEndTimer;
     IBOutlet UIView *congrats;
     IBOutlet UILabel *congratsText;
     CountdownController *countdown;
-    //    SM3DAR_Controller *sm3dar;
+    DeviceMovementArc *arc;
+    NSInteger movementPhase;
+    CGFloat lastPitch;
 }
 
 @property (nonatomic, retain) AlphaWolfView *alphaview;
@@ -31,7 +35,7 @@
 @property (nonatomic, retain) IBOutlet UIView *congrats;
 @property (nonatomic, retain) IBOutlet UILabel *congratsText;
 @property (nonatomic, retain) CountdownController *countdown;
-//@property (nonatomic, assign) SM3DAR_Controller *sm3dar;
+@property (nonatomic, retain) DeviceMovementArc *arc;
 
 - (void)viewDidLoad;
 - (void)acceleratedInX:(float)xx Y:(float)yy Z:(float)zz;
@@ -43,7 +47,8 @@
 - (void)openOverlay:(OverlayController*)newOverlay;
 - (void)closeOverlay:(OverlayController*)activeOverlay;
 - (void)showConfirmationScreen;
--(NSString*)sorno;
+- (NSString*)messageBody;
+- (NSString*)theLetterS;
 
 @end
 

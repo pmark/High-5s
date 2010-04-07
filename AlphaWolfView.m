@@ -657,10 +657,8 @@
 }
 
 -(void)clapper {
-    
-	//[self soundObject:@"clap" type:@"wav"];
-    //AudioServicesPlaySystemSound(pmph);
 	AudioServicesPlayAlertSound(clapSound);
+    //AudioServicesPlayAlertSound(kSystemSoundID_Vibrate);
 }
 -(void)soundObject:(NSString *)file type:(NSString *)type {
 	SystemSoundID pmph;
@@ -731,12 +729,12 @@
  */
 
 - (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
-    UITouch *touch = [touches anyObject];
-    CGPoint point = [touch locationInView:self];
+//    UITouch *touch = [touches anyObject];
+//    CGPoint point = [touch locationInView:self];
 
-    if (point.y > 90 && point.y < 413) {
-        [self.controller handleSlap];        
-    }
+//    if (point.y > 90 && point.y < 413) {
+//        [self.controller handleSlap];        
+//    }
 }
 
 @end
