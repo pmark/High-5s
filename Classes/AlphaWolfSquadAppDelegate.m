@@ -25,6 +25,7 @@
 
     if ([countStr length] > 0) {
 		self.globalCount = [countStr integerValue];      
+        PREF_SAVE_OBJECT(PREF_KEY_GLOBAL_COUNT, [NSNumber numberWithInt:self.globalCount]);    
     } else {
         self.globalCount = GLOBAL_COUNT_NA;
     }
@@ -60,9 +61,15 @@
 }
 
 - (void)incrementLocalCountBy:(NSInteger)adder {
-    NSNumber *localCount = (NSNumber*)PREF_READ_OBJECT(PREF_KEY_LOCAL_COUNT);
-    NSInteger i = [localCount intValue] + adder;
-    PREF_SAVE_OBJECT(PREF_KEY_LOCAL_COUNT, [NSNumber numberWithInt:i]);
+    NSNumber *local = (NSNumber*)PREF_READ_OBJECT(PREF_KEY_LOCAL_COUNT);
+    NSInteger totalLocal = [local intValue] + adder;
+    PREF_SAVE_OBJECT(PREF_KEY_LOCAL_COUNT, [NSNumber numberWithInt:totalLocal]);
+}
+
+- (void)incrementGlobalCountBy:(NSInteger)adder {
+    NSNumber *global = (NSNumber*)PREF_READ_OBJECT(PREF_KEY_GLOBAL_COUNT);
+    NSInteger totalGlobal = [global intValue] + adder;
+    PREF_SAVE_OBJECT(PREF_KEY_GLOBAL_COUNT, [NSNumber numberWithInt:totalGlobal]);    
 }
 
 @end

@@ -13,11 +13,10 @@
 #import "SlapView.h"
 #import "OverlayController.h"
 #import "CountdownController.h"
-#import "SM3DAR.h"
 #import "DeviceMovement.h"
 #import "DeviceMovementArc.h"
 
-@interface AlphaWolfSquadViewController : UIViewController <SlapDelegate, MFMailComposeViewControllerDelegate, SM3DAR_Delegate> {
+@interface AlphaWolfSquadViewController : UIViewController <SlapDelegate, MFMailComposeViewControllerDelegate> {
 	AlphaWolfView *alphaview;
     SlapView *slapview;
     NSTimer *sessionEndTimer;

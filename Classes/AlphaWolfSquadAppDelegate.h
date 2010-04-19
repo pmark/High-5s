@@ -21,6 +21,7 @@
 @property (nonatomic, assign) NSInteger globalCount;
 
 - (void)incrementLocalCountBy:(NSInteger)adder;
+- (void)incrementGlobalCountBy:(NSInteger)adder;
 - (void)clapper;
 
 @end

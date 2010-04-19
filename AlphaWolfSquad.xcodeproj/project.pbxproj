@@ -16,19 +16,6 @@
 		28AD733F0D9D9553002E5188 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 28AD733E0D9D9553002E5188 /* MainWindow.xib */; };
 		28D7ACF80DDB3853001CB0EB /* AlphaWolfSquadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 28D7ACF70DDB3853001CB0EB /* AlphaWolfSquadViewController.m */; };
 		4D6C9DB910FE92FF006D94FD /* SlapView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D6C9DB810FE92FF006D94FD /* SlapView.m */; };
-		4D7A954911649BA1008F1BB1 /* 128_white.png in Resources */ = {isa = PBXBuildFile; fileRef = 4D7A94B411649BA1008F1BB1 /* 128_white.png */; };
-		4D7A954A11649BA1008F1BB1 /* 3dar.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4D7A94B511649BA1008F1BB1 /* 3dar.plist */; };
-		4D7A954B11649BA1008F1BB1 /* 64_white.png in Resources */ = {isa = PBXBuildFile; fileRef = 4D7A94B611649BA1008F1BB1 /* 64_white.png */; };
-		4D7A954C11649BA1008F1BB1 /* 84_white.png in Resources */ = {isa = PBXBuildFile; fileRef = 4D7A94B711649BA1008F1BB1 /* 84_white.png */; };
-		4D7A954D11649BA1008F1BB1 /* 3dar_logo.png in Resources */ = {isa = PBXBuildFile; fileRef = 4D7A94B911649BA1008F1BB1 /* 3dar_logo.png */; };
-		4D7A954E11649BA1008F1BB1 /* 3dar_marker_icon1.png in Resources */ = {isa = PBXBuildFile; fileRef = 4D7A94BA11649BA1008F1BB1 /* 3dar_marker_icon1.png */; };
-		4D7A954F11649BA1008F1BB1 /* 3dar_marker_icon2.png in Resources */ = {isa = PBXBuildFile; fileRef = 4D7A94BB11649BA1008F1BB1 /* 3dar_marker_icon2.png */; };
-		4D7A955011649BA1008F1BB1 /* 3dar_marker_icon3.png in Resources */ = {isa = PBXBuildFile; fileRef = 4D7A94BC11649BA1008F1BB1 /* 3dar_marker_icon3.png */; };
-		4D7A955111649BA1008F1BB1 /* 3dar_marker_icon4.png in Resources */ = {isa = PBXBuildFile; fileRef = 4D7A94BD11649BA1008F1BB1 /* 3dar_marker_icon4.png */; };
-		4D7A955211649BA1008F1BB1 /* 3dar_marker_icon5.png in Resources */ = {isa = PBXBuildFile; fileRef = 4D7A94BE11649BA1008F1BB1 /* 3dar_marker_icon5.png */; };
-		4D7A955311649BA1008F1BB1 /* 3dar_marker_icon6.png in Resources */ = {isa = PBXBuildFile; fileRef = 4D7A94BF11649BA1008F1BB1 /* 3dar_marker_icon6.png */; };
-		4D7A955411649BA1008F1BB1 /* bubble1.png in Resources */ = {isa = PBXBuildFile; fileRef = 4D7A94C011649BA1008F1BB1 /* bubble1.png */; };
-		4D7A958711649BA1008F1BB1 /* SM3DAR_keys.txt in Resources */ = {isa = PBXBuildFile; fileRef = 4D7A954711649BA1008F1BB1 /* SM3DAR_keys.txt */; };
 		4D7A959611649C14008F1BB1 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D7A959511649C14008F1BB1 /* CoreLocation.framework */; };
 		4D7A959811649C14008F1BB1 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D7A959711649C14008F1BB1 /* MapKit.framework */; };
 		4D7A959A11649C14008F1BB1 /* OpenGLES.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D7A959911649C14008F1BB1 /* OpenGLES.framework */; };
@@ -119,7 +106,6 @@
 		4D7C25721163B5EE00F1C8D1 /* countdown-2.png in Resources */ = {isa = PBXBuildFile; fileRef = 4D7C256D1163B5EE00F1C8D1 /* countdown-2.png */; };
 		4D7C25731163B5EE00F1C8D1 /* countdown-3.png in Resources */ = {isa = PBXBuildFile; fileRef = 4D7C256E1163B5EE00F1C8D1 /* countdown-3.png */; };
 		4D7C25741163B5EE00F1C8D1 /* countdown-0.png in Resources */ = {isa = PBXBuildFile; fileRef = 4D7C256F1163B5EE00F1C8D1 /* countdown-0.png */; };
-		4D9014AF116C677C0041CA43 /* SM3DARLibrary.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 4D9014AE116C677C0041CA43 /* SM3DARLibrary.a */; };
 		4D9014DF116C6BB40041CA43 /* HelpContent320.png in Resources */ = {isa = PBXBuildFile; fileRef = 4D9014DE116C6BB40041CA43 /* HelpContent320.png */; };
 		4D9014EC116C6E040041CA43 /* DownArrow.png in Resources */ = {isa = PBXBuildFile; fileRef = 4D9014EA116C6E040041CA43 /* DownArrow.png */; };
 		4D9014ED116C6E040041CA43 /* UpArrow.png in Resources */ = {isa = PBXBuildFile; fileRef = 4D9014EB116C6E040041CA43 /* UpArrow.png */; };
@@ -161,20 +147,6 @@
 		32CA4F630368D1EE00C91783 /* AlphaWolfSquad_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlphaWolfSquad_Prefix.pch; sourceTree = "<group>"; };
 		4D6C9DB710FE92FF006D94FD /* SlapView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SlapView.h; sourceTree = "<group>"; };
 		4D6C9DB810FE92FF006D94FD /* SlapView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SlapView.m; sourceTree = "<group>"; };
-		4D7A94B411649BA1008F1BB1 /* 128_white.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 128_white.png; sourceTree = "<group>"; };
-		4D7A94B511649BA1008F1BB1 /* 3dar.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = 3dar.plist; sourceTree = "<group>"; };
-		4D7A94B611649BA1008F1BB1 /* 64_white.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 64_white.png; sourceTree = "<group>"; };
-		4D7A94B711649BA1008F1BB1 /* 84_white.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 84_white.png; sourceTree = "<group>"; };
-		4D7A94B911649BA1008F1BB1 /* 3dar_logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 3dar_logo.png; sourceTree = "<group>"; };
-		4D7A94BA11649BA1008F1BB1 /* 3dar_marker_icon1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 3dar_marker_icon1.png; sourceTree = "<group>"; };
-		4D7A94BB11649BA1008F1BB1 /* 3dar_marker_icon2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 3dar_marker_icon2.png; sourceTree = "<group>"; };
-		4D7A94BC11649BA1008F1BB1 /* 3dar_marker_icon3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 3dar_marker_icon3.png; sourceTree = "<group>"; };
-		4D7A94BD11649BA1008F1BB1 /* 3dar_marker_icon4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 3dar_marker_icon4.png; sourceTree = "<group>"; };
-		4D7A94BE11649BA1008F1BB1 /* 3dar_marker_icon5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 3dar_marker_icon5.png; sourceTree = "<group>"; };
-		4D7A94BF11649BA1008F1BB1 /* 3dar_marker_icon6.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = 3dar_marker_icon6.png; sourceTree = "<group>"; };
-		4D7A94C011649BA1008F1BB1 /* bubble1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bubble1.png; sourceTree = "<group>"; };
-		4D7A94C511649BA1008F1BB1 /* SM3DAR.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SM3DAR.h; sourceTree = "<group>"; };
-		4D7A954711649BA1008F1BB1 /* SM3DAR_keys.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = SM3DAR_keys.txt; sourceTree = "<group>"; };
 		4D7A959511649C14008F1BB1 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		4D7A959711649C14008F1BB1 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		4D7A959911649C14008F1BB1 /* OpenGLES.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGLES.framework; path = System/Library/Frameworks/OpenGLES.framework; sourceTree = SDKROOT; };
@@ -270,7 +242,6 @@
 		4D7C256D1163B5EE00F1C8D1 /* countdown-2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "countdown-2.png"; sourceTree = "<group>"; };
 		4D7C256E1163B5EE00F1C8D1 /* countdown-3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "countdown-3.png"; sourceTree = "<group>"; };
 		4D7C256F1163B5EE00F1C8D1 /* countdown-0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "countdown-0.png"; sourceTree = "<group>"; };
-		4D9014AE116C677C0041CA43 /* SM3DARLibrary.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; path = SM3DARLibrary.a; sourceTree = "<group>"; };
 		4D9014DE116C6BB40041CA43 /* HelpContent320.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = HelpContent320.png; sourceTree = "<group>"; };
 		4D9014EA116C6E040041CA43 /* DownArrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = DownArrow.png; sourceTree = "<group>"; };
 		4D9014EB116C6E040041CA43 /* UpArrow.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = UpArrow.png; sourceTree = "<group>"; };
@@ -319,7 +290,6 @@
 				4D7A959611649C14008F1BB1 /* CoreLocation.framework in Frameworks */,
 				4D7A959811649C14008F1BB1 /* MapKit.framework in Frameworks */,
 				4D7A959A11649C14008F1BB1 /* OpenGLES.framework in Frameworks */,
-				4D9014AF116C677C0041CA43 /* SM3DARLibrary.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -371,7 +341,6 @@
 			isa = PBXGroup;
 			children = (
 				4DDCA9A8116AA5F800ACA2B1 /* Movement */,
-				4D7A94B311649BA1008F1BB1 /* 3DAR */,
 				4D7C22EB1162DC4000F1C8D1 /* images */,
 				4D90180411125E91009A47FA /* sounds */,
 				080E96DDFE201D6D7F000001 /* Classes */,
@@ -422,36 +391,6 @@
 				288765A40DF7441C002DB57D /* CoreGraphics.framework */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		4D7A94B311649BA1008F1BB1 /* 3DAR */ = {
-			isa = PBXGroup;
-			children = (
-				4D9014AE116C677C0041CA43 /* SM3DARLibrary.a */,
-				4D7A94B411649BA1008F1BB1 /* 128_white.png */,
-				4D7A94B511649BA1008F1BB1 /* 3dar.plist */,
-				4D7A94B611649BA1008F1BB1 /* 64_white.png */,
-				4D7A94B711649BA1008F1BB1 /* 84_white.png */,
-				4D7A94B811649BA1008F1BB1 /* Images */,
-				4D7A94C511649BA1008F1BB1 /* SM3DAR.h */,
-				4D7A954711649BA1008F1BB1 /* SM3DAR_keys.txt */,
-			);
-			path = 3DAR;
-			sourceTree = "<group>";
-		};
-		4D7A94B811649BA1008F1BB1 /* Images */ = {
-			isa = PBXGroup;
-			children = (
-				4D7A94B911649BA1008F1BB1 /* 3dar_logo.png */,
-				4D7A94BA11649BA1008F1BB1 /* 3dar_marker_icon1.png */,
-				4D7A94BB11649BA1008F1BB1 /* 3dar_marker_icon2.png */,
-				4D7A94BC11649BA1008F1BB1 /* 3dar_marker_icon3.png */,
-				4D7A94BD11649BA1008F1BB1 /* 3dar_marker_icon4.png */,
-				4D7A94BE11649BA1008F1BB1 /* 3dar_marker_icon5.png */,
-				4D7A94BF11649BA1008F1BB1 /* 3dar_marker_icon6.png */,
-				4D7A94C011649BA1008F1BB1 /* bubble1.png */,
-			);
-			path = Images;
 			sourceTree = "<group>";
 		};
 		4D7C22EB1162DC4000F1C8D1 /* images */ = {
@@ -774,19 +713,6 @@
 				4D7C25721163B5EE00F1C8D1 /* countdown-2.png in Resources */,
 				4D7C25731163B5EE00F1C8D1 /* countdown-3.png in Resources */,
 				4D7C25741163B5EE00F1C8D1 /* countdown-0.png in Resources */,
-				4D7A954911649BA1008F1BB1 /* 128_white.png in Resources */,
-				4D7A954A11649BA1008F1BB1 /* 3dar.plist in Resources */,
-				4D7A954B11649BA1008F1BB1 /* 64_white.png in Resources */,
-				4D7A954C11649BA1008F1BB1 /* 84_white.png in Resources */,
-				4D7A954D11649BA1008F1BB1 /* 3dar_logo.png in Resources */,
-				4D7A954E11649BA1008F1BB1 /* 3dar_marker_icon1.png in Resources */,
-				4D7A954F11649BA1008F1BB1 /* 3dar_marker_icon2.png in Resources */,
-				4D7A955011649BA1008F1BB1 /* 3dar_marker_icon3.png in Resources */,
-				4D7A955111649BA1008F1BB1 /* 3dar_marker_icon4.png in Resources */,
-				4D7A955211649BA1008F1BB1 /* 3dar_marker_icon5.png in Resources */,
-				4D7A955311649BA1008F1BB1 /* 3dar_marker_icon6.png in Resources */,
-				4D7A955411649BA1008F1BB1 /* bubble1.png in Resources */,
-				4D7A958711649BA1008F1BB1 /* SM3DAR_keys.txt in Resources */,
 				4D7A96071164A777008F1BB1 /* screen2_hand.png in Resources */,
 				4D9014DF116C6BB40041CA43 /* HelpContent320.png in Resources */,
 				4D9014EC116C6E040041CA43 /* DownArrow.png in Resources */,
@@ -841,7 +767,6 @@
 					"$(inherited)",
 					"\"$(SRCROOT)/3DAR/SM3DAR_Common/Lib/HTTPRiot/httpriot-0.6.6/Vendor/gh-unit-iphone\"",
 					"\"$(SRCROOT)/3DAR\"",
-					"\"$(SRCROOT)/../../../../Spot Metrix/PROJECTS/SM3DAR/SM3DARLibrary/SM3DARLibrary/build/Debug-iphoneos\"",
 				);
 				OTHER_LDFLAGS = (
 					"-lxml2",
@@ -864,7 +789,6 @@
 					"$(inherited)",
 					"\"$(SRCROOT)/3DAR/SM3DAR_Common/Lib/HTTPRiot/httpriot-0.6.6/Vendor/gh-unit-iphone\"",
 					"\"$(SRCROOT)/3DAR\"",
-					"\"$(SRCROOT)/../../../../Spot Metrix/PROJECTS/SM3DAR/SM3DARLibrary/SM3DARLibrary/build/Debug-iphoneos\"",
 				);
 				OTHER_LDFLAGS = (
 					"-lxml2",
@@ -907,7 +831,6 @@
 					"$(inherited)",
 					"\"$(SRCROOT)/3DAR/SM3DAR_Common/Lib/HTTPRiot/httpriot-0.6.6/Vendor/gh-unit-iphone\"",
 					"\"$(SRCROOT)/3DAR\"",
-					"\"$(SRCROOT)/../../../../Spot Metrix/PROJECTS/SM3DAR/SM3DARLibrary/SM3DARLibrary/build/Debug-iphoneos\"",
 				);
 				OTHER_LDFLAGS = (
 					"-lxml2",
@@ -937,12 +860,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Bordertown Labs, LLC";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Bordertown Labs, LLC";
 				GCC_C_LANGUAGE_STANDARD = c99;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				PREBINDING = NO;
 				PRODUCT_NAME = "High 5s";
+				PROVISIONING_PROFILE = "42863D0D-9510-4079-A6DE-364D53A11342";
+				"PROVISIONING_PROFILE[sdk=iphoneos*]" = "42863D0D-9510-4079-A6DE-364D53A11342";
 				SDKROOT = iphoneos3.0;
 			};
 			name = Release;

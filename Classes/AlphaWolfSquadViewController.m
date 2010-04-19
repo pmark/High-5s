@@ -32,6 +32,7 @@
 //#define MAIL_BODY_TEXT @"I am sending you %i High 5%@. I worked hard for them and hope you will appreciate the fruits they bear. Click the link below to witness the awesome spectacle these High 5s offer.\n\n%@"
 #define MAIL_BODY_SINGULAR_HTML @"I am sending you a High 5. I worked hard for it and hope you will appreciate the fruit it bears. <a href=\"%@\">Click here</a> to witness the awesome spectacle this High 5 offers."
 #define MAIL_BODY_PLURAL_HTML @"I am sending you %i High 5s. I worked hard for them and hope you will appreciate the fruits they bear. <a href=\"%@\">Click here</a> to witness the awesome spectacle these High 5s offer."
+#define MAIL_BODY_MAX_HTML @"I am sending you %i* High 5s. I worked hard for them and hope you will appreciate the fruits they bear. <a href=\"%@\">Click here</a> to witness the awesome spectacle these High 5s offer.<br/><br/>* True. I sent you %i High 5s. But you will feast your eyes on 23. Anything more would be gluttony. Nobody likes a glutton."
 #define CONGRATS_TEXT_FORMAT @"You just completed %i High 5%@.  You have skills. Now press \"Send.\" Or \"Try Again\" to redeem yourself."
 
 @implementation AlphaWolfSquadViewController
@@ -69,10 +70,6 @@
     
     //[NSTimer scheduledTimerWithTimeInterval:0.1 target:self selector:@selector(detectMovement:) userInfo:nil repeats:YES];
     self.arc = [DeviceMovementArc arcOnAxis:DeviceMovementAxisPitch startAngle:ARC_START_ANGLE travel:ARC_TRAVEL];
-
-    
-    SM3DAR_Controller *sm3dar = [SM3DAR_Controller sharedSM3DAR_Controller];
-    sm3dar.delegate = self;
 }
 
 -(void)openOverlay:(OverlayController*)newOverlay {
@@ -122,7 +119,11 @@
     if (slapview.slapCount == 1) {
         body = [NSString stringWithFormat:MAIL_BODY_SINGULAR_HTML, link];
     } else {
-        body = [NSString stringWithFormat:MAIL_BODY_PLURAL_HTML, slapview.slapCount, link];
+        if (slapview.slapCount > 23) {
+            body = [NSString stringWithFormat:MAIL_BODY_MAX_HTML, slapview.slapCount, link, slapview.slapCount];
+        } else {
+            body = [NSString stringWithFormat:MAIL_BODY_PLURAL_HTML, slapview.slapCount, link];
+        }
     }
 
 	return body;
@@ -220,7 +221,11 @@
 		case MFMailComposeResultCancelled:
             [APP_DELEGATE incrementLocalCountBy:-slapview.slapCount];
             [alphaview updateLocalCounterLabel];            
-			break;
+
+            [APP_DELEGATE incrementGlobalCountBy:-slapview.slapCount];
+            [alphaview updateGlobalCounterLabel];
+
+            break;
 
 		case MFMailComposeResultSent:
             [self showConfirmationScreen];
@@ -334,6 +339,10 @@
 - (IBAction)sendBatch {
     [APP_DELEGATE incrementLocalCountBy:slapview.slapCount];
     [alphaview updateLocalCounterLabel];
+
+    [APP_DELEGATE incrementGlobalCountBy:slapview.slapCount];
+    [alphaview updateGlobalCounterLabel];
+    
     NSString *body = [self messageBody];
     [self showEmailModalView:MAIL_SUBJECT emailBody:body recipientList:nil];
 }
